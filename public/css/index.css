@@ -4,7 +4,7 @@ body {
     color: #000000;
 }
 header {
-    position: absolute;
+    position: relative;
     width: 1304px;
     height: 52px;
     left: 61px;
@@ -31,17 +31,29 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    top: -30px;
+    top: -5px;
 }
 .cabecalho button {
     margin-right: 75px;
 }
 .menu {
-    position: relative;
+    position: absolute;
     width: 1440px;
     height: 60px;
     left: 0px;
     top: 180px;
-
     background: #C4C4C4;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.itens_menu {
+    position: relative;
+    height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    top: 19px;
 }
