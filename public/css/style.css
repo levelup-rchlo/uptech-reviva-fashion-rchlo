@@ -1,0 +1,12 @@
+:root{
+    font-size: 62.5%;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.vis{
+    outline: 1px solid red;
+    display: inline-block;
+}
