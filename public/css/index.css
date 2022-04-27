@@ -46,7 +46,7 @@ header {
 }
 .menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .itens_menu {
     position: relative;
@@ -56,4 +56,32 @@ header {
     line-height: 22px;
     color: #000000;
     top: 19px;
+}
+.formulario {
+    display: grid;
+}
+.pesquisar {
+    position: absolute;
+    width: 1250px;
+    height: 50px;
+    left: 41px;
+    right: 149px;
+    top: 251px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+.formulario button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 1301px;
+    top: 251px;
+    background: #C4C4C4;
+}
+.formulario svg {
+    position: relative;
+    top: 0%;
+    bottom: -0.01%;    
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
