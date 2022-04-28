@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.cabecalho h1 {
+.logo_titulo {
     position: relative;
     font-family: 'Montserrat';
     font-size: 2em;
@@ -25,7 +25,7 @@ header {
     font-size: 36px;
     line-height: 44px;
 }
-.cabecalho p {
+.logo_texto {
     position: relative; 
     left: 205px;
     font-family: 'Montserrat';
@@ -93,7 +93,7 @@ header {
     left: 40px;
     top: 326px;
 }
-.produto_lista h2 {
+.subtitulo {
     position: absolute;
     width: 227px;
     height: 27px;
@@ -143,18 +143,23 @@ header {
     font-size: 1.8em;
     line-height: 30px;
 }
+.botao_sacola {
+    display: flex;
+    justify-content: space-between;
+    width: 1238px;
+}
 .botao_sacola button{
     position: relative;
     width: 285px;
     height: 40px;
-    left: 40px;
+    left: 0px;
     top: 78px;
 
     background: #C4C4C4;
 }
 .banner {
     position: relative;
-    width: 1362px;
+    width: 1238px;
     height: 160px;
     left: 40px;
     top: 380px;
@@ -170,6 +175,7 @@ header {
     font-size: 1.5em;
     line-height: 24px;
     align-items: center;
+    top: 75px;
     
     
     color: #000000;
@@ -183,7 +189,69 @@ header {
     font-size: 2em;
     line-height: 24px;
     align-items: center;
+    top: 80px;
     
     
+    color: #000000;
+}
+.banner_logo {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.banner .logo_texto {
+    top: 35px;
+    left: 265px;
+}
+.produto_lista2 {
+    position: relative;
+    width: 1269px;
+    height: 462px;
+    left: 40px;
+    top: 426px;
+}
+.blog {
+    display: flexbox;
+    position: relative;
+    width: 1238px;
+    height: 504px;
+    left: 39px;
+    top: 478px;
+}
+.blog h3 {
+    position: relative;
+    width: 587px;
+    height: 54px;
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 27px;
+
+    color: #000000;
+}
+.imagem {
+    position: relative;
+    width: 644px;
+    height: 320px;
+    top: 20px;
+
+    background: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+.imagem_texto {
+    position: absolute;
+    width: 642px;
+    height: 81px;
+    left: 40px;
+    top: 2021px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+
     color: #000000;
 }

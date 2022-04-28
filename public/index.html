@@ -16,56 +16,94 @@
     <script src="js/testando.js"></script>
     <header class="cabecalho">
             <div class="cabecalho_logo">
-                <h1>Reviva Fashion</h1>
-                <p>by RCHLO</p>
+                <h1 class="logo_titulo">Reviva Fashion</h1>
+                <p class="logo_texto">by RCHLO</p>
             </div>
             <div class="cabecalho_vetor">
                 <button><svg width="28px" height="31.94px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg></button>
             </div>
     </header>
-    <section class="menu">
-        <nav>
-            <ul>
-                <li class="itens_menu"><a href="index.html">Página Inicial</a></li>
-                <li class="itens_menu"><a href="modaMasculian.html">Moda Masculina</a></li>
-                <li class="itens_menu"><a href="modaFeminina.html">Moda Feminina</a></li>
-                <li class="itens_menu"><a href="modaInfantil.html">Moda Infantil</a></li>
-                <li class="itens_menu"><a href="manualModa.html">Moda Manual da Moda</a></li>
-            </ul>
-        </nav>
-    </section>
-    <form class="formulario">
-        <input type="text" class="pesquisar" placeholder="Faça sua busca aqui se  já souber o que está procurando" name="search">
-        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-        </button>
-    </form>
-    <section class="produto_lista">
-        <h2>Ultimos lançamentos</h2>
-        <div class="produto_imagem">
-            <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
-            <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
-            <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
-            <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
-            
-        </div>
-        <div class="produto_item">
-            <p>Camiseta Reviva K22, Preta 39,99</p>
-            <p>Camiseta Reviva K22, Preta 39,99</p>
-            <p>Camiseta Reviva K22, Preta 39,99</p>
-            <p>Camiseta Reviva K22, Preta 39,99</p>
-        </div>
-        <div class="botao_sacola">
-            <button>Por na Sacola</button>
-            <button>Por na Sacola</button>
-            <button>Por na Sacola</button>
-            <button>Por na Sacola</button>
-        </div>
-    </section>
-    <section class="banner">
-        <p>Fique por dentro de tudo que há de novidade da moda!</p>
-        <h3>Baixe já nosso manual de moda!</h3>
-    </section>
+    <main>
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li class="itens_menu"><a href="index.html">Página Inicial</a></li>
+                    <li class="itens_menu"><a href="modaMasculian.html">Moda Masculina</a></li>
+                    <li class="itens_menu"><a href="modaFeminina.html">Moda Feminina</a></li>
+                    <li class="itens_menu"><a href="modaInfantil.html">Moda Infantil</a></li>
+                    <li class="itens_menu"><a href="manualModa.html">Moda Manual da Moda</a></li>
+                </ul>
+            </nav>
+        </section>
+        <form class="formulario">
+            <input type="text" class="pesquisar" placeholder="Faça sua busca aqui se  já souber o que está procurando" name="search">
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </form>
+        <section class="produto_lista">
+            <h2 class="subtitulo">Ultimos lançamentos</h2>
+            <div class="produto_imagem">
+                <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
+                <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
+                <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
+                <img class="imagem_camiseta" src="https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700" alt="camiseta">
+                
+            </div>
+            <div class="produto_item">
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+            </div>
+            <div class="botao_sacola">
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner_texto">
+                <p>Fique por dentro de tudo que há de novidade da moda!</p>
+                <h3>Baixe já nosso manual de moda!</h3>
+            </div>
+            <div class="banner_logo">
+                <h1 class="logo_titulo">Reviva Fashion</h1>
+                <p class="logo_texto">by RCHLO</p>
+            </div>
+        </section>
+        <section class="produto_lista2">
+            <h2 class="subtitulo">Coleção Verão 2022</h2>
+            <div class="produto_imagem">
+                <img class="imagem_camiseta" src="" alt="camiseta">
+                <img class="imagem_camiseta" src="" alt="camiseta">
+                <img class="imagem_camiseta" src="" alt="camiseta">
+                <img class="imagem_camiseta" src="" alt="camiseta">
+                
+            </div>
+            <div class="produto_item">
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+                <p>Camiseta Reviva K22, Preta 39,99</p>
+            </div>
+            <div class="botao_sacola">
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+                <button>Por na Sacola</button>
+            </div>
+        </section>
+        <section class="blog">
+            <h3>Na dúvida sobre combinar suas roupas e ficar incrível?
+                Confira nossas dicas em nosso blog.</h3>
+            <p class="imagem"></p>
+            <p class="imagem_texto">O que fazer com o look que usou no carnaval? Confira
+                já como fazer uso dessas mesmas peças no inverso e
+                continuar na moda!</p>
+        </section>
+    </main>
 </body>
 </html>
