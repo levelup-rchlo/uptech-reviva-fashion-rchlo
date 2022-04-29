@@ -1,0 +1,132 @@
+:root {
+    font-size: 62.5%;
+    --cor-principal: #000000;
+    --fonte-principal: "Inter", sans-serif;
+    --fundo-navegacao: #e5e5e5;
+    --tamanho-titulo-navegacao: 2rem;
+    --font-cabecalho: 3.5rem;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+}
+
+.cabecalho {
+    display: flex;
+    margin: 5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-cabecalho);
+    cursor: pointer;
+}
+
+.titulo__cabecalho {
+    display: grid;
+}
+
+.titulo__cabecalho>span {
+    font-size: 0.9rem;
+    justify-self: end;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fundo-navegacao);
+    color: var(--cor-principal);
+    height: 3.5rem;
+}
+
+nav ul {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+nav ul li {
+    margin: 2.5rem;
+}
+
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.pesquisa {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.conteudo-pesquisa {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}
+
+.campo__info--pesquisa {
+    margin-right: 8px;
+    border: 1px solid var(--fundo-navegacao);
+}
+
+.imagem__info--visualizacao {
+    margin-right: 8px;
+    background-color: var(--fundo-navegacao);
+    padding: 5px 2rem;
+}
+
+.titulo-pagina {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.secao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.cartao {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cartao__conteudo1 {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid var(--fundo-navegacao);
+    gap: 8px;
+}
+
+.cartao__camisa {
+    grid-column: span 2;
+}
+
+.camisa__tamanhos {
+    display: flex;
+    border: 1px solid var(--fonte-principal);
+    font-size: 1.5rem;
+    justify-content: end;
+}
+
+.cartao__conteudo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 8px;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__perfil {
+    color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
