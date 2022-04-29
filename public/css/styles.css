@@ -1,0 +1,393 @@
+:root {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+  }
+.cabecalho {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 6em;
+  }
+.cabecalho_logo {
+    text-align: end;
+  }
+.logo_superior {
+    font-size: 3.6em;
+    margin: 14.4px 0 0 0;
+  }
+.logo_inferior {
+    font-size: 1.2em;
+    margin: 0;
+  }
+.menu-navegacao {
+    background-color: #C4C4C4;
+  }
+.menu-navegacao_items {
+    align-items: center;
+    display: flex;
+    font-size: 1.8em;
+    font-weight: 700;
+    height: 60px;
+    justify-content: space-around;
+    list-style: none;
+    margin: auto;
+    max-width: 1440px;
+    padding: 0;
+  }
+.menu-navegacao li:hover {
+    transform: scale(1.05);
+    transition: .2s linear;
+  }
+.menu-navegacao_items li a {
+    color: inherit;
+    text-decoration: none;
+  }
+.conteudo {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 4.2em;
+  }
+.conteudo_pesquisa {
+    display: flex;
+    height: 50px;
+    margin: 12px 0;
+  }
+.pesquisa_campo {
+    border: solid 1px #C4C4C4;
+    box-sizing: border-box;
+    font-size: 1.8em;
+    padding: 0 12px;
+    width: 90%;
+  }
+.pesquisa_botao {
+    background: #C4C4C4 center no-repeat url(../assets/svg/logo-pesquisar.svg);
+    border: none;
+    margin-left: .5%;
+    width: 10%;
+  }
+.pesquisa_botao:hover {
+    background-color: #AAAAAA;
+    cursor: pointer;
+  }
+.conteudo_produtos {
+    display: flex;
+    justify-content: space-between;
+  }
+.produtos_titulo {
+    color: inherit;
+    font-size: 22px;
+    text-decoration: none;
+  }
+.conteudo_produtos>h2 {
+    position: absolute;
+  }
+.produto {
+    display: grid;
+    grid-template: 260px 40px auto 40px / 50% 50%;
+    margin: 4.2em;
+    width: 100%;
+
+  grid-template-areas:
+    "imagem imagem"
+    "imagem imagem"
+    "detalhes detalhes"
+    "botao botao";
+  }
+.produto:nth-child(5) {
+    margin-right: 0;
+  }
+.produto:nth-child(2) {
+    margin-left: 0;
+  }
+.produto_imagem {
+    background-color: #C4C4C4;
+    grid-area: imagem;
+  }
+.produto_imagem img {
+    height: 300px;
+    width: 100%;
+  }
+.produto_tamanhos {
+      display: flex;
+      font-size: 1.8em;
+      font-weight: 800;
+      grid-area: 2 / 2 / 3 / 3;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+.tamanhos_label:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+.tamanhos_input {
+    display: none;
+  }
+.tamanhos_input:checked+.tamanhos_label {
+    background-color: rgb(160, 160, 160)
+  }
+.tamanhos_label {
+    border: solid 1px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 27px;
+    padding-top: 3px;
+    width: 27px;
+  }
+.produtos_especificacoes {
+    color: inherit;
+    font-size: 1.8em;
+    grid-area: detalhes;
+    text-decoration: none;
+  }
+.especificacoes_nome {
+    margin: .5em 0;
+  }
+.especificacoes_valor {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 .5em 0;
+  }
+.produto_botao-sacola {
+    background-color: #C4C4C4;
+    display: flex;
+    font-size: 1.4em;
+    grid-area: botao;
+    justify-content: center;
+    position: relative;
+  }
+.produto_botao-sacola button {
+    background: none;
+    border: none;
+  }
+.produto_botao-sacola:hover {
+    background-color: #aaaaaa;
+    cursor: pointer;
+  }
+.botao-sacola_icone {
+    margin: 5px;
+    position: absolute;
+    right: 0;
+  }
+.conteudo_banner {
+    background-color: rgb(221, 221, 221);
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    height: 160px;
+    justify-content: center;
+    margin: 4em 0;
+    position: relative;
+    text-decoration: none;
+  }
+.banner_texto {
+    font-size: 2.0em;
+    letter-spacing: 10.5px;
+    text-align: center;
+  }
+.banner_texto::first-line {
+    letter-spacing: 0;
+  }
+.banner_logo {
+    bottom: 0;
+    margin: 1em;
+    position: absolute;
+    right: 0;
+    text-align: end;
+  }
+.conteudo_noticias-blog {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(5, auto);
+
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "banner-1 banner-1 banner-2 texto-2"
+    "banner-1 banner-1 banner-2 texto-2"
+    "banner-1 banner-1 banner-3 texto-3"
+    "texto-1 texto-1 banner-3 texto-3";
+  }
+.noticias-blog_titulo {
+    font-size: 2.2em;
+    grid-area: titulo;
+    margin: 2em 0 0 0;
+  }
+.noticias-blog_imagem-1 {
+    background-color: #C4C4C4;
+    grid-area: banner-1;
+    height: 320px;
+    width: 90%;
+  }
+.noticias-blog_texto-1 {
+    font-size: 2.2em;
+    grid-area: texto-1;
+    margin-top: 0;
+    width: 90%;
+  }
+.noticias-blog_imagem-2 {
+    background-color: #C4C4C4;
+    grid-area: banner-2;
+    height: 180px;
+    width: 100%;
+  }
+.noticias-blog_texto-2 {
+    font-size: 2em;
+    grid-area: texto-2;
+    margin-top: 0;
+  }
+.noticias-blog_imagem-3 {
+    background-color: #C4C4C4;
+    grid-area: banner-3;
+    height: 180px;
+    width: 100%;
+  }
+.noticias-blog_texto-3 {
+    font-size: 2em;
+    grid-area: texto-3;
+    margin-top: 0;
+  }
+.rodape {
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 37%;
+    grid-template-rows: 30% 70%;
+    height: 380px;
+    margin: 7.2em auto auto auto;
+    max-width: 1440px;
+    padding: 0 4.2em;
+
+  grid-template-areas:
+    "logo logo logo logo"
+    "menu sociais contato newsletter";
+  }
+.rodape_logo {
+    color: inherit;
+    grid-area: logo;
+    text-align: end;
+    text-decoration: none;
+    width: 254px;
+  }
+.rodape_menu-navegacao {
+    font-size: 1.8em;
+    grid-area: menu;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+.rodape_menu-navegacao li {
+    margin: 0 0 .7em 0;
+  }
+.rodape_menu-navegacao li a {
+    color: inherit;
+    text-decoration: none;
+  }
+.menu-navegacao_titulo {
+    font-weight: bold;
+  }
+.rodape_menu-navegacao li a:hover {
+    font-weight: bolder;
+  }
+.rodape_redes-sociais {
+    grid-area: sociais;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+  }
+.rodape_redes-sociais>p {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 .5em 0;
+  }
+.redes-sociais_icones {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    width: 60%;
+  }
+.redes-sociais_icones li a img {
+    transition: .2s all ease-in-out;
+  }
+.redes-sociais_icones li a img:hover {
+    margin: 0 1em;
+    transform: scale(1.1);
+  }
+.rodape_contatos {
+    grid-area: contato;
+    justify-self: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    word-wrap: break-word;
+  }
+.rodape_contatos::first-line {
+    font-weight: bold;
+  }
+.rodape_contatos li {
+    margin: 0 0 .7em 0;
+  }
+.rodape_contatos li a {
+    color: inherit;
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+.rodape_contatos li a:hover {
+    font-weight: bold;
+  }
+.contato_icone-whatsapp {
+    height: 1em;
+    margin-left: .3em;
+  }
+.contato_icone-telefone {
+    height: 1em;
+    margin-left: .3em;
+  }
+.rodape_newsletter {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: newsletter;
+    height: 70px;
+    justify-content: space-between;
+    justify-self: end;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+  }
+.newsletter_label {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+.newsletter_input {
+    box-sizing: border-box;
+    font-size: 1.7em;
+    height: 32px;
+    padding: 0 .5em;
+    width: 65%;
+  }
+.newsletter_botao {
+    background-color: #5e5e5e;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    margin-left: .2em;
+    width: 33%;
+  }
+.newsletter_botao:hover {
+    background-color: #3f3f3f;
+    cursor: pointer;
+  }
