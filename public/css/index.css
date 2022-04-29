@@ -328,12 +328,79 @@ header {
 }
 .rodape {
     position: relative;
-    width: 1440px;
-    height: 379px;
+    width: 1366px;
+    height: 195px;
     top: 494px;
 
     background: #C4C4C4;
 }
 .rodape_logo {
+    position: relative;
+    width: 255px;
+    height: 44px;
+    left: 40px;
     
+}
+.rodape_logo .logo_titulo {
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 44px;
+
+    color: #000000;
+}
+.rodape_logo .logo_texto {
+    position: relative;
+    left: 135px;
+    
+    font-size: 1em;
+    top: -11px;
+}
+.conteudo_rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1238px;
+    
+    margin: 0 0 0 41px;
+    margin-top: 26px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 18px;
+
+    color: #000000;
+}
+.rodape_itens_menu {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+}
+.rodape_link_redeSociais {
+    margin-top: 11px;
+}
+.contato {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+}
+.contato svg{
+    width: 15px;
+    height: 15px;
+   
+    margin-left: 6px;
+}
+.rodape_newletter {
+    width: 179px;
+
+    background: #E5E5E5;
+    border: 1px solid #666666;
+    box-sizing: border-box
+}
+.newletter_botao {
+    position: relative;
+    width: 63px;
+    height: 17px;
+    
+    background: #666666;
 }
