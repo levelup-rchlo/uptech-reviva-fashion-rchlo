@@ -326,3 +326,14 @@ header {
     line-height: 24px;
     color: #000000;
 }
+.rodape {
+    position: relative;
+    width: 1440px;
+    height: 379px;
+    top: 494px;
+
+    background: #C4C4C4;
+}
+.rodape_logo {
+    
+}
