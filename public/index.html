@@ -3,23 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/index.css">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  entender essas linhas antes de adicionar -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--entender linhas antes de adicionar  -->
 </head>
 
 <body>
     <header>
-        <div class="">
-            <h1>Reviva Fashion</h1>
-            <span>by RCHLO</span>
+        <div class="header-style flex">
+            <div class="logo">
+                <h1>Reviva Fashion</h1>
+                <span>by RCHLO</span>
+            </div>
+            <img src="images/shopping-bag.png" alt="sacola-de-compras">
         </div>
 
 
     </header>
 
-    <main>
-        <ul>
+    <nav>
+        <ul id="navbar" class="flex">
             <li>Página inicial</li>
             <li>Moda Masculina</li>
             <li>Moda Feminina</li>
@@ -27,45 +34,172 @@
             <li>Manual de Moda</li>
         </ul>
 
-        <input type="text">
-        <h4 class="vis">icone de pesquisa</h4>
-        <!-- <i class="icon">icone</i> -->
-        <p>Últimos lançamentos</p>
+    </nav>
 
-        <div class="boxModel">
-            <img class="vis" style="width: 285px;height: 300px;"src="" alt="">
-            <p>Camiseta Reviva K22, Preta</p>
-            <p>R$ 39,90</p>
-            <div>
-                <p class="vis"> POR A SACOLA</p>
-                <!-- <i></i> -->
-                <h4 class="vis">icone de sacola</h4>
+
+    <main>
+        <div id="div-search-config">
+            <input id="searchBar" placeholder="Faça sua busca aqui se já souber o que está procurando..." type="text">
+            <div class="image">
+                <button for="searchBar" style="border: none;">
+                     <img src="images/search.png" alt="icon-search">
+                </button>
             </div>
         </div>
-        <section>
-            <p>Fique por dentro de tudo que há de novidade no mundo da moda!</p>
-            <p>Baixe já nosso manual de moda!</p>
-            <p>Reviva Fashion</p>
-            <span>by RCHLO</span>
+
+        <p class="bold">Últimos lançamentos</p>
+
+        <section class="grid-prod">
+            <div class="boxModel ">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+
+            </div>
+            <div class="boxModel ">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+            <div class="boxModel ">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+            <div class="boxModel ">
+                <img class="img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
         </section>
-        <article class="vis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore eligendi modi consequuntur
-            maxime et suscipit ad porro exercitationem deleniti quibusdam voluptatibus doloremque quas, culpa assumenda
-            corrupti iusto voluptas. Quas, incidunt?</article>
-        <article class="vis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, fugiat. Sunt, quia
-            aperiam distinctio reiciendis ratione voluptatem hic delectus veritatis iure sed odit, eaque ipsa
-            accusantium assumenda at aliquam nemo?m ipsum</article>
-        <article class="vis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero nulla eveniet maxime
-            voluptates expedita harum voluptatibus rem porro? Illum ut ex veritatis animi error in, quaerat commodi
-            voluptatibus saepe. ipsum</article>
+
+
+
+        <section class="slogan">
+            <div class="text flex" style="flex-direction: column;">
+                <p class="normal">
+                    <!--text-align:justify-->
+                    Fique por dentro de tudo que há de novidade no mundo da moda!
+                </p>
+                <p class="justify">Baixe já nosso manual de moda!</p>
+            </div>
+
+            <div class="logo">
+                <p>Reviva Fashion</p>
+                <span>by RCHLO</span>
+            </div>
+
+        </section>
+
+        <p class="bold">Coleção de verão 2022</p>
+        <section class="grid-prod">
+            <div class="boxModel " style="grid-area: x;">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+            <div class="boxModel  " style="grid-area: y;">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+            <div class="boxModel " style="grid-area: w;">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+            <div class="boxModel " style="grid-area: k;">
+                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
+                <p class="prices">R$ 39,90</p>
+                <div class=" background-bag">
+                    <p>POR NA SACOLA</p>
+                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                </div>
+            </div>
+        </section>
+
+        <p class="bold">Na dúvida sobre combinar suas roupas e ficar incrível?
+            Confira nossas dicas em nosso blog.</p>
+
+
+        <section class=" grid-section">
+
+            <div class="left">
+                <article></article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum laborum
+                    aperiam veniam! Voluptatum ullam
+                    dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
+                    consectetur, totam cum.</p>
+
+            </div>
+
+            <div class="middle">
+                <article class="first"></article>
+                <article class="second"></article>
+
+            </div>
+            <div class="right ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+                    laborum aperiam veniam! Voluptatum ullam
+                    dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
+                    consectetur, totam cum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+                    laborum aperiam veniam! Voluptatum ullam
+                    dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
+                    consectetur, totam cum.</p>
+            </div>
+
+
+
+
+
+
+        </section>
+
 
     </main>
-    <footer>
-        <p>Reviva Fashion</p>
-        <span>by RCHLO</span>
 
-        <div class="grid-footer">
+    <footer>
+        <div class="logo">
+            <p>Reviva Fashion</p>
+            <span>by RCHLO</span>
+        </div>
+
+        <div class="title-footer">
+
+
             <ul>
-                <li class="bold">Menu</li>
+                <li>Menu</li>
                 <li>Página inicial</li>
                 <li>Moda Masculina</li>
                 <li>Moda Feminina</li>
@@ -73,23 +207,42 @@
                 <li>Manual de Moda</li>
             </ul>
             <ul>
-                <li class="bold">Siga-nos nas redes sociais</li>
-                <i>Facebook</i>
-                <i>Twitter</i>
-                <i>Instagram</i>
-                <i>Youtube</i>  
+                <li>Siga-nos nas redes sociais</li>
+                <div class="flex">
+                    <li><img src="images/facebook.png" alt="logo-telephone"></li>
+                    <li><img src="images/twitter.png" alt="logo-telephone"></li>
+                    <li><img src="images/instagram.png" alt="logo-telephone"></li>
+                    <li><img src="images/youtube.png" alt="logo-telephone"></li>
+                </div>
+
             </ul>
             <ul>
-                <li class="bold">Entre em contato</li>
+                <li>Entre em contato</li>
+
                 <li>Contato</li>
                 <li>reviva@rchlo.com.br</li>
-                <li>WhatsApp</li> <i>Whats</i>
-                <li>11 2123-3321</li>
-                <i>Telefone</i>
+                <div class="flex">
+                    <li>WhatsApp</li> <img src="images/whatsapp.png" alt="logo-whatsapp">
+                </div>
+                <div class="flex">
+                    <li>11 2123-3321</li>
+                    <img src="images/telephone-call.png" alt="logo-telephone">
+                </div>
+
             </ul>
-            <p class="bold">Assine nossa newsletter</p>
-            <input type="email">
-            <button>ASSINAR JÁ</button>
+            <ul>
+                <li>Assine nossa newsletter</li>
+                <div class="flex">
+                    <li>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <button>ASSINAR JÁ</button>
+                    </li>
+                </div>
+
+            </ul>
+
         </div>
 
     </footer>
