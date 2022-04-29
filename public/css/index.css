@@ -4,6 +4,9 @@ body {
     font-size: 62.5%;
     color: #000000;
 }
+h1 {
+    font-size: 62.5%;
+}
 header {
     position: relative;
     width: 1304px;
@@ -133,15 +136,13 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-.botao_tamanho {
-    
-}
 .imagem_botao button {
     position: relative;
     width: 28px;
     height: 28px;
     top: 10px;
     grid-column: 1;
+    margin: 1%;
 
     border: 1px solid #666666;
     box-sizing: border-box;
@@ -150,7 +151,14 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.produto_item p {
+.produto_item_texto {
+    display: flex;
+    width: 1269px;
+    
+    justify-content: space-between;
+
+}
+.produto_item_texto p {
     position: relative;
     width: 284px;
     height: 60px;
@@ -159,6 +167,20 @@ header {
     font-weight: 400;
     font-size: 1.8em;
     line-height: 30px;
+}
+.preco{
+    display: flex;
+    justify-content: space-between;
+    width: 1269px;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 30px;
+    color: #666666;
+    top: 32px;;
+}
+.preco p{
+    width: 284px;
 }
 .botao_sacola {
     display: flex;
@@ -170,7 +192,7 @@ header {
     width: 285px;
     height: 40px;
     left: 0px;
-    top: 78px;
+    top: 36px;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 17px;
