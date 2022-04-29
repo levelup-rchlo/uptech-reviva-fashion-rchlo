@@ -1,0 +1,141 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    max-width: 1660px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em 3em 3em 3em;
+    /* background-color: aqua; */
+}
+
+.header__content__brand {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__content__brand p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__content__shopping-cart button {
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* ----------------------------- */
+
+body {
+    color: #000000;
+}
+
+.main__section--main-menu {
+    width: 100%;
+    height: 2rem;
+    background: #C4C4C4;
+    background-color: aqua;
+    align-content: center;
+}
+
+.main__section--main-menu ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #C4C4C4;
+    padding: 1rem;
+}
+
+.main__section--main-menu__itens a {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* .main__section--search-form { */
+
+
+/* display: flex;
+    flex-direction: row; */
+
+
+/* display: grid;} */
+
+
+/* .main__section--search-form__input {
+    position: absolute;
+    width: 1360px;
+    height: 50px;
+    left: 41px;
+    top: 251px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+
+.main__section--search-form button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 1301px;
+    top: 251px;
+    background: #C4C4C4;
+}
+
+.main__section--search-form svg {
+    position: relative;
+    top: 0%;
+    bottom: -0.01%;
+} */
+
+
+/* --------------------------------- */
+
+
+/* 
+.main__section--product-list-section-1 {
+    position: absolute;
+    width: 1362px;
+    height: 462px;
+    left: 40px;
+    top: 326px;
+} */
+
+
+/* 
+.main__section--product-list-section-1 h2 {
+    position: relative; */
+
+
+/* font-family: 'Inter';
+    font-style: normal; */
+
+
+/* font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+} */
