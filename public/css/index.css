@@ -4,9 +4,6 @@ body {
     font-size: 62.5%;
     color: #000000;
 }
-h1 {
-    font-size: 62.5%;
-}
 header {
     position: relative;
     width: 1304px;
@@ -25,7 +22,6 @@ header {
     font-family: 'Montserrat';
     font-size: 2em;
     font-weight: 400;
-    font-size: 36px;
     line-height: 44px;
 }
 .logo_texto {
@@ -48,11 +44,11 @@ header {
     top: 180px;
     background: #C4C4C4;
 }
-.menu ul{
+.menu_link{
     display: flex;
     justify-content: space-evenly;
 }
-.itens_menu {
+.menu__item {
     position: relative;
     height: 22px;
     font-weight: 400;
@@ -123,7 +119,7 @@ header {
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 }
-.imagem_camiseta {
+.imagem__tamanhos {
     position: relative;
     width: 269px;
     height: 208px;
