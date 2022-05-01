@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles-scss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +24,11 @@
     </header>
     <nav class="menu-navegacao">
         <ul class="menu-navegacao_items">
-            <li><a href="#">Página Inicial</a></li>
-            <li><a href="#">Moda Masculina</a></li>
-            <li><a href="#">Moda Feminina</a></li>
-            <li><a href="#">Moda Infantíl</a></li>
-            <li><a href="#">Manual de Moda</a></li>
+            <li class="item_menu-navegacao" ><a class="item_link" href="#">Página Inicial</a></li>
+            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Masculina</a></li>
+            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Feminina</a></li>
+            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Infantíl</a></li>
+            <li class="item_menu-navegacao" ><a class="item_link" href="#">Manual de Moda</a></li>
         </ul>
     </nav>
     <main class="conteudo">
@@ -38,9 +37,9 @@
             <button class="pesquisa_botao"></button>
         </section>
         <section class="conteudo_produtos">
-            <h2><a class="produtos_titulo" href="#">Últimos lançamentos</a></h2>
+            <h2 class="produtos_titulo"><a class="produtos_link" href="#">Últimos lançamentos</a></h2>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-1" name="tamanhos_modelo-1" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-1">P</label>
@@ -54,12 +53,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img class="" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-2" name="tamanhos_modelo-2" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-2">P</label>
@@ -73,12 +72,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-3" name="tamanhos_modelo-3" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-3">P</label>
@@ -92,12 +91,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-4" name="tamanhos_modelo-4" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-4">P</label>
@@ -111,7 +110,7 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
@@ -127,7 +126,7 @@
         <section class="conteudo_produtos">
             <h2><a class="produtos_titulo" href="#">Coleção de Verão 2022</a></h2>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-5" name="tamanhos_modelo-5" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-5">P</label>
@@ -141,12 +140,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-6" name="tamanhos_modelo-6" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-6">P</label>
@@ -160,12 +159,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-7" name="tamanhos_modelo-7" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-7">P</label>
@@ -179,12 +178,12 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
             <div class="produto">
-                <a class="produto_imagem" href="#"><img src="" alt=""></a>
+                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-8" name="tamanhos_modelo-8" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-8">P</label>
@@ -198,7 +197,7 @@
                     <p class="especificacoes_valor">R$ 39,90</p>
                 </a>
                 <div class="produto_botao-sacola" aria-label="button">
-                    <button>POR NA SACOLA</button>
+                    <button class="botao-sacola" >POR NA SACOLA</button>
                     <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
                 </div>
             </div>
@@ -229,30 +228,28 @@
             <span class="logo_inferior">by RCHLO</span>
         </a>
         <ul class="rodape_menu-navegacao">
-            <li><a class="menu-navegacao_titulo" href="#">Menu</a></li>
-            <li><a href="#">Página Inicial</a></li>
-            <li><a href="#">Moda Masculina</a></li>
-            <li><a href="#">Moda Feminina</a></li>
-            <li><a href="#">Moda Infantíl</a></li>
-            <li><a href="#">Manual de Moda</a></li>
+            <li class="menu-navegacao_titulo">Menu</li>
+            <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Página Inicial</a></li>
+            <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Masculina</a></li>
+            <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Feminina</a></li>
+            <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Infantíl</a></li>
+            <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Manual de Moda</a></li>
         </ul>
         <nav class="rodape_redes-sociais">
-            <p>Siga-nos nas redes sociais</p>
-            <ul class="redes-sociais_icones">
-                <li><a href="#"><img src="assets/svg/logo-facebook.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/svg/logo-twitter.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/svg/logo-instagram.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/svg/logo-youtube.svg" alt=""></a></li>
+            <p class="redes-sociais_titulo" >Siga-nos nas redes sociais</p>
+            <ul class="redes-sociais_lista-icones">
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-youtube.svg" alt="youtube"></a></li>
             </ul>
         </nav>
         <ul class="rodape_contatos">
-            <li><a href="#">Entre em contato</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="mailto:reviva@rchlo.com.br?">reviva@rchlo.com.br</a></li>
-            <li><a href="https://web.whatsapp.com/send?phone=#############">WhatsApp<img src="assets/svg/logo-whats.svg"
-                        alt class="contato_icone-whatsapp"></img></a></li>
-            <li><a href="tel:+551121233321">11 2123 3321<img src="assets/svg/logo-telefone.svg" alt
-                        class="contato_icone-telefone"></img></a></li>
+            <li class="contatos_item">Entre em contato</li>
+            <li class="contatos_item"><a class="contatos_link" href="#">Contato</a></li>
+            <li class="contatos_item"><a class="contatos_link" href="mailto:reviva@rchlo.com.br?">reviva@rchlo.com.br</a></li>
+            <li class="contatos_item"><a class="contatos_link contatos_link-whats" href="https://web.whatsapp.com/send?phone=#############">WhatsApp</a></li>
+            <li class="contatos_item"><a class="contatos_link contatos_link-tel" href="tel:+551121233321">11 2123 3321</a></li>
         </ul>
         <div class="rodape_newsletter">
             <label class="newsletter_label" for="newsletter_campo">Assine nossa newsletter</label>
