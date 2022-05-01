@@ -1,3 +1,50 @@
+/* Resetando o CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Iniciando a página */
+
 html {
   font-size: 62.5%;
 }
@@ -8,7 +55,7 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .cabecalho {
@@ -16,24 +63,24 @@ header {
   justify-content: space-between;
 	position: relative;
 	width: 75vw;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 	margin: 0 auto;
 }
 
-.cabecalho__reviva {
+.cabecalho__marca {
   width: 25vw;
 }
 
-.cabecalho__reviva--titulo {
+.cabecalho__marca__titulo {
   font-size: 3rem;
 }
 
-.cabecalho__reviva--paragrafo {
-  margin-left: 160px;
+.cabecalho__marca__paragrafo {
+  margin-left: 10rem;
 }
 
 .cabecalho__carrinho {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .menu {
@@ -42,17 +89,18 @@ header {
   align-items: center;
   width: 100%;
   background: #bbb;
-  height: 30px;
+  height: 6vh;
+  margin: 1.25rem 0;
 }
 
-.menu__lista {
+.menu__link {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 75vw;
 }
 
-.menu__lista--link {
+.menu__link__item {
   color: #2b2b2b;
   cursor: pointer;
   text-decoration: none;
@@ -69,8 +117,7 @@ header {
 .busca {
   display: flex;
   width: 75vw;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 1.25rem auto;
 }
 
 .busca__input {
@@ -83,7 +130,7 @@ img.busca__botao--lupa {
   height: 30px;
 }
 
-.ultimos-lancamentos {
+.grid-produtos {
   width: 75vw;
   padding: 20px 0;
   margin: auto;
@@ -128,7 +175,7 @@ h2 {
 .produto__caixa--descricao, 
 .produto__caixa--preco, 
 .botao__sacola {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .produto__caixa--preco {
@@ -150,25 +197,55 @@ h2 {
 
 .manual {
   width: 75vw;
-  height: 150px;
-  margin: auto;
+  height: 20vh;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background: #ccc;
-  text-align: center;
-  line-height: 1.5;
 }
 
-.manual p:nth-child(2){
-  letter-spacing: 0.5rem;
+.manual__paragrafo {
+  padding: 15px 0;
 }
 
+.manual__paragrafo p:nth-child(1) {
+  letter-spacing: -0.109rem;
+}
+
+.manual__paragrafo p:nth-child(2){
+  letter-spacing: 0.516rem;
+}
 
 .manual__reviva {
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-end;
   align-self: flex-end;
+  text-align: right;
+  padding-right: 3px;
+}
+
+.manual__reviva p {
+  font-size: 1rem;
+  padding-bottom: 3px;
+}
+
+/* iniciando a section blog */
+
+.blog {
+  width: 75vw;
+  margin: 40px auto;
+}
+
+.blog__imagemtexto--maior {
+  width: 50%;
+}
+
+.blog__imagem1 {
+  width: 36.5vw;
+  height: 30vh;
+  background: #2b2b2b;
+}
+
+.blog__imagemtexto--duplo {
+  
 }

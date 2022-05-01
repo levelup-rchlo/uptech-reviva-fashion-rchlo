@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-scss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Up!Tech - Reviva</title>
-<head>
-</head>
+
+    <head>
+    </head>
+
 <body>
     <header>
         <div class="cabecalho">
-            <div class="cabecalho__reviva">
-                <h1 class="cabecalho__reviva--titulo">Reviva Fashion</h1>
-                <p class="cabecalho__reviva--paragrafo">by RCHLO</p>
+            <div class="cabecalho__marca">
+                <h1 class="cabecalho__marca__titulo">Reviva Fashion</h1>
+                <p class="cabecalho__marca__paragrafo">by RCHLO</p>
             </div>
             <img class="cabecalho__carrinho" src="img/sacola.svg" alt="">
         </div>
     </header>
     <nav class="menu">
-        <ul class="menu__lista">
-            <li><a class="menu__lista--link" href="#">Página Inicial</a></li>
-            <li><a class="menu__lista--link" href="#">Moda Masculina</a></li>
-            <li><a class="menu__lista--link" href="#">Moda Feminina</a></li>
-            <li><a class="menu__lista--link" href="#">Moda Infantil</a></li>
-            <li><a class="menu__lista--link" href="#">Manual de Moda</a></li>
+        <ul class="menu__link">
+            <li><a class="menu__link__item" href="#">Página Inicial</a></li>
+            <li><a class="menu__link__item" href="#">Moda Masculina</a></li>
+            <li><a class="menu__link__item" href="#">Moda Feminina</a></li>
+            <li><a class="menu__link__item" href="#">Moda Infantil</a></li>
+            <li><a class="menu__link__item" href="#">Manual de Moda</a></li>
         </ul>
     </nav>
     <main class="principal">
         <div class="busca">
-            <input type="search" name="busca__input" class="busca__input" placeholder="Faça sua busca aqui se já souber o que está procurando...">
+            <input type="search" name="busca__input" class="busca__input"
+                placeholder="Faça sua busca aqui se já souber o que está procurando...">
             <button class="busca__botao">
                 <img src="img/lupa.svg" id="btnBusca" class="busca__" alt="Buscar">
             </button>
         </div>
-        
-        <section class="ultimos-lancamentos">
+
+        <section class="grid-produtos">
             <h2>Últimos lançamentos</h2>
             <div class="produtos">
                 <div class="produto">
@@ -54,7 +57,7 @@
                         </div>
                     </div>
                     <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
-                    <p class="produto__caixa--preco">39,99</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
                     <button class="botao__sacola">Por na sacola</button>
                 </div>
                 <div class="produto">
@@ -67,7 +70,7 @@
                         </div>
                     </div>
                     <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
-                    <p class="produto__caixa--preco">39,99</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
                     <button class="botao__sacola">Por na sacola</button>
                 </div>
                 <div class="produto">
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                     <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
-                    <p class="produto__caixa--preco">39,99</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
                     <button class="botao__sacola">Por na sacola</button>
                 </div>
                 <div class="produto">
@@ -93,14 +96,16 @@
                         </div>
                     </div>
                     <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
-                    <p class="produto__caixa--preco">39,99</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
                     <button class="botao__sacola">Por na sacola</button>
                 </div>
             </div>
         </section>
         <section class="manual">
+            <div class="manual__vazio">
+            </div>
             <div class="manual__paragrafo">
-                <p>Fique por dentro de tudo que há de novidade no mundo da moda</p>
+                <p>Fique por dentro de tudo que há de novidade no mundo da moda!</p>
                 <p>Baixe já o nosso manual de moda!</p>
             </div>
             <div class="manual__reviva">
@@ -108,6 +113,78 @@
                 <p class="cabecalho__reviva--paragrafo">by RCHLO</p>
             </div>
         </section>
+
+        <section class="grid-produtos">
+            <h2>Coleção de verão</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <div class="produto__caixa">
+                        <img src="img/camisa.svg" alt="Camisa">
+                        <div class="produto__caixa--tamanho">
+                            <p>P</p>
+                            <p>M</p>
+                            <p>G</p>
+                        </div>
+                    </div>
+                    <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
+                    <button class="botao__sacola">Por na sacola</button>
+                </div>
+                <div class="produto">
+                    <div class="produto__caixa">
+                        <img src="img/camisa.svg" alt="Camisa">
+                        <div class="produto__caixa--tamanho">
+                            <p>P</p>
+                            <p>M</p>
+                            <p>G</p>
+                        </div>
+                    </div>
+                    <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
+                    <button class="botao__sacola">Por na sacola</button>
+                </div>
+                <div class="produto">
+                    <div class="produto__caixa">
+                        <img src="img/camisa.svg" alt="Camisa">
+                        <div class="produto__caixa--tamanho">
+                            <p>P</p>
+                            <p>M</p>
+                            <p>G</p>
+                        </div>
+                    </div>
+                    <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
+                    <button class="botao__sacola">Por na sacola</button>
+                </div>
+                <div class="produto">
+                    <div class="produto__caixa">
+                        <img src="img/camisa.svg" alt="Camisa">
+                        <div class="produto__caixa--tamanho">
+                            <p>P</p>
+                            <p>M</p>
+                            <p>G</p>
+                        </div>
+                    </div>
+                    <p class="produto__caixa--descricao">Camiseta Reviva K22, preta</p>
+                    <p class="produto__caixa--preco">R$ 39,99</p>
+                    <button class="botao__sacola">Por na sacola</button>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <h2>Na dúvida como combinar suas roupas e ficar incrível?<br />Confira as dicas em nosso blog</h2>
+            <div class="blog__imagemtexto--maior">
+                <div class="blog__imagem1"></div>
+                <p>O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas mesmas peças no inverso e continuar na moda!</p>
+            </div>
+            <div class="blog__imagemtexto--duplo">
+                <div class="blog__imagem2"></div>
+                <p>O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas mesmas peças no inverso e continuar na moda!</p>
+                <div class="blog__imagem3"></div>
+                <p>O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas mesmas peças no inverso e continuar na moda!</p>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
