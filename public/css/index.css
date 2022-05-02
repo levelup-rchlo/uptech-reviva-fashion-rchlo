@@ -112,20 +112,21 @@
     
     .add-to-bag-button {
         background-color: #C4C4C4;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
     }
     
     .add-to-bag-button p {
         font-size: 0.8em;
+        grid-column-start: 3;
+        grid-column-end: 6;
         align-self: center;
-        display: flex;
     }
     
     .shopping-cart {
         background-color: #C4C4C4;
         border: none;
+        grid-column-start: 8;
     }
     /*-------------------------------------*/
     
@@ -141,7 +142,6 @@
     
     .banner__text-bottom {
         display: flex;
-        /*justify-content: flex-end;*/
     }
     
     .banner__text-brand {
@@ -153,4 +153,30 @@
     p {
         display: flex;
         justify-content: flex-end;
+    }
+
+    /*-----------------------------*/
+
+    .fashion-tips{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    .fashion-tips__big-post{
+        margin-right: 2rem;
+    }
+
+    .fashion-tips__big-post p{
+        margin-top: 10px;
+    }
+
+    .fashion-tips__small-post{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .fashion-tips__small-post p{
+        margin-left: 10px;
     }
