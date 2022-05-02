@@ -20,26 +20,31 @@
             <h1 class="logo_superior">Reviva Fashion</h1>
             <span class="logo_inferior">by RCHLO</span>
         </div>
-        <a href="#"><img alt="carrinho de compra" src="assets/svg/logo-carrinho-compras.svg"></a>
+        <a href="#"><img class="cabecalho_carrinho" alt="carrinho de compra" src="assets/svg/logo-carrinho-compras.svg"></a>
     </header>
     <nav class="menu-navegacao">
         <ul class="menu-navegacao_items">
-            <li class="item_menu-navegacao" ><a class="item_link" href="#">Página Inicial</a></li>
-            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Masculina</a></li>
-            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Feminina</a></li>
-            <li class="item_menu-navegacao" ><a class="item_link" href="#">Moda Infantíl</a></li>
-            <li class="item_menu-navegacao" ><a class="item_link" href="#">Manual de Moda</a></li>
+            <li class="item_menu-navegacao"><a class="item_link" href="#">Página Inicial</a></li>
+            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Masculina</a></li>
+            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Feminina</a></li>
+            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Infantíl</a></li>
+            <li class="item_menu-navegacao"><a class="item_link" href="#">Manual de Moda</a></li>
         </ul>
     </nav>
     <main class="conteudo">
         <section class="conteudo_pesquisa">
-            <input class="pesquisa_campo" placeholder="Faça sua busca aqui se já souber o que está procurando..." type="text">
+            <input class="pesquisa_campo" placeholder="Faça sua busca aqui se já souber o que está procurando..."
+                type="text">
             <button class="pesquisa_botao"></button>
         </section>
         <section class="conteudo_produtos">
             <h2 class="produtos_titulo"><a class="produtos_link" href="#">Últimos lançamentos</a></h2>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-1/img1.jpg" alt="Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-1" name="tamanhos_modelo-1" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-1">P</label>
@@ -49,16 +54,17 @@
                     <label class="tamanhos_label" for="tamanho-g-1">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Blusa Plus Size Feminina Ampla Decote Malha Onça Preto Filipa by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 139,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-2/img1.jpg" alt="Modelo com Blusa Preta, Plus Size, Gola Canoa, Manga Curta, Estampa de Folhas na Cor Verde na Barra">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-2" name="tamanhos_modelo-2" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-2">P</label>
@@ -68,16 +74,17 @@
                     <label class="tamanhos_label" for="tamanho-g-2">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Blusa Plus Size Feminina Ampla Folhagem Preto Filipa by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 89,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-3/img1.jpg" alt="Modelo com Blusa Verde, Plus Size, Gola Alta Redonda, Manga Longa, Sem Estampas">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-3" name="tamanhos_modelo-3" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-3">P</label>
@@ -87,16 +94,18 @@
                     <label class="tamanhos_label" for="tamanho-g-3">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Blusa Plus Size Feminina Gola Alta Manga Longa Canelada Verde Filipa by Reviva Fashion
+                    </h4>
+                    <p class="especificacoes_valor">R$ 79,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-4/img1.jpg" alt="Modelo com Blusa na Cor Vermelho Escuro Mescla, Plus Size, Gola Redonda, Manga 7/8, Sem Estampas">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-4" name="tamanhos_modelo-4" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-4">P</label>
@@ -106,27 +115,29 @@
                     <label class="tamanhos_label" for="tamanho-g-4">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Blusa Plus Size Feminina Manga 7-8 Tricot Canelado Vermelho Filipa by Reviva Fashion
+                    </h4>
+                    <p class="especificacoes_valor">R$ 89,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
         </section>
-        <a href="#" class="conteudo_banner">
-            <p class="banner_texto">Fique por dentro de tudo que há de novidade no mundo da moda!<br>Baixe já nosso
-                manual de moda!</p>
+        <a href="#" title="Ir para menu da moda" class="conteudo_banner">
+            <img class="conteudo_imagem" src="assets/img/banner.png" alt="Banner com duas botas marrom">
+            <p class="banner_texto">Fique por dentro de tudo que há de novidade no mundo da moda!<br>Baixe já nosso manual de moda!</p>
             <div class="banner_logo">
                 <h1 class="logo_superior">Reviva Fashion</h1>
                 <span class="logo_inferior">by RCHLO</span>
             </div>
         </a>
         <section class="conteudo_produtos">
-            <h2><a class="produtos_titulo" href="#">Coleção de Verão 2022</a></h2>
+            <h2 class="produtos_titulo"><a class="produtos_link" href="#">Coleção de Verão 2022</a></h2>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-5/img1.jpg" alt="Modelo com Calça Jeans Cor Denim Médio, Plus Size, 2 Bolsos Frontais e 2 Traseiros, Comprimento Cigarrete, com Lavagem">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-5" name="tamanhos_modelo-5" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-5">P</label>
@@ -136,16 +147,17 @@
                     <label class="tamanhos_label" for="tamanho-g-5">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Calça Jeans Plus Size Feminina Cigarrete Denim Médio Filipa by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 159,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-6/img1.jpg" alt="Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-6" name="tamanhos_modelo-6" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-6">P</label>
@@ -155,16 +167,17 @@
                     <label class="tamanhos_label" for="tamanho-g-6">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Top Cropped Jeans Feminino Denim Escuro Pool by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 99,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-7/img1.jpg" alt="Modelo com Top Cropped, Plus Size, com Recorte Alça Média, Decote Princesa, Estampa Abstrata Marrom">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-7" name="tamanhos_modelo-7" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-7">P</label>
@@ -174,16 +187,17 @@
                     <label class="tamanhos_label" for="tamanho-g-7">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Top Cropped Plus Size Feminino Alças Franzidas Abstrato Marrom Filipa by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 129,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
             <div class="produto">
-                <a class="produto_link-imagem" href="#"><img class="produto_imagem" src="" alt=""></a>
+                <a class="produto_link-imagem" href="#">
+                    <picture>
+                        <img class="produto_imagem" src="assets/img/produto-8/img1.jpg" alt="Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom">
+                    </picture>
+                </a>
                 <ul class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-8" name="tamanhos_modelo-8" class="tamanhos_input">
                     <label class="tamanhos_label" for="tamanho-p-8">P</label>
@@ -193,34 +207,27 @@
                     <label class="tamanhos_label" for="tamanho-g-8">G</label>
                 </ul>
                 <a href="#" class="produtos_especificacoes">
-                    <p class="especificacoes_nome">Camiseta REviva K22, Preta</p>
-                    <p class="especificacoes_valor">R$ 39,90</p>
+                    <h4 class="especificacoes_nome">Camisa Plus Size Feminina Manga Longa Abstrata Marrom Filipa by Reviva Fashion</h4>
+                    <p class="especificacoes_valor">R$ 179,90</p>
                 </a>
-                <div class="produto_botao-sacola" aria-label="button">
-                    <button class="botao-sacola" >POR NA SACOLA</button>
-                    <img class="botao-sacola_icone" src="assets/svg/logo-sacola-branca.svg" aria-hidden="true">
-                </div>
+                <button class="produto_botao-sacola">POR NA SACOLA</button>
             </div>
         </section>
-        <section class="conteudo_noticias-blog">
-            <h3 class="noticias-blog_titulo">Na dúvida sobre combinar suas roupas e ficar incrível?<br>Confira nossas
-                dicas em nosso blog.</h3>
-            <img class="noticias-blog_imagem-1" src="" alt="">
-            <p class="noticias-blog_texto-1">O que fazer com o look que usou no carnaval? Confira já como fazer uso
-                dessas
-                mesmas peças
-                no inverso e continuar na moda!</p>
-            <img class="noticias-blog_imagem-2" src="" alt="">
-            <p class="noticias-blog_texto-2">O que fazer com o look que usou no carnaval? Confira já como fazer uso
-                dessas
-                mesmas peças
-                no inverso e continuar na moda!</p>
-            <img class="noticias-blog_imagem-3" src="" alt="">
-            <p class="noticias-blog_texto-3">O que fazer com o look que usou no carnaval? Confira já como fazer uso
-                dessas
-                mesmas peças
-                no inverso e continuar na moda!</p>
-        </section>
+        <article class="conteudo_noticias-blog">
+            <h3 class="noticias-blog_titulo">Na dúvida sobre combinar suas roupas e ficar incrível?<br>Confira nossas dicas em nosso blog.</h3>
+            <img class="noticias-blog_imagem-1" title="Ir para o blog"
+                src="https://midia.fotos-riachuelo.com.br/fotos/hotsites/home/new/blog/2022/04/19.jpg"
+                alt="Sabrina Sato, Eulá e Filha da Eulá com Looks Usados no Carnaval">
+            <a href="#" class="noticias-blog_texto-1">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas mesmas peças no inverso e continuar na moda!</a>
+            <img class="noticias-blog_imagem-2" title="Ir para o blog"
+                src="https://rchloblogprod.blob.core.windows.net/wp-content/blog-preview-outono-conteudo5-ads10303.jpg"
+                alt="Modelos Usando Conjuntos Estampados">
+            <a href="#" class="noticias-blog_texto-2">Está pronto para receber os melhores spoilers da próxima temporada? Acabam de chegar à Riachu as tendências mais aguardadas do Outono Inverno 2022.</a>
+            <img class="noticias-blog_imagem-3" title="Ir para o blog"
+                src="https://rchloblogprod.blob.core.windows.net/wp-content/blog-preview-outono-conteudo-ads10303-697x580.jpg"
+                alt="Modelo Usando Blusa com Transparência e Colete por Cima em Tons Neutros ">
+            <a href="#" class="noticias-blog_texto-3">O colete é tendência forte para 2022. Seja no inverno ou no verão, essa terceira peça é aquele truque de estilo que vale a pena ter no armário.</a>
+        </article>
     </main>
     <footer class="rodape">
         <a href="#" class="rodape_logo">
@@ -236,12 +243,16 @@
             <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Manual de Moda</a></li>
         </ul>
         <nav class="rodape_redes-sociais">
-            <p class="redes-sociais_titulo" >Siga-nos nas redes sociais</p>
+            <p class="redes-sociais_titulo">Siga-nos nas redes sociais</p>
             <ul class="redes-sociais_lista-icones">
-                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-facebook.svg" alt="facebook"></a></li>
-                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-twitter.svg" alt="twitter"></a></li>
-                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-instagram.svg" alt="instagram"></a></li>
-                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-youtube.svg" alt="youtube"></a></li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-facebook.svg" alt="facebook"></a>
+                </li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-twitter.svg" alt="twitter"></a>
+                </li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-instagram.svg" alt="instagram"></a>
+                </li>
+                <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-youtube.svg" alt="youtube"></a>
+                </li>
             </ul>
         </nav>
         <ul class="rodape_contatos">
@@ -249,13 +260,13 @@
             <li class="contatos_item"><a class="contatos_link" href="#">Contato</a></li>
             <li class="contatos_item"><a class="contatos_link" href="mailto:reviva@rchlo.com.br?">reviva@rchlo.com.br</a></li>
             <li class="contatos_item"><a class="contatos_link contatos_link-whats" href="https://web.whatsapp.com/send?phone=#############">WhatsApp</a></li>
-            <li class="contatos_item"><a class="contatos_link contatos_link-tel" href="tel:+551121233321">11 2123 3321</a></li>
+            <li class="contatos_item"><a class="contatos_link contatos_link-tel" href="tel:+551121233321">11 2123-3321</a></li>
         </ul>
-        <div class="rodape_newsletter">
+        <fieldset class="rodape_newsletter">
             <label class="newsletter_label" for="newsletter_campo">Assine nossa newsletter</label>
             <input class="newsletter_input" type="text" id="newsletter_campo">
-            <input class="newsletter_botao" type="submit" value="ASSINAR JÁ">
-        </div>
+            <button class="newsletter_botao">ASSINAR JÁ</button>
+        </fieldset>
     </footer>
 </body>
 
