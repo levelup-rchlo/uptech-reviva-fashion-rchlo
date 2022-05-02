@@ -38,11 +38,11 @@ header {
     margin: 0 5% 0 0;
 }
 .menu {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 60px;
     left: 0px;
-    top: 45%;
+    top: 6%;
     background: #C4C4C4;
 }
 .menu_link {
@@ -62,21 +62,21 @@ header {
     display: grid;
 }
 .pesquisar {
-    position: absolute;
+    position: relative;
     width: 84%;
     height: 50px;
     margin: 0 0 0 4%;
-    
-    top: 251px;
+    top: 142px;
     font-size: 1.8em;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 }
+  
 .botao_pesquisa {
-    position: absolute;
-    width: 6%;
+    position: relative;
+    width: 8%;
     margin: 0 0 0 89%;
-    top: 251px;
+    top: 91px;
     background: #C4C4C4;
 }
 .formulario svg {
@@ -86,14 +86,14 @@ header {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 img {
-    width: 269px;
+    width: 249px;
     height: 208px;
     margin: 2%;
 }
 .produlo_lista {
     position: relative;
     margin: 0 0 0 4%;
-    top: 282px;
+    top: 125px;
 }
 .produto_lista_titulo {
     font-size: 2.1em;
@@ -186,7 +186,7 @@ img {
     width: 96%;
     height: 160px;
     left: 40px;
-    top: 380px;
+    top: 229px;
     background: #C4C4C4;
 }
 .banner_texto {
@@ -232,7 +232,7 @@ img {
 .produlo_lista2 {
     position: relative;
     margin: 0 0 0 4%;
-    top: 402px;
+    top: 275px;
 }
 .produto_lista2_titulo2 {
     font-size: 2.1em;
@@ -244,12 +244,12 @@ img {
 }
 .blog {
     display: flex;
-
     position: relative;
     width: 100%;
     height: 504px;
-    left: 39px;
-    top: 478px;
+    
+    margin: 0 0 0 4%;
+    top: 360px;
 }
 .blog_titulo {
     position: relative;
@@ -337,7 +337,7 @@ img {
     position: relative;
     width: 100%;
     height: 195px;
-    top: 494px;
+    top: 383px;
 
     background: #C4C4C4;
 }
@@ -395,7 +395,7 @@ h4 {
    
     margin-left: 6px;
 }
-.rodape_newletter {
+.rodape_newsletter{
     width: 179px;
 
     background: #E5E5E5;
@@ -410,221 +410,24 @@ h4 {
     background: #666666;
 }
 
-@media screen and (max-width: 576px) {
-    .cabecalho, .formulario {
-        width: 100%;
-    }
-    .logo_texto{
-        font-size: 1.2em;
-    }
-    .cabecalho_botao {
-        margin: 0 38% 0 0;
-    }
-    .menu{
-        width: 100%;
-        margin-top: 8%;
-
-    }
-    .menu_link {
-        margin: 0 0 0 4%;
-        max-width: 100%;
-    }
-    .menu_item {
-        top: 10px;
-    }
-    .pesquisar {
-        width: 75%;
-    }
-    .botao_pesquisa {
-        margin: 0 0 0 87%;
-        width: 12%;
-    }
-    img {
-        width: 316px;
-        height: 203px;
-        margin: 2%;
-    }
-    .imagem_borda, .botao_compra {
-        width: 59%;
-        align-content: center;
-    }
-    .produto_item_texto {
-        text-align: center;
-    }
-    .produto_lista_conteudo {
-        text-align: -webkit-center;
-    }
-    .imagem_botao {
-        width: 90%;
-    }
-    .preco {
-        text-align: center;
-    }
-    .banner {
-        max-width: 90%;
-    }
-    .blog_principal, .blog_titulo, .blog_imagem_principal {
-        width: 100%;
-        top: -32px;
-    }
-    .blog_texto_principal {
-            position: absolute;
-            width: 90%;
-            height: 81px;
-            top: 70%;
-            font-weight: 400;
-            font-size: 1.8em;
-            line-height: 27px;
-            color: #000000;
-    }
-    .blog {
+@media screen and (min-width: 576px) {
+    body {
         display: grid;
-        width: 90%;
-    }
-    .blog_conteudo {
-        width: 66%;
-    }
-    .blog_imagem_secundario {
-        width: 87%;
-        top: 76px
-    }
-    .blog_texto_secudario {
-        top: -109px;
-        left: 320px;
-    }
-    .blog_imagem_terceiro {
-        width: 87%;   
-    }
-    .blog_texto_terceiro {
-        left: 320px;
-    }
-    .produto_lista2_titulo2 {
-        text-align: center;
-    }
-    .produto_lista_titulo {
-        display: grid;
+        grid-template-columns: auto;
         max-width: 576px;
-        justify-content: center;   
     }
-    .rodape {
-        top: 852px;
-        width: 100%;
-    }
-    .conteudo_rodape {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 568px;
-    }
-    .rodape_link_redeSociais {
+    .cabecalho {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 97px;
         
-        align-items: center;
+        justify-items: center;
     }
-    .newsletter {
-        width: 178px;
+    .menu {
+        display: grid;
+        
+        width: 100%;
     }
     .rodape_newsletter {
-        width: 137px;
+        width: 63%;
     }
 }
-
-/*@media screen and (max-width: 768px) {
-    .cabecalho, .formulario {
-        width: 100%;
-    }
-    .logo_texto{
-        font-size: 1.2em;
-    }
-    .cabecalho_botao {
-        margin: 0 11% 0 0;
-    }
-    .menu{
-        width: 100%;
-    }
-    .menu_link {
-        margin: 0 0 0 4%;
-        max-width: 100%;
-    }
-    .menu_item {
-        top: 19px
-    }
-    .pesquisar {
-        width: 82%;
-    }
-    .botao_pesquisa {
-        margin: 0 0 0 89%;
-        width: 11%;
-    }
-    img {
-        width: 316px;
-        height: 203px;
-        margin: 2%;
-    }
-    .imagem_borda, .botao_compra {
-        width: 91%;
-    }
-    .produto_item_texto {
-        
-    }
-    .imagem_botao {
-        width: 90%;
-    }
-    .produto_lista2_titulo2 {
-        text-align: center;
-    }
-    .produto_lista_conteudo {
-        text-align: center;
-    }
-    .produto_lista_titulo, .produto_lista_conteudo {
-        display: grid;
-        max-width: 758px;
-        justify-content: center;   
-    }
-    .blog_principal, .blog_titulo, .blog_imagem_principal, .blog_texto_principal, .banner {
-        max-width: 90%;
-    }
-    .blog {
-        display: grid;
-        max-width: 90%;
-        justify-items: center;
-        justify-content: end;
-    }
-    .blog_conteudo {
-        margin: 0 0 0 0;
-        width: 544px;
-    }
-    .blog_imagem_secundario {
-        width: 300px;
-        top: 80px;
-    }
-    .blog_texto_secudario {
-        top: -106px;
-    }
-    .blog_imagem_terceiro {
-        width: 300px;   
-    }
-    .rodape {
-        top: 852px;
-        width: 100%;
-    }
-    .conteudo_rodape {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 568px;
-    }
-    .rodape_link_redeSociais {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 97px;
-        
-        align-items: center;
-    }
-    .newsletter {
-        width: 178px;
-    }
-    .rodape_newsletter {
-        width: 137px;
-    }
-}*/
