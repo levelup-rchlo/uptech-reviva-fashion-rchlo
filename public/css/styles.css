@@ -76,7 +76,7 @@ header {
 }
 
 .cabecalho__marca__paragrafo {
-  margin-left: 10rem;
+  margin-left: 16.2rem;
 }
 
 .cabecalho__carrinho {
@@ -88,7 +88,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background: #bbb;
+  background: #C4C4C4;
   height: 6vh;
   margin: 1.25rem 0;
 }
@@ -125,12 +125,12 @@ header {
   margin-right: 1%;
 }
 
-img.busca__botao--lupa {
-  width: 50%;
-  height: 30px;
+.busca__botao__lupa {
+  width: 90%;
+  height: 1.875rem;
 }
 
-.grid-produtos {
+.vestuario {
   width: 75vw;
   padding: 20px 0;
   margin: auto;
@@ -142,43 +142,44 @@ h2 {
   margin-bottom: 20px;
 }
 
-.produtos {
+.vestuario__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
-.produto__caixa {
-  border: 2px solid rgb(187, 187, 187);
+.produto {
+  border: 2px solid #bbb;
   display: flex;
   flex-direction: column;
 }
 
-.produto__caixa img {
+.produto__imagem {
   width: 80%;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   align-self: center;
 }
 
-.produto__caixa--tamanho {
+.produto__imagem__tamanho {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
 }
 
-.produto__caixa--tamanho p {
-  margin: 0px 3px 5px 0px;
-  padding: 2px 5px;
-  border: 1px solid rgb(187, 187, 187);
+.produto__imagem__tamanho__botao {
+  margin: 0 0.188rem 0.313rem 0;
+  padding: 0.125rem 0.313rem;
+  border: 1px solid #bbb;
 }
 
-.produto__caixa--descricao, 
-.produto__caixa--preco, 
+
+.produto__imagem__descricao, 
+.produto__imagem__preco, 
 .botao__sacola {
-  margin-top: 8px;
+  margin-top: 1rem;
 }
 
-.produto__caixa--preco {
+.produto__imagem__preco {
   color: #888;
   font-weight: bolder;
 }
@@ -186,11 +187,14 @@ h2 {
 .botao__sacola {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
 
-.botao__sacola::after {
-  content: url(../img/shop.png);
-  margin-left: 20px;
+.botao__sacola__vazio {
+  width: 24px;
+  height: 24px;
 }
 
 /* Iniciando a section - Manual de Moda */
@@ -198,54 +202,139 @@ h2 {
 .manual {
   width: 75vw;
   height: 20vh;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: #ccc;
+  background: #C4C4C4;
 }
 
 .manual__paragrafo {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 
-.manual__paragrafo p:nth-child(1) {
+.manual__paragrafo__junto {
   letter-spacing: -0.109rem;
 }
 
-.manual__paragrafo p:nth-child(2){
+.manual__paragrafo__espacado{
   letter-spacing: 0.516rem;
 }
 
-.manual__reviva {
+.manual__marca {
   align-self: flex-end;
   text-align: right;
   padding-right: 3px;
 }
 
-.manual__reviva p {
+.manual__marca__titulo {
+  font-size: 3rem;
+}
+
+.manual__marca__paragrafo {
   font-size: 1rem;
-  padding-bottom: 3px;
+  padding-bottom: 0.188rem;
 }
 
 /* iniciando a section blog */
 
 .blog {
-  width: 75vw;
-  margin: 40px auto;
+  width: 75vw;  
+  margin: 1.25rem auto;
 }
 
-.blog__imagemtexto--maior {
+.blog__item {
+  display: flex;
+  max-height: 52vh;
+}
+
+.blog__item__maior {
   width: 50%;
+  margin-right: 1rem;
 }
 
-.blog__imagem1 {
-  width: 36.5vw;
-  height: 30vh;
-  background: #2b2b2b;
+.blog__item__maior__imagem {
+  width: 100%;
+  height: 75%;
+
 }
 
-.blog__imagemtexto--duplo {
-  
+.blog__item__duplo {
+  width: 50%;
+  margin-left: 1.25rem;
+}
+
+.blog__item__duplo1 {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.blog__item__duplo1__imagem1 {
+  width: 55%;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.blog__item__duplo2 {
+  display: flex;
+}
+
+
+.blog__item__duplo2__imagem2 {
+  width: 55%;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+/* Seção do rodapé */
+
+.rodape {
+  width: 100%;
+  height: 250px;
+  background: #C4C4C4;
+}
+
+.rodape__box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  width: 75vw;
+  height: 80%;
+  margin: auto;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.rodape__marca {
+  grid-column: span 4;
+}
+
+.rodape__marca__titulo {
+  font-size: 3rem;
+}
+
+.rodape__marca__paragrafo {
+  font-size: 1rem;
+  margin-left: 16.2rem;
+}
+
+.rodape__menu__item {
+  text-decoration: none;
+  color: black;
+  line-height: 3rem;
+}
+
+.rodape__subtitulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.redes-sociais__icones__item {
+  padding-right: 1.2rem;
+}
+
+.contato {
+  line-height: 2rem;
 }
