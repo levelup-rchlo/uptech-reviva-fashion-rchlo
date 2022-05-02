@@ -18,6 +18,7 @@
     
     h3 {
         font-size: 1em;
+        font-weight: bold;
     }
     
     header {
@@ -154,29 +155,95 @@
         display: flex;
         justify-content: flex-end;
     }
-
     /*-----------------------------*/
-
-    .fashion-tips{
+    
+    .fashion-tips {
         display: flex;
         flex-direction: row;
         margin: 1rem;
     }
-
-    .fashion-tips__big-post{
+    
+    .fashion-tips__big-post {
         margin-right: 2rem;
     }
-
-    .fashion-tips__big-post p{
+    
+    .fashion-tips__big-post p {
         margin-top: 10px;
     }
-
-    .fashion-tips__small-post{
+    
+    .fashion-tips__small-post {
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
     }
-
-    .fashion-tips__small-post p{
+    
+    .fashion-tips__small-post p {
         margin-left: 10px;
+    }
+    /*-----------------------------*/
+    
+    footer {
+        background-color: #C4C4C4;
+    }
+    
+    .footer__header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3em 3em;
+    }
+    
+    .content-brand {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em 3em 3em;
+    }
+    
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-menu a {
+        text-decoration: none;
+    }
+    
+    .footer-menu li {
+        margin: 0.5rem 0;
+    }
+    
+    .newsletter__button {
+        background-color: black;
+        color: white;
+    }
+    
+    .footer-medias img {
+        margin: 10px 5px 0 0;
+    }
+    
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .whatsapp,
+    .telefone,
+    .footer-contact p {
+        display: flex;
+        margin: 0.5rem 0;
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .newsletter div {
+        margin: 0.5rem 0;
     }
