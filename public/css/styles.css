@@ -1,10 +1,19 @@
 :root {
     font-size: 62.5%;
     --cor-principal: #000000;
+    --cor-secundario: green;
     --fonte-principal: "Inter", sans-serif;
     --fundo-navegacao: #e5e5e5;
-    --tamanho-titulo-navegacao: 2rem;
-    --font-cabecalho: 3.5rem;
+    --font-cabecalho: 1rem;
+    --font-subTitulo: 0.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -14,7 +23,8 @@ body {
 
 .cabecalho {
     display: flex;
-    margin: 5rem 2rem;
+    margin: 2rem 0.5rem;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
     font-size: var(--font-cabecalho);
@@ -25,31 +35,40 @@ body {
     display: grid;
 }
 
-.titulo__cabecalho>span {
-    font-size: 0.9rem;
+.subtitulo {
+    font-size: var(--font-subTitulo);
     justify-self: end;
 }
 
-nav {
+.navegacao {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--fundo-navegacao);
     color: var(--cor-principal);
-    height: 3.5rem;
+    height: 4.8rem;
 }
 
-nav ul {
+.navegacao__opcoes {
     font-size: 1.5rem;
     display: flex;
 }
 
-nav ul li {
-    margin: 2.5rem;
+.nav__item_menu {
+    margin: 10rem;
+    list-style: none;
+}
+
+.item__link {
+    color: var(--cor-principal);
+}
+
+.item__link:hover {
+    color: var(--cor-secundario);
 }
 
 .principal {
-    padding: 24px 16px;
+    padding: 1.5rem 1rem;
     display: grid;
     gap: 16px;
 }
@@ -86,7 +105,7 @@ nav ul li {
 .secao {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    gap: 2rem;
 }
 
 .cartao {
@@ -95,15 +114,16 @@ nav ul li {
 }
 
 .cartao__conteudo1 {
-    padding: 16px;
+    padding: 1rem 6rem;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     border: 1px solid var(--fundo-navegacao);
-    gap: 8px;
+    gap: 0.2;
 }
 
 .cartao__camisa {
-    grid-column: span 2;
+    grid-column: 2 span;
+    cursor: pointer;
 }
 
 .camisa__tamanhos {
@@ -111,6 +131,13 @@ nav ul li {
     border: 1px solid var(--fonte-principal);
     font-size: 1.5rem;
     justify-content: end;
+}
+
+.opcoes__tamanhos {
+    border: 2px solid var(--fundo-navegacao);
+    padding: 0.1rem;
+    margin: 0.2rem;
+    cursor: pointer;
 }
 
 .cartao__conteudo {
@@ -125,8 +152,143 @@ nav ul li {
     grid-column: span 2;
 }
 
-.cartao__perfil {
+.cartao__preco {
     color: #95999c;
     font-size: 0.9rem;
     grid-column: span 2;
+}
+
+.imagem {
+    justify-self: end;
+}
+
+.espaco__botao {
+    display: grid;
+    padding: 0.2rem;
+    grid-column: 1 span;
+}
+
+.botao {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border: none;
+    cursor: pointer;
+}
+
+.espaco__imagem {
+    padding: 0.2rem;
+}
+
+
+/*espaço painel*/
+
+.painel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.secao__painel {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem;
+    background-color: var(--fundo-navegacao);
+}
+
+.painel__titulo {
+    text-align: center;
+}
+
+.painel__titulo_Destaque {
+    text-align: center;
+}
+
+.painel__logo {
+    text-align: end;
+    font-size: 2rem;
+}
+
+.painel__sublogo {
+    text-align: end;
+}
+
+
+/* artigos*/
+
+.painel__central {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+}
+
+.painel .noticiais {}
+
+.painel__subsecao {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.painel__divisao {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+}
+
+.painel__descricao {
+    font-size: 2rem;
+}
+
+.painel__texto {
+    font-size: 3rem;
+}
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-navegacao);
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.titulo__rodape {
+    display: grid;
+    margin: 2.4rem;
+}
+
+.subtitulo__rodape {
+    font-size: var(--font-subTitulo);
+    justify-self: start;
+    margin-left: 7rem;
+}
+
+.menu__rodape {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.botao__rodape {
+    border: 0;
+    background-color: var(--fundo-navegacao);
+}
+
+.centralizar {
+    padding-left: 2.5rem;
+}
+
+.nav__item_rodape {
+    margin: 2.5rem;
+    list-style: none;
+}
+
+.redes {
+    cursor: pointer;
+}
+
+.assinar {
+    cursor: pointer;
 }
