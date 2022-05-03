@@ -19,30 +19,44 @@
                 <h1>Reviva Fashion</h1>
                 <span>by RCHLO</span>
             </div>
-            <img src="images/shopping-bag.png" alt="sacola-de-compras">
+            <button class="shooping-cart-header"></button>
         </div>
 
 
     </header>
 
     <nav>
-        <ul id="navbar" class="flex">
-            <li>Página inicial</li>
-            <li>Moda Masculina</li>
-            <li>Moda Feminina</li>
-            <li>Moda Infatil</li>
-            <li>Manual de Moda</li>
+        <ul class="navbar flex">
+            <li> <a href="">Página inicial</a> </li>
+            <li> <a href="">Moda Masculina</a> </li>
+            <li> <a href=""> Moda Feminina</a></li>
+            <li> <a href=""> Moda Infatil</a></li>
+            <li> <a href="">Manual de Moda</a></li>
         </ul>
+
+        <!--collapse media screen navbar-->
+        <details class="collapse">
+            <summary class="title">Menu</summary>
+            <div class="description">
+                <ul class="navbar">
+                    <li> <a href="">Página inicial</a> </li>
+                    <li> <a href="">Moda Masculina</a> </li>
+                    <li> <a href=""> Moda Feminina</a></li>
+                    <li> <a href=""> Moda Infatil</a></li>
+                    <li> <a href="">Manual de Moda</a></li>
+                </ul>
+            </div>
+        </details>
+          <!--collapse media screen navbar-->
 
     </nav>
 
 
     <main>
-        <div id="div-search-config">
-            <input id="searchBar" placeholder="Faça sua busca aqui se já souber o que está procurando..." type="text">
+        <div class="div-search-config">
+            <input class="searchBar" placeholder="Faça sua busca aqui se já souber o que está procurando..." type="text">
             <div class="image">
-                <button for="searchBar" style="border: none;">
-                     <img src="images/search.png" alt="icon-search">
+                <button class="search-button" for="searchBar">
                 </button>
             </div>
         </div>
@@ -51,48 +65,83 @@
 
         <section class="grid-prod">
             <div class="boxModel ">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
 
             </div>
             <div class="boxModel ">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
             <div class="boxModel ">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
             <div class="boxModel ">
-                <img class="img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
         </section>
 
 
 
         <section class="slogan">
-            <div class="text flex" style="flex-direction: column;">
+            <div class="text flex ">
                 <p class="normal">
                     <!--text-align:justify-->
                     Fique por dentro de tudo que há de novidade no mundo da moda!
@@ -109,87 +158,115 @@
 
         <p class="bold">Coleção de verão 2022</p>
         <section class="grid-prod">
-            <div class="boxModel " style="grid-area: x;">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+            <div class="boxModel ">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
 
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
-            <div class="boxModel  " style="grid-area: y;">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+            <div class="boxModel ">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
-            <div class="boxModel " style="grid-area: w;">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+            <div class="boxModel ">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
                 <div class="flex background-bag">
                     <p> POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
-            <div class="boxModel " style="grid-area: k;">
-                <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-street">
+            <div class="boxModel ">
+                <div class=" div-image-buttons">
+                    <img class=" img-prod" src="images/image-model.jpg" alt="imagem-modelo-roupas">
+                    <div class="image-buttons">
+                        <button>P</button>
+                        <button>M</button>
+                        <button>G</button>
+
+                    </div>
+                </div>
                 <p class="txt-desc-prod prices">Camiseta Reviva K22, Preta</p>
                 <p class="prices">R$ 39,90</p>
-                <div class=" background-bag">
-                    <p>POR NA SACOLA</p>
-                    <img src="images/shopping-bag (1).png" alt="sacola-de-compras">
+                <div class="flex background-bag">
+                    <p> POR NA SACOLA</p>
+                    <button class="shopping-cart"></button>
                 </div>
+
             </div>
         </section>
 
         <p class="bold">Na dúvida sobre combinar suas roupas e ficar incrível?
-            Confira nossas dicas em nosso blog.</p>
-
+        </p>
+        <p class="bold"> Confira nossas dicas em nosso blog.</p>
 
         <section class=" grid-section">
 
-            <div class="left">
+            <div class="big-article">
                 <article></article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum laborum
-                    aperiam veniam! Voluptatum ullam
+                    aperiam veniam! Voluptatum ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. In et
+                    asperiores laboriosam alias voluptatum repellendus cum quae, laudantium nam debitis minima tempora!
+                    Dignissimos quis voluptatum, asperiores consectetur enim facere? Nulla.
                     dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
                     consectetur, totam cum.</p>
 
             </div>
 
-            <div class="middle">
-                <article class="first"></article>
-                <article class="second"></article>
+            <div class="middle-article">
+                <article class="first-middle-article"></article>
+                <article class="second-middle-article"></article>
 
             </div>
             <div class="right ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
-                    laborum aperiam veniam! Voluptatum ullam
-                    dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
-                    consectetur, totam cum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
-                    laborum aperiam veniam! Voluptatum ullam
-                    dolorem cupiditate quo quasi nam tempora deserunt eligendi doloribus asperiores voluptas sint
-                    consectetur, totam cum.</p>
+                <p class="first-middle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+                    laborum aperiam veniam! </p>
+                <p class="second-middle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+                    laborum aperiam veniam! .</p>
             </div>
-
-
-
-
-
 
         </section>
 
 
     </main>
 
-    <footer>
+    <footer class="footer-grid">
         <div class="logo">
             <p>Reviva Fashion</p>
             <span>by RCHLO</span>
@@ -198,7 +275,7 @@
         <div class="title-footer">
 
 
-            <ul>
+            <ul class="menu">
                 <li>Menu</li>
                 <li>Página inicial</li>
                 <li>Moda Masculina</li>
@@ -206,17 +283,17 @@
                 <li>Moda Infatil</li>
                 <li>Manual de Moda</li>
             </ul>
-            <ul>
+            <ul class="networks">
                 <li>Siga-nos nas redes sociais</li>
-                <div class="flex">
-                    <li><img src="images/facebook.png" alt="logo-telephone"></li>
-                    <li><img src="images/twitter.png" alt="logo-telephone"></li>
-                    <li><img src="images/instagram.png" alt="logo-telephone"></li>
-                    <li><img src="images/youtube.png" alt="logo-telephone"></li>
+                <div class="flex medias-logo">
+                    <li><img src="images/facebook.png" alt="logo-facebook"></li>
+                    <li><img src="images/twitter.png" alt="logo-twitter"></li>
+                    <li><img src="images/instagram.png" alt="logo-instagram"></li>
+                    <li><img src="images/youtube.png" alt="logo-youtube"></li>
                 </div>
 
             </ul>
-            <ul>
+            <ul class="contact">
                 <li>Entre em contato</li>
 
                 <li>Contato</li>
@@ -230,14 +307,14 @@
                 </div>
 
             </ul>
-            <ul>
+            <ul class="newsletter">
                 <li>Assine nossa newsletter</li>
-                <div class="flex">
+                <div class="div-newsletter flex">
                     <li>
-                        <input type="text">
+                        <input class="input-newsletter" type="text">
                     </li>
                     <li>
-                        <button>ASSINAR JÁ</button>
+                        <button class="newsletter-button">ASSINAR JÁ</button>
                     </li>
                 </div>
 
