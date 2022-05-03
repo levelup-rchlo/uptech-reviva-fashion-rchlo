@@ -1,0 +1,1038 @@
+:root {
+    font-size: 62.5%;
+    --cor-principal: #000000;
+    --cor-secundario: green;
+    --fonte-principal: "Inter", sans-serif;
+    --fundo-navegacao: #e5e5e5;
+    --font-cabecalho: 1rem;
+    --font-subTitulo: 0.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+}
+
+.cabecalho {
+    display: flex;
+    margin: 2rem 0.5rem;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-cabecalho);
+    cursor: pointer;
+}
+
+.titulo__cabecalho {
+    display: grid;
+}
+
+.subtitulo {
+    font-size: var(--font-subTitulo);
+    justify-self: end;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fundo-navegacao);
+    color: var(--cor-principal);
+    height: 4.8rem;
+}
+
+.navegacao__opcoes {
+    font-size: 1rem;
+    display: flex;
+}
+
+.nav__item_menu {
+    margin: 2rem;
+    list-style: none;
+}
+
+.item__link {
+    color: var(--cor-principal);
+}
+
+.item__link:hover {
+    color: var(--cor-secundario);
+}
+
+.principal {
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.pesquisa {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.conteudo-pesquisa {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+}
+
+.campo__info--pesquisa {
+    margin-right: 8px;
+    border: 1px solid var(--fundo-navegacao);
+}
+
+.imagem__info--visualizacao {
+    margin-right: 8px;
+    background-color: var(--fundo-navegacao);
+    padding: 5px 2rem;
+}
+
+.titulo-pagina {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.secao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cartao {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cartao__conteudo1 {
+    padding: 2rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border: 1px solid var(--fundo-navegacao);
+    gap: 0.2;
+}
+
+.cartao__camisa {
+    grid-column: 2 span;
+    cursor: pointer;
+}
+
+.camisa__tamanhos {
+    display: flex;
+    border: 1px solid var(--fonte-principal);
+    font-size: 1.5rem;
+    justify-content: end;
+}
+
+.opcoes__tamanhos {
+    border: 2px solid var(--fundo-navegacao);
+    padding: 0.1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+}
+
+.cartao__conteudo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 8px;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__preco {
+    color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.imagem {
+    justify-self: end;
+}
+
+.espaco__botao {
+    display: grid;
+    padding: 0.2rem;
+    grid-column: 1 span;
+}
+
+.botao {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border: none;
+    cursor: pointer;
+}
+
+.espaco__imagem {
+    padding: 0.2rem;
+}
+
+
+/*espaço painel*/
+
+.painel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.secao__painel {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem;
+    background-color: var(--fundo-navegacao);
+}
+
+.painel__titulo {
+    text-align: center;
+}
+
+.painel__titulo_Destaque {
+    text-align: center;
+}
+
+.painel__logo {
+    text-align: end;
+    font-size: 2rem;
+}
+
+.painel__sublogo {
+    text-align: end;
+}
+
+
+/* artigos*/
+
+.painel__central {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.painel .noticiais {}
+
+.painel__subsecao {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.painel__divisao {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+}
+
+.painel__descricao {
+    font-size: 2rem;
+}
+
+.painel__texto {
+    font-size: 3rem;
+}
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-navegacao);
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.titulo__rodape {
+    display: grid;
+    margin: 2.4rem;
+}
+
+.subtitulo__rodape {
+    font-size: var(--font-subTitulo);
+    justify-self: start;
+    margin-left: 7rem;
+}
+
+.menu__rodape {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.botao__rodape {
+    border: 0;
+    background-color: var(--fundo-navegacao);
+}
+
+.centralizar {
+    padding-left: 2.5rem;
+}
+
+.nav__item_rodape {
+    margin: 2.5rem;
+    list-style: none;
+}
+
+.redes {
+    cursor: pointer;
+}
+
+.assinar {
+    cursor: pointer;
+}
+
+
+/*
+@media screen and (max-width: 1500px) {
+    .navegacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 4.8rem;
+    }
+    .navegacao__opcoes {
+        font-size: 1.2rem;
+        display: flex;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .cartao__conteudo1 {
+        padding: 3.6rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 0.2;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 3rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .painel__texto {
+        font-size: 2rem;
+    }
+}
+*/
+
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+
+@media screen and (min-width: 1400px) {
+    .navegacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 4.8rem;
+    }
+    .navegacao__opcoes {
+        display: flex;
+    }
+    .item__link1 {
+        color: var(--cor-principal);
+        font-size: 2rem;
+    }
+    .item__link {
+        color: var(--cor-principal);
+        font-size: 1rem;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .cartao__conteudo1 {
+        padding: 3.6rem;
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 1rem;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 3rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .painel__texto {
+        font-size: 2rem;
+    }
+}
+
+
+/*X-Large devices (large desktops, 1200px and up)*/
+
+@media screen and (min-width: 1200px) {
+    .navegacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 5rem;
+    }
+    .navegacao__opcoes {
+        display: flex;
+    }
+    .item__link1 {
+        color: var(--cor-principal);
+        font-size: 2rem;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .cartao__conteudo1 {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 0.2;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 3rem;
+    }
+    .painel__descricao {
+        font-size: 1.5rem;
+    }
+    .painel__texto {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .titulo__cabecalho {
+        font-size: 20px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 5rem;
+        padding: 0 2rem;
+        justify-content: center;
+    }
+    .navegacao__opcoes {
+        display: flex;
+    }
+    .item__link1 {
+        color: var(--cor-principal);
+        font-size: 2rem;
+    }
+    .titulo-pagina {
+        text-align: center;
+        font-size: 20px;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*.cartao__conteudo1 {
+        padding: 1rem;
+        margin: 2px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 0.2;
+    }*/
+    .cartao {
+        width: 400px;
+        margin: 0px 28px;
+        overflow: hidden;
+    }
+    .cartao__conteudo1 {
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 1px solid var(--fundo-navegacao);
+    }
+    .cartao__camisa {
+        grid-column: 1 span;
+        cursor: pointer;
+    }
+    .camisa__tamanhos {
+        display: flex;
+        border: 1px solid var(--fonte-principal);
+        font-size: 3.5rem;
+        justify-content: center;
+        align-self: center;
+    }
+    .opcoes__tamanhos {
+        border: 2px solid var(--fundo-navegacao);
+        padding: 0.1rem;
+        margin: 0.2rem;
+        cursor: pointer;
+    }
+    .cartao__titulo {
+        font-size: 3.5rem;
+    }
+    .cartao__preco {
+        font-size: 3.5rem;
+    }
+    .painel__central {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .imagem__total {
+        width: 100%;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem;
+    }
+    .painel__descricao {
+        font-size: 1.5rem;
+    }
+    .painel__texto {
+        font-size: 0.9rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .espaco__botao {
+        display: grid;
+        padding: 0.2rem;
+        grid-column: 1 span;
+    }
+    .botao {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr auto;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .rodape {
+        background-color: var(--fundo-navegacao);
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .item__link {
+        font-size: 2rem;
+    }
+    .centralizar {
+        padding-left: 2.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .titulo__cabecalho {
+        font-size: 20px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 5rem;
+        padding: 0 2rem;
+        justify-content: center;
+    }
+    .navegacao__opcoes {
+        display: flex;
+    }
+    .item__link1 {
+        color: var(--cor-principal);
+        font-size: 2rem;
+    }
+    .titulo-pagina {
+        text-align: center;
+        font-size: 20px;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*.cartao__conteudo1 {
+        padding: 1rem;
+        margin: 2px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 0.2;
+    }*/
+    .cartao {
+        width: 400px;
+        margin: 0px 28px;
+        overflow: hidden;
+    }
+    .cartao__conteudo1 {
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 1px solid var(--fundo-navegacao);
+    }
+    .cartao__camisa {
+        grid-column: 1 span;
+        cursor: pointer;
+    }
+    .camisa__tamanhos {
+        display: flex;
+        border: 1px solid var(--fonte-principal);
+        font-size: 3.5rem;
+        justify-content: center;
+        align-self: center;
+    }
+    .opcoes__tamanhos {
+        border: 2px solid var(--fundo-navegacao);
+        padding: 0.1rem;
+        margin: 0.2rem;
+        cursor: pointer;
+    }
+    .cartao__titulo {
+        font-size: 3.5rem;
+    }
+    .cartao__preco {
+        font-size: 3.5rem;
+    }
+    .painel__central {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .imagem__total {
+        width: 100%;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem;
+    }
+    .painel__descricao {
+        font-size: 1.5rem;
+    }
+    .painel__texto {
+        font-size: 0.9rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .espaco__botao {
+        display: grid;
+        padding: 0.2rem;
+        grid-column: 1 span;
+    }
+    .botao {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr auto;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .rodape {
+        background-color: var(--fundo-navegacao);
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .titulo__rodape {
+        display: grid;
+        margin: 2.4rem;
+    }
+    .subtitulo__rodape {
+        font-size: var(--font-subTitulo);
+        justify-self: start;
+        margin-left: 7rem;
+    }
+    .menu__rodape {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .item__link {
+        font-size: 2rem;
+    }
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .botao__rodape {
+        border: 0;
+        background-color: var(--fundo-navegacao);
+    }
+    .centralizar {
+        padding-left: 2.5rem;
+        font-size: 2rem;
+    }
+    .nav__item_rodape {
+        margin: 2.5rem;
+        list-style: none;
+    }
+    .redes {
+        cursor: pointer;
+    }
+    .assinar {
+        cursor: pointer;
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .titulo__cabecalho {
+        font-size: 20px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fundo-navegacao);
+        color: var(--cor-principal);
+        height: 5rem;
+        padding: 0 2rem;
+        justify-content: center;
+    }
+    .navegacao__opcoes {
+        display: flex;
+    }
+    .item__link1 {
+        color: var(--cor-principal);
+        font-size: 2rem;
+    }
+    .titulo-pagina {
+        text-align: center;
+        font-size: 20px;
+    }
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*.cartao__conteudo1 {
+        padding: 1rem;
+        margin: 2px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        border: 1px solid var(--fundo-navegacao);
+        gap: 0.2;
+    }*/
+    .cartao {
+        width: 400px;
+        margin: 0px 28px;
+        overflow: hidden;
+    }
+    .cartao__conteudo1 {
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 1px solid var(--fundo-navegacao);
+    }
+    .cartao__camisa {
+        grid-column: 1 span;
+        cursor: pointer;
+    }
+    .camisa__tamanhos {
+        display: flex;
+        border: 1px solid var(--fonte-principal);
+        font-size: 3.5rem;
+        justify-content: center;
+        align-self: center;
+    }
+    .opcoes__tamanhos {
+        border: 2px solid var(--fundo-navegacao);
+        padding: 0.1rem;
+        margin: 0.2rem;
+        cursor: pointer;
+    }
+    .cartao__titulo {
+        font-size: 3.5rem;
+    }
+    .cartao__preco {
+        font-size: 3.5rem;
+    }
+    .painel__central {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .imagem__total {
+        width: 100%;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem;
+    }
+    .painel__descricao {
+        font-size: 1.5rem;
+    }
+    .painel__texto {
+        font-size: 0.9rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .espaco__botao {
+        display: grid;
+        padding: 0.2rem;
+        grid-column: 1 span;
+    }
+    .botao {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr auto;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .rodape {
+        background-color: var(--fundo-navegacao);
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .titulo__rodape {
+        display: grid;
+        margin: 2.4rem;
+    }
+    .subtitulo__rodape {
+        font-size: var(--font-subTitulo);
+        justify-self: start;
+        margin-left: 7rem;
+    }
+    .menu__rodape {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .item__link {
+        font-size: 2rem;
+    }
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .botao__rodape {
+        border: 0;
+        background-color: var(--fundo-navegacao);
+    }
+    .centralizar {
+        padding-left: 2.5rem;
+        font-size: 2rem;
+    }
+    .nav__item_rodape {
+        margin: 2.5rem;
+        list-style: none;
+    }
+    .redes {
+        cursor: pointer;
+    }
+    .assinar {
+        cursor: pointer;
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+    .secao {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cartao {
+        width: 400px;
+        margin: 0px 11rem;
+        overflow: hidden;
+    }
+    .cartao__conteudo1 {
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 1px solid var(--fundo-navegacao);
+    }
+    .cartao__camisa {
+        grid-column: 1 span;
+        cursor: pointer;
+    }
+    .camisa__tamanhos {
+        display: flex;
+        border: 1px solid var(--fonte-principal);
+        font-size: 3.5rem;
+        justify-content: center;
+        align-self: center;
+    }
+    .opcoes__tamanhos {
+        border: 2px solid var(--fundo-navegacao);
+        padding: 0.1rem;
+        margin: 0.2rem;
+        cursor: pointer;
+    }
+    .cartao__titulo {
+        font-size: 3.5rem;
+    }
+    .cartao__preco {
+        font-size: 3.5rem;
+    }
+    .painel__central {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .painel__subsecao {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .imagem__total {
+        width: 100%;
+    }
+    .painel__divisao {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+    .painel__descricao {
+        font-size: 1.5rem;
+    }
+    .painel__texto {
+        font-size: 0.9rem;
+    }
+    .painel__descricao {
+        font-size: 2rem;
+    }
+    .espaco__botao {
+        display: grid;
+        padding: 0.2rem;
+        grid-column: 1 span;
+    }
+    .botao {
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr auto;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .rodape {
+        background-color: var(--fundo-navegacao);
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .titulo__rodape {
+        display: grid;
+        margin: 2.4rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .subtitulo__rodape {
+        font-size: var(--font-subTitulo);
+        justify-self: start;
+        margin-left: 30rem;
+        font-size: 2rem;
+    }
+    .menu__rodape {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        grid-area: "menu contatos   Assinar redes";
+        grid-area: 1;
+        margin: 2rem;
+    }
+    .item__link {
+        font-size: 2rem;
+    }
+    .contatos {
+        grid-area: 1;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .botao__rodape {
+        border: 0;
+        background-color: var(--fundo-navegacao);
+    }
+    .centralizar {
+        padding-left: 2.5rem;
+        font-size: 2rem;
+    }
+    .nav__item_rodape {
+        margin: 2.5rem;
+        list-style: none;
+    }
+    .redes {
+        font-size: 2rem;
+        grid-area: 2;
+        cursor: pointer;
+    }
+    .assinar {
+        font-size: 2rem;
+        grid-area: 2;
+        cursor: pointer;
+    }
+}
