@@ -1,3 +1,12 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M31.5 16C31.5 7.4375 24.5625 0.5 16 0.5C7.4375 0.5 0.5 7.4375 0.5 16C0.5 23.7362 6.16813 30.1488 13.5781 31.3125V20.4806H9.64062V16H13.5781V12.585C13.5781 8.70062 15.8906 6.555 19.4325 6.555C21.1287 6.555 22.9025 6.8575 22.9025 6.8575V10.67H20.9475C19.0225 10.67 18.4219 11.865 18.4219 13.0906V16H22.7206L22.0331 20.4806H18.4219V31.3125C25.8319 30.1488 31.5 23.7362 31.5 16Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021.5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.2019mm" height="8.1523mm" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 222.29 220.95"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path fill="#FEFEFE" fill-rule="nonzero" d="M222.29 111.14c0,-61.4 -49.75,-111.14 -111.15,-111.14 -61.4,0 -111.14,49.75 -111.14,111.14 0,55.48 40.65,101.46 93.78,109.8l0 -77.67 -28.24 0 0 -32.13 28.24 0 0 -24.49c0,-27.85 16.58,-43.24 41.98,-43.24 12.16,0 24.88,2.17 24.88,2.17l0 27.34 -14.02 0c-13.8,0 -18.11,8.57 -18.11,17.36l0 20.86 30.83 0 -4.93 32.13 -25.9 0 0 77.67c53.14,-8.34 93.78,-54.33 93.78,-109.8z"/>
+ </g>
 </svg>

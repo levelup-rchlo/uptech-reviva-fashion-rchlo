@@ -40,7 +40,8 @@ body {
 }
 
 .menu-navegacao {
-  background-color: #C4C4C4;
+  background-color: #2b6099;
+  color: #ffffff;
 }
 
 .menu-navegacao_botao {
@@ -92,14 +93,14 @@ body {
 }
 
 .pesquisa_botao {
-  background: #C4C4C4 center no-repeat url(../assets/svg/logo-pesquisar.svg);
+  background: #2b6099 center no-repeat url(../assets/svg/logo-pesquisar.svg);
   border: none;
   margin-left: .5%;
   width: 10%;
 }
 
 .pesquisa_botao:hover {
-  background-color: #AAAAAA;
+  background-color: #134376;
   cursor: pointer;
 }
 
@@ -212,14 +213,15 @@ body {
 }
 
 .produto_botao-sacola {
-  background: url(../assets/svg/logo-sacola-branca.svg) #c4c4c4 right no-repeat;
+  background: url(../assets/svg/logo-sacola-branca.svg) #2b6099 right no-repeat;
   border: .5em solid transparent;
+  color: #ffffff;
   font-size: 1.4em;
   grid-area: botao;
 }
 
 .produto_botao-sacola:hover {
-  background-color: #aaaaaa;
+  background-color: #134376;
   cursor: pointer;
 }
 
@@ -274,7 +276,6 @@ body {
 }
 
 .noticias-blog_imagem-1 {
-  background-color: #C4C4C4;
   grid-area: banner-1;
   height: 100%;
   width: 100%;
@@ -289,7 +290,6 @@ body {
 }
 
 .noticias-blog_imagem-2 {
-  background-color: #C4C4C4;
   grid-area: banner-2;
   width: 100%;
 }
@@ -302,7 +302,6 @@ body {
 }
 
 .noticias-blog_imagem-3 {
-  background-color: #C4C4C4;
   grid-area: banner-3;
   width: 100%;
 }
@@ -315,12 +314,13 @@ body {
 }
 
 .base-rodape {
-  background-color: #ebebeb;
+  background-color: #2b6099;
 }
 
 .rodape {
-  background-color: #ebebeb;
+  background-color: #2b6099;
   box-sizing: border-box;
+  color: #ffffff;
   display: grid;
   grid-template-columns: 21% 21% 21% 37%;
   grid-template-rows: 30% 70%;
@@ -473,6 +473,7 @@ body {
 }
 
 .newsletter_input {
+  border: none;
   box-sizing: border-box;
   font-size: 1.7em;
   height: 2em;
@@ -481,7 +482,7 @@ body {
 }
 
 .newsletter_botao {
-  background-color: #5e5e5e;
+  background-color: #0d335b;
   border: none;
   color: white;
   font-size: 1.4em;
@@ -490,7 +491,7 @@ body {
 }
 
 .newsletter_botao:hover {
-  background-color: #3f3f3f;
+  background-color: #134376;
   cursor: pointer;
 }
 
