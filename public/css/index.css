@@ -5,17 +5,21 @@ body {
     color: #000000;
 }
 header {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 52px;
     margin: 0 0 0 0.8%;
-    top: 77px;
+    top: 11%;
 }
 .cabecalho {
     background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.cabecalho_logo {
+    display: grid;
+    align-items: end;
 }
 .logo_titulo {
     position: relative;
@@ -26,24 +30,24 @@ header {
     line-height: 44px;
 }
 .logo_texto {
-    position: relative; 
-    
+    position: absolute;
     font-family: Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.2em;
-    margin: 0 0 0 77%;
+    justify-self: end;
+    top: 79%;
 }
 .cabecalho_vetor {
     margin: 0 5% 0 0;
 }
 .menu {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 60px;
+    height: 15%;
     left: 0px;
-    top: 6%;
-    background: #C4C4C4;
+    top: 23%;
+    background: #000000;
 }
 .menu_link {
     display: flex;
@@ -51,39 +55,41 @@ header {
 }
 .menu_item {
     position: relative;
-    height: 22px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-    top: 19px;
+    font-size: 1.8em;
+    line-height: 9vh;
+    color: #ffffff;
+    top: 3vh;
+    justify-content: space-between;
 }
 .formulario {
     display: grid;
 }
 .pesquisar {
-    position: relative;
-    width: 84%;
-    height: 50px;
+    position: absolute;
+    width: 85%;
+    height: 7%;
     margin: 0 0 0 4%;
-    top: 142px;
+    top: 40%;
     font-size: 1.8em;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 }
   
 .botao_pesquisa {
-    position: relative;
+    position: absolute;
     width: 8%;
-    margin: 0 0 0 89%;
-    top: 91px;
-    background: #C4C4C4;
+    height: 7%;
+    margin: 0 0 0 91%;
+    top: 40%;
+    background: #000000;
 }
 .formulario svg {
     position: relative;
     top: 0%;
     bottom: -0.01%;    
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    color: #ffffff;
 }
 img {
     width: 249px;
@@ -91,36 +97,40 @@ img {
     margin: 2%;
 }
 .produlo_lista {
-    position: relative;
-    margin: 0 0 0 4%;
-    top: 125px;
+    position: absolute;
+    margin: 2% 0 0 5%;
+    
+    top: 50%;
 }
 .produto_lista_titulo {
     font-size: 2.1em;
     font-weight: bold;
     font-style: normal;
-    line-height: 27px;
+    line-height: 2%;
+    
 
-    color: #000000;
+    color: #ffffff;
 }
 .produto_lista_conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: -webkit-center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    max-width: 100%;
+    
 }
 .imagem_borda {
     display: grid;
 
     position: relative;
-    width: 87%;
+    width: 105%;
     height: 300px;
-    top: 52px;
+    top: 6%;
 
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 }
 .produto_lista_imagem {
-    flex: 1 1 200px;
+    flex: 1 1 2%;
 }
 .imagem_botao {
     display: flex;
@@ -136,40 +146,42 @@ img {
     grid-column: 1;
     margin: 1%;
 
-    border: 1px solid #666666;
+    border: 1px solid #000000;
     box-sizing: border-box;
 }
 .produto_item_texto {
     position: relative;
     width: 87%;
-    height: 60px;
-    top: 54px;
+    height: 8%;
+    top: 6%;
     font-weight: 400;
     font-size: 1.8em;
     line-height: 30px;
     text-align: start;
+    margin: 0 0 0 3%;
 }
 .preco{
     position: relative;
     font-weight: bold;
     font-size: 2em;
-    line-height: 30px;
+    line-height: 214%;
     color: #666666;
-    top: 18px;;
+    top: 3%;
     width: 87%;
     text-align: start;
+    margin: 0 0 0 3%;
 }
 .botao_compra{
     position: relative;
-    width: 285px;
+    width: 105%;
     height: 40px;
-    left: 0px;
-    top: 21px;
+    
+    top: 1vh;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 17px;
-    color: #000000;
-    background: #C4C4C4;
+    color: #ffffff;
+    background: #000000;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -182,12 +194,12 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 31%;
-    position: relative;
-    width: 96%;
-    height: 160px;
-    left: 40px;
-    top: 229px;
-    background: #C4C4C4;
+    position: absolute;
+    width: 90%;
+    height: 26%;
+    margin: 0 0 0 5%;
+    top: 130%;
+    background: #000000;
 }
 .banner_texto {
     grid-column: 1 / -1;
@@ -201,7 +213,7 @@ img {
     margin: 50px 0 0 0;
     
     
-    color: #000000;
+    color: #ffffff;
 }
 .banner h3 {
     position: relative;
@@ -210,19 +222,19 @@ img {
 
     font-weight: 400;
     font-size: 2em;
-    line-height: 24px;
+    line-height: 4vh;
     align-items: center;
     margin: 2px 0 0 0;
     
     
-    color: #000000;
+    color: #ffffff;
 }
 .banner_logo {
     grid-column: 2 / span 2;    
 }
 .banner_logo .logo_titulo {
     text-align: end;
-    top: 50px;
+    top: 100%;
 }
 .banner .logo_texto {
     left: 0%;
@@ -230,204 +242,452 @@ img {
     top: -7px;
 }
 .produlo_lista2 {
-    position: relative;
-    margin: 0 0 0 4%;
-    top: 275px;
+    position: absolute;
+    margin: 2% 0 0 5%;
+    
+    top: 160%;
 }
-.produto_lista2_titulo2 {
-    font-size: 2.1em;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 27px;
-
-    color: #000000;
+.produto_lista2_conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    max-width: 100%;
 }
 .blog {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
     width: 100%;
     height: 504px;
-    
     margin: 0 0 0 4%;
-    top: 360px;
+    top: 240%;
 }
 .blog_titulo {
-    position: relative;
-    width: 70%;
+    position: absolute;
+    width: 50%;
     height: 54px;
-   
     font-style: normal;
     font-weight: 700;
     font-size: 2em;
-    line-height: 27px;
-
+    line-height: 110%;
     color: #000000;
 }
 .blog_principal {
-    top: 20px;
     width: 50%;
 }
 .blog_imagem_principal {
-    position: relative;
-    width: 90%;
+    position: absolute;
+    width: 45%;
     height: 320px;
-    top: 10px;
-
+    top: 64px;
     background: #C4C4C4;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 }
 .blog_texto_principal {
     position: absolute;
-    width: 40%;
-    height: 81px;
-    top: 389px;
-    
+    width: 50%;
+    top: 77%;
     font-weight: 400;
     font-size: 1.8em;
     line-height: 27px;
-
     color: #000000;
 }
 .blog_conteudo {
     width: 50%;
+    margin: 0 0 0 1%;
 }
 .blog_imagem_secundario {
-    position: relative;
-    width: 320px;
-    height: 180px;
-    
-    top: 64px;
+    position: absolute;
+    width: 22.5%;
+    height: 34%;
+    top: 13%;
     background: #C4C4C4;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
 } 
 .blog_texto_secudario {
-    position: relative;
-    width: 221px;
-    height: 120px;
-    left: 330px;
-    top: -116px;
+    position: absolute;
+    width: 15%;
+   
+    top: 12%;
+    margin: 0 0 0 23%;
     font-size: 1.5em;
     line-height: 24px;
-    
     color: #000000;
 
 }
 .blog_imagem_terceiro {
-    position: relative;
-    width: 320px;
-    height: 180px;
-
+    position: absolute;
+    width: 22.5%;
+    height: 34%;
     background: #C4C4C4;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
+    top: 50%;
 }
 .blog_texto_terceiro {
-    position: relative;
-    width: 221px;
-    height: 120px;
-    left: 330px;
-    top: -184px;
+    position: absolute;
+    width: 15%;
+    margin: 0 0 0 23%;
+    top: 50%;
     font-size: 1.5em;
     line-height: 24px;
     color: #000000;
 }
 .rodape {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 195px;
-    top: 383px;
-
-    background: #C4C4C4;
+    height: 30%;
+    top: 320%;
+    background: #000000;
+}
+.rodape p, a {
+    color: #FFFFFF;
 }
 .rodape_logo {
-    position: relative;
-    width: 255px;
-    height: 44px;
-    left: 40px;
+    position: absolute;
+    width: 25%;
+    height: 1%;
+    margin: 0 0 0 4%;
     
 }
 .rodape_logo .logo_titulo {
     font-weight: 400;
     font-size: 2.7em;
-    line-height: 44px;
-
-    color: #000000;
+    line-height: 3vh;
+    color: #ffffff;
+    margin: 5% 0 0 0;
 }
 .rodape_logo .logo_texto {
-    position: relative;
-    margin: -10px 0 0 53%;
+    position: absolute;
+    display: flex;
+    max-width: 83%;
+    margin: 10% 0 0 40%;
     font-size: 1.1em;
+    align-self: flex-end;
 }
 .conteudo_rodape {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 1238px;
-    
-    margin: 0 0 0 41px;
-    margin-top: 26px;
+    max-width: 100%;
+    margin: 0 0 0 4%;
+    margin-top: 4%;
 }
 h4 {
     font-weight: bold;
     font-size: 1.2em;
-    line-height: 18px;
-
-    color: #000000;
+    line-height: 1.5rem;
+    color: #ffffff;
 }
 .rodape_itens_menu {
     font-weight: normal;
     font-size: 1em;
-    line-height: 18px;
+    
+    line-height: 197%;
 }
 .rodape_link_redeSociais {
-    margin-top: 11px;
+    margin-top: 1%;
 }
 .contato {
     font-weight: normal;
     font-size: 1em;
-    line-height: 18px;
+    
+    line-height: 197%;
 }
 .contato svg{
-    width: 15px;
-    height: 15px;
-   
-    margin-left: 6px;
+    width: 15%;
+    height: 15%;
+    margin-left: 7%;
+}
+.newsletter{
+    width: 20%;
 }
 .rodape_newsletter{
-    width: 179px;
-
+    width: 50%;
     background: #E5E5E5;
     border: 1px solid #666666;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .newletter_botao {
-    position: relative;
-    width: 63px;
-    height: 17px;
-    
+    position: absolute;
+    width: 4%;
+    line-height: 197%;
+    height: 2.4vh;
     background: #666666;
 }
 
-@media screen and (min-width: 576px) {
-    body {
-        display: grid;
-        grid-template-columns: auto;
-        max-width: 576px;
-    }
+@media (max-width: 480px) {
     .cabecalho {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-        justify-items: center;
+        width: 96%;
     }
-    .menu {
-        display: grid;
-        
+    .logo_titulo {
+        font-size: 1.4rem;
+    }
+    .logo_texto{
+        font-size: 1.2em;
+    }
+    .menu{
+        height: 15%;
         width: 100%;
     }
+    .menu_item {
+        line-height: 6vh;        
+    }
+    .pesquisar {
+        width: 71%;
+        height: 10%;
+    }
+    .botao_pesquisa {
+        width: 16%;
+        height: 10%;
+        margin: 0 0 0 77%;
+    }
+    .produlo_lista {
+        
+        width: 59%;
+        margin: 4% 0 0 4%;
+    }
+    .produto_lista_conteudo {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .imagem_borda {
+        
+        width: 104%;
+        height: 540px;
+
+    }
+    .imagem_tamanhos {
+        width: 396px;
+        height: 462px;   
+    }
+    .imagem_botao {
+        
+        margin: 0 0 3% 0;
+    }
+    .botao_compra {
+        width: 104%;
+        font-size: 1.5rem;
+        top: 4vh;
+    }
+    .banner {
+        width: 93%;
+        top: 620%;
+        height: 33%;
+    }
+    .banner p {
+        font-size: 1.3em;
+    }
+    .banner h3 {
+        font-size: 1.8em;
+    }
+    .produlo_lista2 {
+        
+        width: 59%;
+        margin: 4% 0 0 4%;
+        top: 654%;
+    }
+    .produto_lista2_conteudo {
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .blog {
+        width: 87%;
+        margin: 2% 0 0 4%;
+        grid-auto-flow: row;
+        top: 1223%;
+    }
+    .blog_principal {
+        width: 87%;
+    }
+    .blog_titulo {
+        width: 103%;
+    }
+    .blog_imagem_principal {
+        width: 100%;
+        top: 15%;
+    }
+    .blog_texto_principal {
+        width: 94%;
+        top: 79%;
+    }
+    .blog_conteudo {
+        margin: 0 0 0 -100%;
+    }
+    .blog_imagem_secundario {
+        top: 96%;
+        width: 50%;
+    }
+    .blog_texto_secudario {
+        top: 96%;
+        width: 45%;
+        margin: 0 0 0 52%;
+    }
+    .blog_imagem_terceiro {
+        top: 134%;
+        width: 50%;
+    }
+    .blog_texto_terceiro {
+        top: 134%;
+        width: 45%;
+        margin: 0 0 0 52%;
+    }
+    .rodape {
+        width: 100%;
+        top: 1400%;
+        height: 40%;
+    }
+    .rodape_logo {
+        width: 68%;
+    }
+    .conteudo_rodape {
+        margin-top: 10%;
+        width: 94%;
+    }
+    .rodape_Redes {
+        width: 17%;
+    }
+    .rodape_link_redeSociais svg {
+        color: #FFFFFF;
+    }
     .rodape_newsletter {
-        width: 63%;
+        width: 101%;
+    }
+    .newletter_botao {
+        width: 14%;
+        height: 8%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 624px) {
+
+    .cabecalho {
+        width: 95%;
+    }
+    .logo_texto{
+        font-size: 1.2em;
+    }
+    .menu_item {
+
+        line-height: 3vh;
+        
+    }
+    .pesquisar {
+        width: 83%;
+        height: 9%;
+    }
+    .botao_pesquisa {
+        height: 9%;
+        width: 10%;
+        margin: 0 0 0 89%;
+    }
+    .produlo_lista {
+        
+        width: 95%;
+        margin: 4% 0 0 4%;
+    }
+    .produto_lista_conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+    .imagem_borda {
+        
+        width: 94%;
+        height: 315px;
+
+    }
+    .imagem_tamanhos {
+        width: 242px;
+        height: 259px;   
+    }
+    .imagem_botao {
+        
+        margin: 0 0 3% 0;
+    }
+    .botao_compra {
+        width: 94%;
+        font-size: 1.5rem;
+        top: 4vh;
+    }
+    .banner {
+        width: 93%;
+        top: 245%
+    }
+    .banner p {
+        font-size: 1.2em;
+    }
+    .banner h3 {
+        font-size: 1.8em;
+    }
+    .banner_logo .logo_titulo {
+        font-size: 2em;
+    }
+    .banner_logo .logo_texto {
+        font-size: 1.2em;
+        top: -22px;
+    }
+    .produlo_lista2 {
+        width: 95%;
+                
+        top: 273%
+    }
+    .produto_lista2_conteudo {
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .blog {
+        grid-template-columns: 1fr;
+        width: 93%;
+        
+        grid-auto-flow: row;
+        top: 463%;
+    }
+    .blog_titulo {
+        width: 93%;
+    }
+    .blog_imagem_principal {
+        width: 93%
+    }
+    .blog_texto_principal {
+        width: 93%
+    }
+    .blog_imagem_secundario {
+        top: 91%;
+        width: 43%;
+    }
+    .blog_texto_secudario {
+        top: 91%;
+        width: 30%;
+        margin: 0 0 0 46%;
+    }
+    .blog_imagem_terceiro {
+        top: 130%;
+        width: 43%;
+    }
+    .blog_texto_terceiro {
+        top: 130%;
+        width: 30%;
+        margin: 0 0 0 46%;
+    }
+    .rodape {
+        width: 100%;
+        top: 633%;
+        height: 36%;
+    }
+    .rodape_logo {
+        width: 53%;
+    }
+    .conteudo_rodape {
+        margin-top: 8%;
+    }
+    .rodape_newsletter{
+        width: 101%;
+
+    }
+    .newletter_botao {
+        width: 11%;
+        height: 10%
     }
 }
