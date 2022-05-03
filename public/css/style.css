@@ -4,6 +4,10 @@
 }
 
 
+body{
+    background-color: #fbf7eb;
+}
+
 main,
 nav,
 footer {
@@ -13,7 +17,7 @@ footer {
 
 nav,
 footer {
-    background-color: #E5E5E5;
+    background-color: #e9dec8;
 }
 
 main {
@@ -31,10 +35,15 @@ button:hover {
 
 .search-button {
     background: url(../images/search.png);
-    background-color: #E5E5E5;
+    background-color: #e9dec8;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 55px;
+}
+
+.search-button:hover {
+    transition: 0.5s all ease-in;
+    transform: scale(1.1);
 }
 
 .navbar {
@@ -42,10 +51,19 @@ button:hover {
     align-items: center;
     padding: 1%;
     font-size: 18px;
-    
+    border-top: 1px solid  rgba(0, 0, 0, 0.1);
+
 }
 
-li > a{
+li>a.navbar-link:hover {
+    border: solid 1px #E5E5E5;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.20);
+    transition: 1s border;
+    transform: scale(0.9);
+}
+
+
+li>a {
     text-decoration: none;
     color: black;
 }
@@ -87,23 +105,39 @@ li > a{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    font-weight: 400;
     justify-content: flex-start;
+}
+
+.prices-text {
+    font-weight: 400;
+    color: #666666;
+
 }
 
 .header-style {
     justify-content: space-between;
+    background-color: #e9dec8;
     align-items: center;
     box-sizing: border-box;
     padding: 25px 20px 25px 20px;
+    
 }
 
 .shopping-cart-header {
+
     background: url(../images/shopping-bag.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    width: 29px;
+    width: 32px;
     height: 32px;
+}
+
+.background-button:hover {
+    border: solid 1px #ffffff;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    transition: 1s all;
+    transform: scale(1.2);
 }
 
 .bold {
@@ -139,6 +173,11 @@ div.title-footer li {
     margin: 20px;
 }
 
+.newsletter-button{
+    background-color: #ffffff;
+    border-radius: 5%;
+}
+
 li>button {
     width: 160px;
     height: 38px;
@@ -149,7 +188,7 @@ li>button {
 li>input {
     width: 280px;
     height: 32px;
-    
+
 
 }
 
@@ -169,12 +208,23 @@ div.title-footer>ul>li:nth-child(1) {
 
 /*logo css*/
 
-div.logo {
+div.logo , strong.logo {
     width: 265px;
     display: flex;
     flex-direction: column;
     padding: 1%;
 
+}
+
+strong.logo p,h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+strong.logo span{
+    font-size: 12px;
+    font-weight: 400;
+    align-self: flex-end;
 }
 
 div.logo p {
@@ -225,6 +275,10 @@ div.logo span {
 
 }
 
+div.image-buttons > button:hover{
+    background-color: #e9dec8;
+}
+
 .shopping-cart {
     background: url(../images/shopping-bag\ \(1\).png);
     background-repeat: no-repeat;
@@ -251,8 +305,9 @@ div.boxModel {
     width: 285px;
     height: 425px;
 }
-div.boxModel:hover{
-    transition: 1s all;
+
+div.boxModel:hover {
+    transition: 0.2s all;
     transform: scale(1.1);
 }
 
@@ -261,10 +316,10 @@ div.div-image-buttons>img {
     border: 1px solid #C4C4C4;
     border-radius: 1%;
     padding: 4%;
-    transition: 1s all ;
+    transition: 1s all;
 }
 
-div.div-image-buttons > img:hover{
+div.div-image-buttons>img:hover {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -292,7 +347,7 @@ main>p {
     justify-content: center;
 
     /* align-items: center; */
-    background-color: #E5E5E5;
+    background-color: #e9dec8;
     width: 285px;
     border-radius: 1%;
 }
@@ -300,6 +355,12 @@ main>p {
 div.background-bag>p {
     align-self: center;
     justify-self: flex-end;
+}
+
+div.background-bag > button.desc-button{
+    background-color: #e9dec8;
+    font-size: 15px;
+   
 }
 
 div.background-bag>img {
@@ -316,7 +377,7 @@ div.background-bag>img {
 section.slogan {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #E5E5E5;
+    background-color: #e9dec8;
     height: auto;
     width: 100%;
     border-radius: 1%;
@@ -348,7 +409,7 @@ div.text>p.normal {
     letter-spacing: 0.2em;
 }
 
-section.slogan>div.logo {
+section.slogan>strong.logo {
     justify-self: right;
     align-self: flex-end;
 }
@@ -361,13 +422,15 @@ section.slogan>div.logo {
 .searchBar {
     width: 90%;
     height: 50px;
-    padding: 1px;
+    padding: 0.5%;
+    font-size: 18px;
 
 }
 
 input::placeholder {
     font-size: 1em;
 }
+
 
 .div-search-config {
     display: flex;
@@ -389,31 +452,25 @@ input::placeholder {
 .grid-section {
     display: grid;
     grid-template-columns: 3fr 1.2fr 1fr;
-
-    /* grid-template-areas: "big-article first-middle-article first-middle-text"
-                         "big-article-text second-middle-article second-middle-text"; */
     column-gap: 30px;
 
 }
-    /* .big-article{
-        grid-area: big-article;
-    }
-    .first-middle-article{
-        grid-area: first-middle-article;
-    }
-    .second-middle-article{
-        grid-area: second-middle-article;
-    }
-    .big-article-text{
-        grid-area: big-article-text;
-    }
-    .first-middle-text{
-        grid-area: first-middle-text;
-    }
-    .second-middle-article{
-        grid-area: second-middle-article;
-    } */
-    
+
+div.big-article>article > img{
+    height: 320px;
+    width: 100%;
+    background: url(images/collection-clothes-girls.jpg);
+}
+
+article.first-middle-article {
+    background: url(images/collection-clothes-classic.jpg);
+    background-position: 50% 45%;
+    background-size: contain;
+}
+
+article.second-middle-article{
+    background: url(images/collection-clothes-street.jpg);background-position: 50% 45%; background-size: contain;
+}
 
 
 
@@ -458,10 +515,6 @@ div.middle-article>article.second-middle-article {
 
 }
 
-article {
-    background-color: #E5E5E5;
-
-}
 
 
 @media(max-width: 1180px) {
@@ -513,7 +566,7 @@ article {
     .second-middle-article {
         grid-area: second;
     }
-    
+
 }
 
 @media(max-width: 1010px) {
@@ -521,7 +574,7 @@ article {
         grid-template-columns: repeat(2, 50%);
     }
 
-    
+
 
     div.title-footer {
         display: grid;
@@ -541,21 +594,19 @@ article {
 
 }
 
-@media(max-width:760px){
-   nav > ul.navbar{
+@media(max-width:760px) {
+    nav>ul.navbar {
         display: none;
-        
-    }
-    nav{
-        background-color: #ffffff;
+
     }
 
-    div.description > ul.navbar{
+
+    div.description>ul.navbar {
         display: flex;
         flex-direction: column;
     }
 
-    ul.navbar > li{
+    ul.navbar>li {
         padding: 1%;
     }
 
@@ -570,22 +621,25 @@ article {
         transition: background-color 0.9s;
         will-change: background-color;
     }
+
     .title {
         cursor: pointer;
         font-weight: 600;
         padding: 16px;
         position: relative;
     }
+
     .description {
         border-top: #E5E5E5 solid 1px;
         font-size: 14px;
         line-height: 21px;
         padding: 16px;
-      }
-      
+    }
+
 }
+
 @media(min-width:760px) {
-    .collapse{
+    .collapse {
         display: none;
     }
 }
@@ -595,10 +649,11 @@ article {
         grid-template-columns: 50%;
         justify-content: center;
     }
-    section.slogan{
+
+    section.slogan {
         grid-template-rows: 1fr;
     }
-    
+
 }
 
 @media(max-width: 510px) {
