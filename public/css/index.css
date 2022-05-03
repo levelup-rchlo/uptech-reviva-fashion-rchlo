@@ -14,6 +14,7 @@
     h2 {
         font-size: 1.5em;
         margin: 1rem;
+        font-weight: bold;
     }
     
     h3 {
@@ -111,10 +112,21 @@
         border: 1px solid #C4C4C4;
     }
     
+    .item-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .item-text p {
+        margin: 0.5rem 0;
+    }
+    
     .add-to-bag-button {
         background-color: #C4C4C4;
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto;
+        margin: 0.5rem 0;
     }
     
     .add-to-bag-button p {
@@ -202,6 +214,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 3em 3em 3em;
+        flex-wrap: wrap;
     }
     
     .footer-menu ul {
@@ -246,4 +259,36 @@
     
     .newsletter div {
         margin: 0.5rem 0;
+    }
+    /*------------------------*/
+    
+    @media screen and (max-width:1300px) {
+        .main__section--product-list-section-1,
+        .fashion-tips {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fashion-tips__blog-posts {
+            margin-top: 1rem;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .fashion-tips__small-post {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-menu,
+        .footer-medias,
+        .footer-contact,
+        .newsletter {
+            margin-top: 2rem;
+        }
+    }
+    
+    @media screen and (max-width:644px) {
+        /*Por enquanto a div do post grande(fashion-tips__big-post) some. Alterar para imagem responsiva*/
+        .fashion-tips__big-post {
+            display: none;
+        }
     }
