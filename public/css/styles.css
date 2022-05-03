@@ -225,7 +225,7 @@ body {
 
 .conteudo_banner {
   align-items: center;
-  background: left/cover url(/assets/img/banner.jpg);
+  background: left/cover url(../assets/img/banner.jpg);
   color: inherit;
   display: flex;
   font-weight: bold;
@@ -699,7 +699,7 @@ body {
   }
 
   .conteudo_banner {
-    background: left/100% no-repeat url(/assets/img/banner-menor.jpg);
+    background: left/100% no-repeat url(../assets/img/banner-menor.jpg);
     height: 18em;
     justify-content: flex-end;
     margin: 4em 0;
@@ -766,7 +766,7 @@ body {
   .pesquisa_campo::placeholder {
     font-size: .8em;
   }
-  
+
   .pesquisa_botao {
     display: none;
   }
