@@ -47,6 +47,7 @@ table {
 
 html {
   font-size: 62.5%;
+  color: #212B36;
 }
 
 body {
@@ -91,7 +92,6 @@ header {
 }
 
 .cabecalho__carrinho {
-  margin-right: 1.875rem;
   justify-self: flex-end;
 }
 
@@ -100,7 +100,8 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background: #C4C4C4;
+  background: #EFF2F7;
+  border: 1px solid #f0f0f0;
   height: 6vh;
   margin: 1.25rem 0;
 }
@@ -113,11 +114,15 @@ header {
 }
 
 .menu__link__item {
-  color: #2b2b2b;
   cursor: pointer;
+  color: #212B36;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.menu__link__item:hover {
+  text-shadow: 0.1em 0.1em 0.2em #a5a5a5;
 }
 
 .principal {
@@ -135,6 +140,21 @@ header {
 .busca__input {
   width: 100%;
   margin-right: 1%;
+}
+
+.busca__botao {
+  background: #487680;
+  border: none;
+  width: 5vh;
+  height: 4vh;
+}
+
+.busca__botao:hover {
+  background: #6eb4c4;
+}
+
+.busca__botao:active {
+  border: 1px solid #c5c5c5;
 }
 
 .busca__botao__lupa {
@@ -161,7 +181,7 @@ h2 {
 }
 
 .produto {
-  border: 2px solid #bbb;
+  border: 1px solid #c5c5c5;
   display: flex;
   flex-direction: column;
 }
@@ -190,8 +210,9 @@ h2 {
 }
 
 .produto__imagem__tamanho input[type="radio"]:checked + button {
-  background-color: #5a5a5a;
+  background-color: #487680;
   color: white;
+  font-weight: bold;
 }
 
 
@@ -208,10 +229,15 @@ h2 {
 
 .botao__sacola {
   width: 100%;
+  height: 5vh;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  background: #487680;
+  color: #EFF2F7;
+  border: none;
+  border-radius: 5px;
 }
 
 .botao__sacola__vazio {
@@ -229,7 +255,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: #C4C4C4;
+  background: #EFF2F7;
 }
 
 .manual__paragrafo {
@@ -308,7 +334,7 @@ h2 {
 
 .rodape {
   width: 100%;
-  background: #C4C4C4;
+  background: #EFF2F7;
   margin-top: 1.25rem;
 }
 
@@ -337,7 +363,7 @@ h2 {
 
 .rodape__menu__item {
   text-decoration: none;
-  color: black;
+  color: #212B36;
   line-height: 3rem;
 }
 
@@ -473,7 +499,7 @@ h2 {
       display: flex;
       position: absolute;
       flex-direction: column;
-      background-color: #C4C4C4;
+      background-color: #EFF2F7;
       width: 48vw;
       height: 30vh;
       left: -110vw;
