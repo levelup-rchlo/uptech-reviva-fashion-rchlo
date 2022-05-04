@@ -1,9 +1,10 @@
 :root {
     font-size: 62.5%;
     --cor-principal: #000000;
+    --cor-texto-secundario: #fff;
     --cor-secundario: green;
     --fonte-principal: "Inter", sans-serif;
-    --fundo-navegacao: #e5e5e5;
+    --fundo-navegacao: rgba(0, 0, 0, 0.87);
     --font-cabecalho: 1rem;
     --font-subTitulo: 0.8rem;
 }
@@ -45,7 +46,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--fundo-navegacao);
-    color: var(--cor-principal);
+    color: var(--cor-texto-secundario);
     height: 4.8rem;
 }
 
@@ -59,8 +60,30 @@ body {
     list-style: none;
 }
 
+
+/**/
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #15191c;
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: 0.25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: 0.25s;
+}
+
+
+/**/
+
 .item__link {
-    color: var(--cor-principal);
+    color: var(--cor-texto-secundario);
 }
 
 .item__link:hover {
@@ -124,6 +147,7 @@ body {
 .cartao__camisa {
     grid-column: 2 span;
     cursor: pointer;
+    width: 100%;
 }
 
 .camisa__tamanhos {
@@ -173,6 +197,8 @@ body {
     grid-template-columns: 1fr auto;
     border: none;
     cursor: pointer;
+    background-color: var(--fundo-navegacao);
+    color: #fff;
 }
 
 .espaco__imagem {
@@ -196,10 +222,12 @@ body {
 
 .painel__titulo {
     text-align: center;
+    color: var(--cor-texto-secundario);
 }
 
 .painel__titulo_Destaque {
     text-align: center;
+    color: var(--cor-texto-secundario);
 }
 
 .painel__logo {
@@ -261,11 +289,13 @@ body {
 }
 
 .menu__rodape {
+    color: var(--cor-texto-secundario);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .contatos {
+    color: var(--cor-texto-secundario);
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -273,7 +303,7 @@ body {
 
 .botao__rodape {
     border: 0;
-    background-color: var(--fundo-navegacao);
+    background-color: var(--cor-texto-secundario);
 }
 
 .centralizar {
@@ -287,9 +317,11 @@ body {
 
 .redes {
     cursor: pointer;
+    color: var(--cor-texto-secundario);
 }
 
 .assinar {
+    color: var(--cor-texto-secundario);
     cursor: pointer;
 }
 
@@ -355,11 +387,11 @@ body {
         display: flex;
     }
     .item__link1 {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 2rem;
     }
     .item__link {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 1rem;
     }
     .secao {
@@ -409,7 +441,7 @@ body {
         display: flex;
     }
     .item__link1 {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 2rem;
     }
     .secao {
@@ -455,7 +487,7 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: var(--fundo-navegacao);
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         height: 5rem;
         padding: 0 2rem;
         justify-content: center;
@@ -464,7 +496,7 @@ body {
         display: flex;
     }
     .item__link1 {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 2rem;
     }
     .titulo-pagina {
@@ -586,7 +618,7 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: var(--fundo-navegacao);
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         height: 5rem;
         padding: 0 2rem;
         justify-content: center;
@@ -595,7 +627,7 @@ body {
         display: flex;
     }
     .item__link1 {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 2rem;
     }
     .titulo-pagina {
@@ -708,6 +740,11 @@ body {
     }
     .item__link {
         font-size: 2rem;
+        color: var(--cor-texto-secundario);
+    }
+    .item__link1 {
+        font-size: 2rem;
+        color: var(--cor-texto-secundario);
     }
     .contatos {
         display: flex;
@@ -716,7 +753,7 @@ body {
     }
     .botao__rodape {
         border: 0;
-        background-color: var(--fundo-navegacao);
+        background-color: var(--cor-texto-secundario);
     }
     .centralizar {
         padding-left: 2.5rem;
@@ -749,7 +786,7 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: var(--fundo-navegacao);
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         height: 5rem;
         padding: 0 2rem;
         justify-content: center;
@@ -758,7 +795,7 @@ body {
         display: flex;
     }
     .item__link1 {
-        color: var(--cor-principal);
+        color: var(--cor-texto-secundario);
         font-size: 2rem;
     }
     .titulo-pagina {
@@ -879,7 +916,7 @@ body {
     }
     .botao__rodape {
         border: 0;
-        background-color: var(--fundo-navegacao);
+        background-color: var(--cor-texto-secundario);
     }
     .centralizar {
         padding-left: 2.5rem;
@@ -1015,7 +1052,7 @@ body {
     }
     .botao__rodape {
         border: 0;
-        background-color: var(--fundo-navegacao);
+        background-color: var(--cor-texto-secundario);
     }
     .centralizar {
         padding-left: 2.5rem;
