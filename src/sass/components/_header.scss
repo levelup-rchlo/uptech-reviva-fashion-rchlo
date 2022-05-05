@@ -1,0 +1,41 @@
+@import '../abstract/variaveis';
+
+/*Header*/
+
+.cabecalho {    
+    width: 90%;
+    height: 5%;
+    margin: 0 0 0 4%;
+    top: 11%;
+    
+    background: $color-background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cabecalho__logo {
+        display: grid;
+        align-items: end;
+    
+        .logo__titulo {
+            
+            font-family: $font;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    
+        .logo__texto {
+            font-family: $font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2em;
+            justify-self: end;
+            margin-top: -13%;
+                
+        }    
+    }
+    .cabecalho__vetor {
+        margin: 0 5% 0 0;
+    }
+}
