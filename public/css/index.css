@@ -153,9 +153,36 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto;
         margin: 0.5rem 0;
+        perspective: 500px;
     }
     
-    .add-to-bag-button p {
+    .card-inner {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        display: grid;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    
+    .add-to-bag-button:hover .card-inner {
+        opacity: 0.9;
+        transform: rotateY(180deg);
+        transition: transform 0.5s;
+    }
+    
+    .card-front {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    
+    .card-front,
+    .card-back {
+        display: grid;
+        backface-visibility: hidden;
+    }
+    
+    .card-front__text {
         font-size: 0.8em;
         grid-column-start: 3;
         grid-column-end: 6;
@@ -168,10 +195,17 @@
         border: none;
         grid-column-start: 8;
     }
+    
+    .card-back {
+        position: absolute;
+        background-color: blue;
+        justify-content: center;
+        transform: rotateY(180deg);
+    }
     /*-------------------------------------*/
     
     .banner__wrap {
-        background-color: #C4C4C4;
+        background-color: #D6BBA3;
         margin: 1.5rem;
     }
     
@@ -179,7 +213,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 3rem;
+        padding-top: 3rem;
     }
     
     .banner__text-bottom {
@@ -225,7 +259,7 @@
     /*-----------------------------*/
     
     footer {
-        background-color: #C4C4C4;
+        background-color: #D6BBA3;
     }
     
     .footer__header-wrapper {
