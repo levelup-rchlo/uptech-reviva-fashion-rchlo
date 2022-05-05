@@ -171,6 +171,7 @@ body {
   background-color: black;
   border: solid 1px #C4C4C4;
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .tamanhos_label {
@@ -235,6 +236,7 @@ body {
   justify-content: center;
   position: relative;
   text-decoration: none;
+  margin: 2em 0;
 }
 
 .banner_texto {
@@ -638,7 +640,7 @@ body {
   }
 
   .menu-navegacao_items {
-    background-color: #c4c4c4;
+    background-color: #2b6099;
     border-radius: 0 0 30px;
     font-size: 1.6em;
     flex-direction: column;
@@ -759,6 +761,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .cabecalho_logo{
+    font-size: .8em;
+  }
+
   .pesquisa_campo {
     padding: .2em;
     width: 100%;

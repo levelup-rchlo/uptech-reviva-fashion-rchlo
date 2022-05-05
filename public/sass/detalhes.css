@@ -1,0 +1,116 @@
+.conteudo_detalhes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+  -ms-grid-rows: 10% 30% 40% 10% 10%;
+      grid-template-rows: 10% 30% 40% 10% 10%;
+      grid-template-areas: "imagem-principal titulo" "imagem-principal descricao" "imagem-principal produtos" "imagem-principal tamanhos" "imagem-principal botao";
+  margin: 7.2em 0;
+}
+
+.conteudo_detalhes .detalhes_titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo;
+  font-size: 2.4em;
+  margin: 0;
+}
+
+.conteudo_detalhes .detalhes_descricao {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: descricao;
+  font-size: 2.4em;
+  margin: 0.5em 0;
+}
+
+.conteudo_detalhes .detalhes_imagem-principal {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: imagem-principal;
+  height: 65em;
+}
+
+.conteudo_detalhes .detalhes_imagem-principal img {
+  border: solid 1px #c4c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1px;
+}
+
+.conteudo_detalhes .detalhes_imagem-principal .imagem-principal_principal {
+  height: 100%;
+}
+
+.conteudo_detalhes .detalhes_imagens {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: produtos;
+  height: 18em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conteudo_detalhes .detalhes_imagens img {
+  border: solid 1px #c4c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1px;
+}
+
+.conteudo_detalhes .detalhes_imagens .imagem_secundaria-1 {
+  height: 100%;
+}
+
+.conteudo_detalhes .detalhes_imagens .imagem_secundaria-2 {
+  height: 100%;
+}
+
+.conteudo_detalhes .detalhes_imagens .imagem_secundaria-3 {
+  height: 100%;
+}
+
+.conteudo_detalhes .detalhes_imagens .imagem_secundaria-4 {
+  height: 100%;
+}
+
+.conteudo_detalhes .detalhes_tamanhos {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: tamanhos;
+  padding: 0;
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.conteudo_detalhes .detalhes_tamanhos .tamanhos_label {
+  font-size: 2em;
+  text-align: center;
+}
+
+.conteudo_detalhes .detalhes_botao-sacola {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: botao;
+  height: 50px;
+  width: 315px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+  border: none;
+  color: #ffffff;
+  background: url(../assets/svg/logo-sacola-branca.svg) #2b6099 right no-repeat;
+  border: .5em solid transparent;
+}
+
+.conteudo_detalhes .detalhes_botao-sacola:hover {
+  background-color: #134376;
+}
+/*# sourceMappingURL=detalhes.css.map */
