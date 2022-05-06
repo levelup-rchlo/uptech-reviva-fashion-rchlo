@@ -1,0 +1,87 @@
+@import '../abstract/variaveis';
+
+.rodape {
+    background: $color-background-destaque;
+    margin-top: 5%;
+    height: 20%;
+    width: 100%;
+    p a {
+        color: $color-text-destaque;
+    } 
+}
+.rodape__logo {
+    align-items: end;
+    display: grid;
+    .logo__titulo {
+        color: $color-text-destaque;
+        font-family: $font;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 90%;
+        margin: 1% 0 0 4%;
+    }
+    .logo__texto {
+        align-self: flex-end;
+        color: $color-text-destaque;
+        display: flex;
+
+        font-family: $font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        margin: 0 0 0 15%;
+    }
+}
+.conteudo__rodape {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 4% 0 4%;
+}
+h4 {
+    color: $color-text-destaque;
+    line-height: 1.5rem;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.rodape__itens__menu {
+    font-weight: normal;
+    font-size: 1.8em;
+    line-height: 197%;
+    a {
+        color: $color-text-destaque;
+        text-decoration: none;
+    }
+    
+}
+.rodape__link__redeSociais {
+    text-align: center;
+    margin-top: 1%;
+}
+.contato {
+    color: $color-text-destaque;
+    line-height: 197%;
+    font-weight: normal;
+    font-size: 1.8em;
+    svg{
+        height: 15%;
+        margin-left: 7%;
+        width: 15%;
+    }
+}
+.newsletter{
+    width: 25%;
+}
+.rodape__newsletter{
+    background: $color-text-destaque;
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    height: 3.5vh;
+    width: 50%;
+}
+.newletter__botao {
+    background: $color-border;
+    height: 4vh;
+    width: 25%;
+}
