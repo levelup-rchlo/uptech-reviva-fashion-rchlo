@@ -301,4 +301,115 @@ html, body {
   font-size: 2em;
   color: #ffffff;
 }
+
+.sugestao__compra {
+  margin: 0 0 0 4%;
+  width: 90%;
+}
+
+.sugestao__compra__titulo {
+  color: #000000;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 2%;
+}
+
+.sugestao__compra__conteudo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10em;
+  max-width: 95%;
+}
+
+.sugestao__compra__imagem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 2%;
+          flex: 1 1 2%;
+}
+
+.sugestao__compra__imagem__borda {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  width: 105%;
+  height: 300px;
+}
+
+.sugestao__compra__imagem__tamanhos {
+  height: 208px;
+  margin: 2%;
+  width: 249px;
+}
+
+.sugestao__compra__imagem__botao {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.botao__tamanho {
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  height: 2.3vw;
+  margin: 1%;
+  width: 10%;
+}
+
+.sugestao__compra__texto {
+  font-weight: 400;
+  font-size: 2.9em;
+  height: 8%;
+  text-align: start;
+  width: 100%;
+}
+
+.sugestao__compra__preco {
+  color: #666666;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 0%;
+  text-align: start;
+  width: 100%;
+  margin-top: -9%;
+}
+
+.sugestao__compra__botao__compra {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: -ms-grid;
+  display: grid;
+  height: 3vw;
+  line-height: 6vh;
+  width: 100%;
+}
+
+.sugestao__compra__botao__svg {
+  margin-top: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 /*# sourceMappingURL=detalhes.css.map */

@@ -1,0 +1,82 @@
+@import '../abstract/variaveis';
+
+.sugestao__compra {
+    margin: 0 0 0 4%;
+    width: 90%;
+}
+.sugestao__compra__titulo {
+    color: $color-text;
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 2%;
+}
+.sugestao__compra__conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10em;
+    max-width: 95%;
+}
+.sugestao__compra__imagem {
+    flex: 1 1 2%;
+}
+.sugestao__compra__imagem__borda {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+
+    display: grid;
+
+    width: 105%;
+    height: 300px;
+}
+.sugestao__compra__imagem__tamanhos {
+    height: 208px;
+    margin: 2%;
+    width: 249px;
+}
+.sugestao__compra__imagem__botao {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.botao__tamanho {
+    border: 1px solid $color-text;
+    box-sizing: border-box;
+    grid-column: 1;
+    height: 2.3vw;
+    margin:  1%;
+    width: 10%;
+}
+.sugestao__compra__texto {    
+    font-weight: 400;
+    font-size: 2.9em;
+    height: 8%;
+    text-align: start;
+    width: 100%;
+}
+.sugestao__compra__preco {
+    color: $color-preco;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 0%;
+    text-align: start;
+    width: 100%;
+    margin-top: -9%;
+}
+.sugestao__compra__botao__compra {
+    align-items: center;
+    background: $color-background-destaque;
+    color: $color-text-destaque;
+    font-weight: bold;
+    font-size: 1.7rem;
+    display: grid; 
+    height: 3vw;
+    line-height: 6vh;
+    width: 100%;
+}
+.sugestao__compra__botao__svg {
+    margin-top: -35px;
+    display: flex;    
+    justify-content: flex-end;
+}
