@@ -1,0 +1,22 @@
+@import '../../assets/var';
+
+.slogan{
+background-color: $quaternary-color;
+
+
+    .slogan-text-config{
+        text-align: center;
+        width: 52%;
+        margin-left: 314px;
+    }
+
+    &__text{
+        font-size: $font-size-text;
+        display: inline-block;
+        text-align: justify;
+    }
+    &__text::after{
+        content: "";
+        width: 100%;
+    }
+}

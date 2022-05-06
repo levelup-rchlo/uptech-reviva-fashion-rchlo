@@ -1,0 +1,20 @@
+@mixin img($scale) {
+
+    @if $scale == medium {
+        width: 14em;
+        height: 16em;
+    }
+//refatorar e isolar mixins and functions
+}
+
+
+.recomendations__visualize{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+
+    .recomendations__products img{
+        @include img(medium)
+    }
+
+}
