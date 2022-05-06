@@ -3,86 +3,118 @@
 .conteudo_detalhes {
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-rows: 10% 30% 40% 10% 10%;
+    grid-template-rows: 10% 35% 35% 10% 10%;
+    margin: 7.2em 0;
     grid-template-areas:
         "imagem-principal titulo"
         "imagem-principal descricao"
         "imagem-principal produtos"
         "imagem-principal tamanhos"
         "imagem-principal botao";
-    margin: 7.2em 0;
 
-    .detalhes_titulo {
-        grid-area: titulo;
-        font-size: 2.4em;
-        margin: 0;
+    @media screen and(max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 13em 40em 18em 5em 6em;
+        grid-template-areas:
+            "imagem-principal titulo"
+            "imagem-principa descricao"
+            "produtos produtos"
+            "tamanhos tamanhos"
+            "botao botao";
     }
 
-    .detalhes_descricao {
-        grid-area: descricao;
-        font-size: 2.4em;
-        margin: 0.5em 0;
+    @media screen and(max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "imagem-principal"
+            "titulo"
+            "descricao"
+            "produtos"
+            "tamanhos"
+            "botao";
+    }
+}
+
+.detalhes_titulo {
+    font-size: 2.4em;
+    grid-area: titulo;
+    margin: 0;
+}
+
+.detalhes_descricao {
+    font-size: 2.4em;
+    grid-area: descricao;
+    margin: 0.5em 0;
+
+    @media screen and(max-width: 1200px) {
+        font-size: 2em;
+    }
+}
+
+.detalhes_imagens {
+    display: flex;
+    grid-area: produtos;
+    height: 18em;
+    justify-content: space-between;
+    @include bordas-imagens;
+
+    @media screen and(max-width: 1200px) {
+        height: 15em;
     }
 
-    .detalhes_imagem-principal {
-        grid-area: imagem-principal;
-        height: 65em;
-        @include bordas-imagens;
+    @media screen and(max-width: 768px) {
+        height: 13em;
+    }
+}
 
-        .imagem-principal_principal {
-            height: 100%;
-        }
+.detalhes_imagem-principal {
+    grid-area: imagem-principal;
+    height: 60em;
+    @include bordas-imagens;
+
+    @media screen and(max-width: 1200px) {
+        height: 50em;
     }
 
-    .detalhes_imagens {
-        grid-area: produtos;
-        height: 18em;
-        display: flex;
-        justify-content: space-between;
-        @include bordas-imagens;
+    @media screen and(max-width: 768px) {
+        height: 115vw;
+    }
+}
 
-        .imagem_secundaria-1 {
-            height: 100%;
-        }
+.imagem-principal_principal {
+    height: 100%;
+}
 
-        .imagem_secundaria-2 {
-            height: 100%;
-        }
+.detalhes_tamanhos {
+    align-self: flex-end;
+    grid-area: tamanhos;
 
-        .imagem_secundaria-3 {
-            height: 100%;
-        }
+    @media screen and(max-width: 992px) {
+        align-self: flex-start;
+    }
+}
 
-        .imagem_secundaria-4 {
-            height: 100%;
-        }
+.tamanhos_label-sacola {
+    font-size: 2em;
+    text-align: center;
+}
+
+.detalhes_botao-sacola {
+    align-self: flex-end;
+    background: url(../assets/svg/logo-sacola-branca.svg) $cor-primaria right no-repeat;
+    border: .5em solid transparent;
+    color: #ffffff;
+    font-size: 20px;
+    grid-area: botao;
+    height: 50px;
+    width: 315px;
+
+    &:hover {
+        background-color: $cor-secundaria;
     }
 
-    .detalhes_tamanhos {
-        grid-area: tamanhos;
-        padding: 0;
-        margin: 0;
-        align-self: flex-end;
-
-        .tamanhos_label {
-            font-size: 2em;
-            text-align: center;
-        }
-    }
-
-    .detalhes_botao-sacola {
-        grid-area: botao;
-        height: 50px;
-        width: 315px;
-        align-self: flex-end;
-        font-size: 20px;
-        border: none;
-        color: #ffffff;
-        background: url(../assets/svg/logo-sacola-branca.svg) $cor-primaria right no-repeat;
-        border: .5em solid transparent;
-
-        &:hover {
-            background-color: $cor-secundaria;
-        }
+    @media screen and(max-width: 992px) {
+        align-self: flex-start;
     }
 }
