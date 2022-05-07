@@ -1,13 +1,17 @@
 $cor-primaria: #2b6099;
 $cor-secundaria: #134376;
 $cor-terciaria: #0d335b;
+$fonte-x-small: 1.6em;
+$fonte-small: 1.8em;
+$fonte-medium: 2.0em;
+$fonte-large: 2.2em;
+$fonte-extra-large: 2.4em;
 
 @mixin bordas-imagens {
     img {
         border: solid 1px #c4c4c4;
         box-sizing: border-box;
         padding: 1px;
-        height: 100%;
     }
 
 }

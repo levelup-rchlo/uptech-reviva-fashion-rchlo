@@ -1,17 +1,21 @@
 @import "../abstract/variaveis";
 
-$font-size-carrinho: 1.3em;
+$font-size-carrinho: 1.2em;
 .conteudo {
     position: relative;
 }
-
 .conteudo_carrinho {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
     justify-content: space-between;
     width: 80%;
+    @media screen and(max-width: 992px) {
+        width: 100%;
+    }
+    @media screen and(max-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .carrinho_titulo {
@@ -21,7 +25,6 @@ $font-size-carrinho: 1.3em;
 }
 
 .carrinho_produto {
-
     column-gap: 1em;
     display: grid;
     grid-template-columns: 15% 20% 20% 10% 15% 10%;
@@ -29,6 +32,30 @@ $font-size-carrinho: 1.3em;
     height: 22em;
     grid-template-areas:
         "imagem descricao tamanhos valor quantidade subtotal";
+        @media screen and(max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+        "imagem descricao"
+        "imagem tamanhos"
+        "imagem valor"
+        "imagem quantidade"
+        "imagem subtotal";
+            height: auto;
+            margin: 1em 0;
+        }
+        @media screen and(max-width: 576px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas:
+        "imagem "
+        "descricao "
+        "tamanhos "
+        "valor "
+        "quantidade"
+        "subtotal";
+        row-gap: 1em;
+        }
 }
 
 .produto_imagem {
@@ -80,6 +107,13 @@ $font-size-carrinho: 1.3em;
 .produto_quantidade {
     font-size: $font-size-carrinho;
     grid-area: quantidade;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(max-width: 768px) {
+        align-items: flex-start;
+       
+    }
 }
 
 .quantidade_titulo {
@@ -89,7 +123,9 @@ $font-size-carrinho: 1.3em;
 .quantidade {
     margin: .2em 0;
     text-align: center;
-    width: 60%;
+    width: 3em;
+    border-radius: .3em;
+    border: 1px solid
 }
 
 .produto_subtotal {
@@ -115,17 +151,26 @@ $font-size-carrinho: 1.3em;
     font-size: 2em;
     font-weight: bold;
     grid-area: checkout;
-    height: 30%;
+    line-height: 1em;
     margin: 2em;
     padding: 1em;
     position: absolute;
     right: 0;
     text-align: center;
     width: 20%;
+    @media screen and(max-width: 992px) {
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
 }
 
 .checkout_total {
     margin-top: 0;
+    word-spacing: 20;
+    @media screen and(max-width: 992px) {
+        font-size: $font-size-carrinho + 1/3;
+    }
 }
 
 .total {
@@ -137,13 +182,14 @@ $font-size-carrinho: 1.3em;
 .checkout_botao {
     background-color: $cor-secundaria;
     border: none;
+    box-sizing: border-box;
     color: inherit;
     font-size: 1em;
     font-weight: bold;
-    height: 2em;
+    height: auto;
     margin: auto 0 0 0;
+    padding: .5em;
     width: 100%;
-
     &:hover {
         background-color: $cor-terciaria;
         cursor: pointer;

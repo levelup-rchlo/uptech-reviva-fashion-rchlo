@@ -17,7 +17,9 @@ body {
 }
 
 .cabecalho_logo {
+  color: inherit;
   text-align: end;
+  text-decoration: none;
 }
 
 .logo_superior {
@@ -681,6 +683,11 @@ body {
     width: 45%;
   }
 
+  .produtos_titulo {
+    font-size: 1.2em;
+    width: 90%;
+  }
+
   .produto:nth-child(2) {
     margin-left: auto;
   }
@@ -705,7 +712,6 @@ body {
     background: left/100% no-repeat url(../assets/img/banner-menor.jpg);
     height: 18em;
     justify-content: flex-end;
-    margin: 4em 0;
   }
 
   .banner_texto {
@@ -761,7 +767,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .cabecalho_logo{
+  .cabecalho_logo {
     font-size: .8em;
   }
 
