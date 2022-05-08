@@ -4,96 +4,87 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    width: 90%;
-    height: 504px;
     margin: 2% 4%;
-    
+    width: 90%;
+}
 
-    .detalhes__imagem {
-        width: 80%;
-        height: 90%;
-        
-        border: 1px solid $color-border;
-        box-sizing: border-box;
-        .detalhes__imagem__destaque {
-            width: 95%;
-            height: 95%;
-            margin: 2%;
-        }
-    }
-    .detalhes__conteudo {
-        width: 100%;
-             
+.detalhes__imagem {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
 
-        .detalhes__titulo {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2rem;
-            color: $color_text;
-        }
-        .detalhes__descericao {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2em;
-            line-height: 160%;
-            color: $color_text;
-        }
-    }
-    .detlahes__descricao__imagens {
-        width: 100%;
-        margin: 5% 0 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        
-        .detalhes__imagem__borda {
-            width: 24%;
-            height: 15%;
-            padding: 1%;           
-            
-            border: 1px solid $color-border;
-            box-sizing: border-box;
-            .detalhes__imagem__descricao {
-                width: 100%;
-                height: 100%;
-                
-            }
-        }
-    }
-    .imagem__botao {
-        display: flex;        
-        align-items: flex-start;
-        width: 100%;
-        margin: 10% 0 0 0;
+    height: 90%;
+    width: 80%;        
+}
+.detalhes__imagem__destaque {
+    height: 95%;
+    margin: 2%;
+    width: 95%;
+}
 
+.detalhes__conteudo {
+    width: 100%;
+}             
+
+.detalhes__titulo {
+    color: $color_text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.detalhes__descericao {
+    color: $color_text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 160%;
+}
+.detlahes__descricao__imagens {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
+    @extend .detalhes__conteudo;
+}
+.detalhes__imagem__borda {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    height: 15%;
+    padding: 1%;           
+    width: 24%;
+}
+.detalhes__imagem__descricao {
+    height: 100%;
+    @extend .detalhes__conteudo;
+}
+.imagem__botao {
+    align-items: flex-start;
+    display: flex;        
+    margin: 10% 0 0 0;
+    @extend .detalhes__conteudo;
         .botao__tamanho {
-            width: 5%;
-            height: 2.3vw;
-            top: 10px;
-            grid-column: 1;
-            margin:  1%;
-
             border: 1px solid $color-text;
             box-sizing: border-box;
+            height: 2.3vw;
+            grid-column: 1;
+            margin:  1%;
+            top: 10vw;
+            width: 5%;
         }
-    }
-    .botao__compra{
-           
-        width: 40%;
-        height: 3vw;
-        font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 6vh;
-        color: $color-text-destaque;
-        background: $color-background-destaque;
-	    align-items: center;
-        display: grid; 
-        
-        .iamgem__svg {
-            margin-top: -40px;
-            display: flex;    
-            justify-content: flex-end;
-        }
-    }
+}
+.botao__compra{
+    align-items: center;
+    background: $color-background-destaque;
+    color: $color-text-destaque;
+    display: grid; 
+    font-weight: bold;
+    font-size: 1.7rem;
+    height: 3vw;
+    line-height: 6vh;
+    width: 40%;
+}    
+.iamgem__svg {
+    place-self: end;
+    margin-top: 3%;
+    min-block-size: fit-content;
 }

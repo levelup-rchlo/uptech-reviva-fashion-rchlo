@@ -3,27 +3,24 @@
 /*Menu*/
 
 .menu {
-    width: 100%;
+    background: $color-background-destaque;
     height: 10vh;
     left: 0px;
     top: 23%;
-    background: $color-background-destaque;
-
-    .menu__lista {
-        display: flex;
-        justify-content: space-evenly;
-        .menu__item {
-            font-weight: 400;
-            font-size: 2.8em;
-            line-height: 10vh;
-            
-            top: 4vh;
-            justify-content: space-between;
-
-            .menu__link {
-                text-decoration: none;
-                color: $color-text-destaque;
-            }
-        }
-    }
+    width: 100%;
 }
+.menu__lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu__item {
+    font-weight: 400;
+    font-size: 2.8em;
+    line-height: 10vh;        
+    top: 4vh;
+    justify-content: space-between;
+}
+.menu__link {
+    color: $color-text-destaque;
+    text-decoration: none;
+}        

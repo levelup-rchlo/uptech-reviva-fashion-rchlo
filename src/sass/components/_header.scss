@@ -2,40 +2,35 @@
 
 /*Header*/
 
-.cabecalho {    
-    width: 90%;
-    height: 5%;
-    margin: 0 0 0 4%;
-    top: 11%;
-    
+.cabecalho {
+    align-items: center;    
     background: $color-background;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    .cabecalho__logo {
-        display: grid;
-        align-items: end;
+    height: 5%;
+    margin: 0 0 0 4%;
+    width: 90%;
+}
+.cabecalho__logo {
+    align-items: end;
+    display: grid;
+}
+.logo__titulo {            
+    font-family: $font;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 73%;
+    margin-block-end: 0%;
+}
     
-        .logo__titulo {
-            
-            font-family: $font;
-            font-size: 3rem;
-            font-weight: 400;
-            line-height: 150%;
-        }
-    
-        .logo__texto {
-            font-family: $font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2em;
-            justify-self: end;
-            margin-top: -13%;
-                
-        }    
-    }
-    .cabecalho__vetor {
-        margin: 0 5% 0 0;
-    }
+.logo__texto {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    justify-self: end;
+    margin-top: auto;
+}
+.cabecalho__vetor {
+    margin: 0 5% 0 0;
 }
