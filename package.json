@@ -23,7 +23,7 @@
   "homepage": "https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo#readme",
   "devDependencies": {
     "concurrently": "^7.1.0",
-    "live-server": "^1.2.1",
+    "live-server": "^1.1.0",
     "nodemon": "^2.0.15",
     "sass": "^1.49.9",
     "typescript": "^4.6.3"

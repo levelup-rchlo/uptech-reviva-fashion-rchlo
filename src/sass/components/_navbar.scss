@@ -13,15 +13,13 @@
     display: flex;
     justify-content: space-evenly;
 }
-.menu__item {
+.menu__link {
+    color: $color-text-destaque;
     font-weight: 400;
     font-size: 2.8em;
     line-height: 10vh;
     list-style-type: none;        
-    top: 4vh;
     justify-content: space-between;
-}
-.menu__link {
-    color: $color-text-destaque;
     text-decoration: none;
+    top: 4vh;
 }        

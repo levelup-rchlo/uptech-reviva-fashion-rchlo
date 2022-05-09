@@ -32,7 +32,7 @@ html, body {
   display: grid;
 }
 
-.logo__titulo {
+.cabecalho__logo__titulo {
   font-family: Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -41,7 +41,7 @@ html, body {
           margin-block-end: 0%;
 }
 
-.logo__texto {
+.cabecalho__logo__texto {
   font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -77,20 +77,17 @@ html, body {
           justify-content: space-evenly;
 }
 
-.menu__item {
+.menu__link {
+  color: #f3eded;
   font-weight: 400;
   font-size: 2.8em;
   line-height: 10vh;
   list-style-type: none;
-  top: 4vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu__link {
-  color: #f3eded;
   text-decoration: none;
+  top: 4vh;
 }
 
 /*Form*/
@@ -99,7 +96,7 @@ html, body {
   display: grid;
 }
 
-.pesquisar {
+.formulario__pesquisar {
   border: 1px solid #C4C4C4;
   font-size: 2.5em;
   height: 128%;
@@ -108,7 +105,7 @@ html, body {
   width: 85%;
 }
 
-.botao__pesquisa {
+.formulario__botao__pesquisa {
   border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -119,7 +116,7 @@ html, body {
   width: 6%;
 }
 
-.botao__pesquisa svg {
+.formulario__botao__pesquisa svg {
   color: #ffffff;
   bottom: -0.01%;
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);

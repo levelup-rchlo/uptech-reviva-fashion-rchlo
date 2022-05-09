@@ -8,29 +8,28 @@
     width: 90%;
 }
 
-.detalhes__imagem {
+.detalhes__produto__imagem {
     @include border__img;
 
     height: 90%;
     width: 80%;        
 }
-.detalhes__imagem__destaque {
+.detalhes__produto__imagem__destaque {
     height: 95%;
     margin: 2%;
     width: 95%;
 }
 
-.detalhes__conteudo {
+.detalhes__produto__conteudo {
     width: 100%;
-}             
-
-.detalhes__titulo {
-    color: $color_text;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
+    .detalhes__produto__conteudo__titulo {
+        color: $color_text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20em;
+    }
 }
-.detalhes__descericao {
+.detalhes__produto__conteudo__descericao {
     color: $color_text;
     font-style: normal;
     font-weight: 400;

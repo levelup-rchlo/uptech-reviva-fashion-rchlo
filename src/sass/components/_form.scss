@@ -4,7 +4,7 @@
 .formulario {
     display: grid;
 }
-.pesquisar {
+.formulario__pesquisar {
     border: 1px solid $color_border;
     font-size: 2.5em;
     height: 128%;
@@ -12,7 +12,7 @@
     top: 40%;
     width: 85%;
 }
-.botao__pesquisa {
+.formulario__botao__pesquisa {
     @include border__pesquisa;
     background: $color_text;
     height: 130%;
