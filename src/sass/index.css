@@ -293,6 +293,73 @@ html *, body * {
   margin-top: 1%;
 }
 
+.blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  height: 100%;
+  margin: 0 0 0 4%;
+}
+
+.blog__titulo {
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 83%;
+}
+
+.blog__imagem__principal {
+  margin: 0%;
+}
+
+.blog__imagem__principal__tamanho {
+  height: 63vh;
+  width: 37vw;
+}
+
+.blog__texto__principal {
+  color: #000000;
+  font-weight: 400;
+  font-size: 2.3em;
+  width: 80%;
+}
+
+.blog__conteudo {
+  margin-top: 12%;
+  width: 100%;
+}
+
+.blog__secundario, .blog__terciario {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.blog__imagem__secundaria, .blog__imagem__terciaria {
+  margin: 0%;
+  width: 78%;
+}
+
+.blog__imagem__secundaria__tamanho, .blog__imagem__terciaria__tamanho {
+  height: 40vh;
+  width: 20vw;
+}
+
+.blog__texto__secudario, .blog__texto__terceiro {
+  color: #000000;
+  font-size: 2.5em;
+  margin: 0%;
+}
+
+.blog__terciario {
+  margin-top: 4%;
+}
+
 .rodape {
   background: #151515;
   margin-top: 5%;

@@ -1,1 +1,64 @@
 @import '../abstract/variaveis';
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    height: 100%;
+    margin: 0 0 0 4%;
+}
+.blog__titulo {
+    color: $color-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 83%;
+}
+.blog__imagem__principal {
+    margin: 0%;
+}
+.blog__imagem__principal__tamanho {
+    height: 63vh;
+    width: 37vw;
+}
+.blog__texto__principal {
+    color: $color-text;
+    font-weight: 400;
+    font-size: 2.3em;
+    width: 80%;
+}
+.blog__conteudo {
+    margin-top: 12%;
+    width: 100%;
+}
+.blog__secundario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+.blog__imagem__secundaria {
+    margin: 0%;
+    width: 78%;
+}
+.blog__imagem__secundaria__tamanho {
+    height: 40vh;
+    width: 20vw;
+}
+.blog__texto__secudario {
+    color: $color-text;
+    font-size: 2.5em;
+    margin: 0%;    
+}
+.blog__terciario {
+    @extend .blog__secundario;
+    margin-top: 4%;
+}
+.blog__imagem__terciaria {
+    @extend .blog__imagem__secundaria;
+}
+.blog__imagem__terciaria__tamanho {
+    @extend .blog__imagem__secundaria__tamanho;
+}
+.blog__texto__terceiro {
+    @extend .blog__texto__secudario;
+}
