@@ -53,11 +53,15 @@ html, body {
 
 .cabecalho__vetor {
   margin: 0 5% 0 0;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15%;
 }
 
 /*Menu*/
 .menu {
-  background: #000000;
+  background: #151515;
   height: 10vh;
   left: 0px;
   top: 23%;
@@ -77,6 +81,7 @@ html, body {
   font-weight: 400;
   font-size: 2.8em;
   line-height: 10vh;
+  list-style-type: none;
   top: 4vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -84,7 +89,7 @@ html, body {
 }
 
 .menu__link {
-  color: #ffffff;
+  color: #f3eded;
   text-decoration: none;
 }
 
@@ -104,6 +109,10 @@ html, body {
 }
 
 .botao__pesquisa {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1vh;
   background: #000000;
   height: 130%;
   margin: -1.6% 0 0 91%;
@@ -170,13 +179,14 @@ html, body {
 .botao__tamanho {
   width: 15%;
   height: 5vh;
-  border: 1px solid #000000;
+  border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 15%;
 }
 
 .produto__preco {
-  color: #666666;
+  color: #fa3939;
   font-weight: bold;
   font-size: 3em;
   line-height: 0%;
@@ -196,11 +206,11 @@ html, body {
 .quantidade__botao {
   background-color: #ffffff;
   border: none;
-  color: #666666;
+  color: #fa3939;
 }
 
 .quantidade__valor {
-  color: #666666;
+  color: #fa3939;
   font-weight: bold;
   font-size: 3em;
   margin-top: 5%;
@@ -236,27 +246,28 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  background: #000000;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.7rem;
+  background: #1C7947;
+  border-radius: 1vh;
+  border: 1px solid #C4C4C4;
+  color: #f3eded;
   display: -ms-grid;
   display: grid;
+  font-weight: bold;
+  font-size: 1.7rem;
   height: 3vw;
   line-height: 6vh;
   width: 90%;
 }
 
 .rodape {
-  background: #000000;
+  background: #151515;
   margin-top: 5%;
   height: 20%;
   width: 100%;
 }
 
 .rodape p a {
-  color: #ffffff;
+  color: #f3eded;
 }
 
 .rodape__logo {
@@ -266,7 +277,7 @@ html, body {
 }
 
 .rodape__logo .logo__titulo {
-  color: #ffffff;
+  color: #f3eded;
   font-family: Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -277,7 +288,7 @@ html, body {
 .rodape__logo .logo__texto {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #ffffff;
+  color: #f3eded;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,38 +309,39 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
   margin: 0 4% 0 4%;
+  max-width: 100%;
 }
 
 h4 {
-  color: #ffffff;
-  line-height: 1.5rem;
+  color: #f3eded;
   font-weight: bold;
   font-size: 2.2em;
+  line-height: 1.5rem;
 }
 
 .rodape__itens__menu {
   font-weight: normal;
   font-size: 1.8em;
   line-height: 197%;
+  list-style-type: none;
 }
 
 .rodape__itens__menu a {
-  color: #ffffff;
+  color: #f3eded;
   text-decoration: none;
 }
 
 .rodape__link__redeSociais {
-  text-align: center;
   margin-top: 1%;
+  text-align: center;
 }
 
 .contato {
-  color: #ffffff;
-  line-height: 197%;
+  color: #f3eded;
   font-weight: normal;
   font-size: 1.8em;
+  line-height: 197%;
 }
 
 .contato svg {
@@ -343,7 +355,7 @@ h4 {
 }
 
 .rodape__newsletter {
-  background: #ffffff;
+  background: #f3eded;
   border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

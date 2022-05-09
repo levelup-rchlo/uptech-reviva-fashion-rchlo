@@ -9,8 +9,7 @@
     width: 90%;
 }
 .minha__sacola__imagem {
-    border: 1px solid $color-border;
-    box-sizing: border-box;
+    @include border__img;
     height: 95%;
     width: 100%;
 }
@@ -43,8 +42,7 @@
     width: 15%;
     height: 5vh;
 
-    border: 1px solid $color-text;
-    box-sizing: border-box;
+    @include border__tamanho;
 }
 .produto__preco {
     color: $color-preco;
@@ -93,15 +91,7 @@
     margin-left: 10%;
 }
 .botao__produto__pagamento {
-    align-items: center;
-    text-align: center;
-    background: $color-background-destaque;
-    color: $color-text-destaque;
-    font-weight: bold;
-    font-size: 1.7rem;
-    display: grid; 
-    height: 3vw;
-    line-height: 6vh;
+    @include button__sacola;
     width: 90%;
 }
 .minha__sacola__imagem2 {

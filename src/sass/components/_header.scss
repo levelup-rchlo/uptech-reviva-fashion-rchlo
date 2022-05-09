@@ -33,4 +33,5 @@
 }
 .cabecalho__vetor {
     margin: 0 5% 0 0;
+    @include border__tamanho;
 }

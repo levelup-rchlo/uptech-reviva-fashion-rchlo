@@ -13,21 +13,20 @@
 }
 .sugestao__compra__conteudo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10em;
+    grid-template-columns: repeat(4, 1fr);
     max-width: 95%;
 }
 .sugestao__compra__imagem {
     flex: 1 1 2%;
 }
 .sugestao__compra__imagem__borda {
-    border: 1px solid $color-border;
-    box-sizing: border-box;
+    @include border__img;
 
     display: grid;
 
-    width: 105%;
     height: 300px;
+    width: 105%;
 }
 .sugestao__compra__imagem__tamanhos {
     height: 208px;
@@ -41,8 +40,7 @@
     width: 100%;
 }
 .botao__tamanho {
-    border: 1px solid $color-text;
-    box-sizing: border-box;
+    @include border__tamanho;
     grid-column: 1;
     height: 2.3vw;
     margin:  1%;
@@ -65,18 +63,9 @@
     margin-top: -9%;
 }
 .sugestao__compra__botao__compra {
-    align-items: center;
-    background: $color-background-destaque;
-    color: $color-text-destaque;
-    font-weight: bold;
-    font-size: 1.7rem;
-    display: grid; 
-    height: 3vw;
-    line-height: 6vh;
+    @include button__sacola;
     width: 100%;
 }
 .sugestao__compra__botao__svg {
-    margin-top: -35px;
-    display: flex;    
-    justify-content: flex-end;
+    @include button__svg__sacola;
 }

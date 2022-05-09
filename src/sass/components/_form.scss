@@ -13,6 +13,7 @@
     width: 85%;
 }
 .botao__pesquisa {
+    @include border__pesquisa;
     background: $color_text;
     height: 130%;
     margin: -1.6% 0 0 91%;

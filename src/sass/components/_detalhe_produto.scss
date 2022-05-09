@@ -9,8 +9,7 @@
 }
 
 .detalhes__imagem {
-    border: 1px solid $color-border;
-    box-sizing: border-box;
+    @include border__img;
 
     height: 90%;
     width: 80%;        
@@ -47,8 +46,7 @@
     @extend .detalhes__conteudo;
 }
 .detalhes__imagem__borda {
-    border: 1px solid $color-border;
-    box-sizing: border-box;
+    @include border__img;
     height: 15%;
     padding: 1%;           
     width: 24%;
@@ -63,8 +61,7 @@
     margin: 10% 0 0 0;
     @extend .detalhes__conteudo;
         .botao__tamanho {
-            border: 1px solid $color-text;
-            box-sizing: border-box;
+            @include border__tamanho;
             height: 2.3vw;
             grid-column: 1;
             margin:  1%;
@@ -73,18 +70,9 @@
         }
 }
 .botao__compra{
-    align-items: center;
-    background: $color-background-destaque;
-    color: $color-text-destaque;
-    display: grid; 
-    font-weight: bold;
-    font-size: 1.7rem;
-    height: 3vw;
-    line-height: 6vh;
+    @include button__sacola;
     width: 40%;
 }    
 .iamgem__svg {
-    place-self: end;
-    margin-top: 3%;
-    min-block-size: fit-content;
+    @include button__svg__sacola;
 }

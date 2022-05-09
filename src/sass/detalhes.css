@@ -53,11 +53,15 @@ html, body {
 
 .cabecalho__vetor {
   margin: 0 5% 0 0;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15%;
 }
 
 /*Menu*/
 .menu {
-  background: #000000;
+  background: #151515;
   height: 10vh;
   left: 0px;
   top: 23%;
@@ -77,6 +81,7 @@ html, body {
   font-weight: 400;
   font-size: 2.8em;
   line-height: 10vh;
+  list-style-type: none;
   top: 4vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -84,7 +89,7 @@ html, body {
 }
 
 .menu__link {
-  color: #ffffff;
+  color: #f3eded;
   text-decoration: none;
 }
 
@@ -104,6 +109,10 @@ html, body {
 }
 
 .botao__pesquisa {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1vh;
   background: #000000;
   height: 130%;
   margin: -1.6% 0 0 91%;
@@ -199,9 +208,10 @@ html, body {
 }
 
 .imagem__botao .botao__tamanho {
-  border: 1px solid #000000;
+  border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 15%;
   height: 2.3vw;
   -ms-grid-column: 1;
   grid-column: 1;
@@ -214,8 +224,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000000;
-  color: #ffffff;
+  background: #1C7947;
+  border-radius: 1vh;
+  border: 1px solid #C4C4C4;
+  color: #f3eded;
   display: -ms-grid;
   display: grid;
   font-weight: bold;
@@ -234,7 +246,7 @@ html, body {
 }
 
 .banner {
-  background: #000000;
+  background: #151515;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -250,7 +262,7 @@ html, body {
 }
 
 .banner__conteudo .banner__conteudo__texto, .banner__conteudo .banner__conteudo__titulo {
-  color: #ffffff;
+  color: #f3eded;
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
@@ -276,7 +288,7 @@ html, body {
 }
 
 .banner__logo .logo__titulo {
-  color: #ffffff;
+  color: #f3eded;
   font-family: Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -286,7 +298,7 @@ html, body {
 }
 
 .banner__logo .logo__texto {
-  color: #ffffff;
+  color: #f3eded;
   font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -311,9 +323,9 @@ html, body {
 .sugestao__compra__conteudo {
   display: -ms-grid;
   display: grid;
+  gap: 10em;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 10em;
   max-width: 95%;
 }
 
@@ -329,8 +341,8 @@ html, body {
           box-sizing: border-box;
   display: -ms-grid;
   display: grid;
-  width: 105%;
   height: 300px;
+  width: 105%;
 }
 
 .sugestao__compra__imagem__tamanhos {
@@ -353,9 +365,10 @@ html, body {
 }
 
 .botao__tamanho {
-  border: 1px solid #000000;
+  border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 15%;
   -ms-grid-column: 1;
   grid-column: 1;
   height: 2.3vw;
@@ -372,7 +385,7 @@ html, body {
 }
 
 .sugestao__compra__preco {
-  color: #666666;
+  color: #fa3939;
   font-weight: bold;
   font-size: 4em;
   line-height: 0%;
@@ -385,36 +398,36 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000000;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.7rem;
+  background: #1C7947;
+  border-radius: 1vh;
+  border: 1px solid #C4C4C4;
+  color: #f3eded;
   display: -ms-grid;
   display: grid;
+  font-weight: bold;
+  font-size: 1.7rem;
   height: 3vw;
   line-height: 6vh;
   width: 100%;
 }
 
 .sugestao__compra__botao__svg {
-  margin-top: -35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  place-self: end;
+  margin-top: 3%;
+  min-block-size: -webkit-fit-content;
+  min-block-size: -moz-fit-content;
+  min-block-size: fit-content;
 }
 
 .rodape {
-  background: #000000;
+  background: #151515;
   margin-top: 5%;
   height: 20%;
   width: 100%;
 }
 
 .rodape p a {
-  color: #ffffff;
+  color: #f3eded;
 }
 
 .rodape__logo {
@@ -424,7 +437,7 @@ html, body {
 }
 
 .rodape__logo .logo__titulo {
-  color: #ffffff;
+  color: #f3eded;
   font-family: Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -435,7 +448,7 @@ html, body {
 .rodape__logo .logo__texto {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #ffffff;
+  color: #f3eded;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,38 +469,39 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
   margin: 0 4% 0 4%;
+  max-width: 100%;
 }
 
 h4 {
-  color: #ffffff;
-  line-height: 1.5rem;
+  color: #f3eded;
   font-weight: bold;
   font-size: 2.2em;
+  line-height: 1.5rem;
 }
 
 .rodape__itens__menu {
   font-weight: normal;
   font-size: 1.8em;
   line-height: 197%;
+  list-style-type: none;
 }
 
 .rodape__itens__menu a {
-  color: #ffffff;
+  color: #f3eded;
   text-decoration: none;
 }
 
 .rodape__link__redeSociais {
-  text-align: center;
   margin-top: 1%;
+  text-align: center;
 }
 
 .contato {
-  color: #ffffff;
-  line-height: 197%;
+  color: #f3eded;
   font-weight: normal;
   font-size: 1.8em;
+  line-height: 197%;
 }
 
 .contato svg {
@@ -501,7 +515,7 @@ h4 {
 }
 
 .rodape__newsletter {
-  background: #ffffff;
+  background: #f3eded;
   border: 1px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

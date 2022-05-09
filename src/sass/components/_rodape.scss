@@ -35,19 +35,20 @@
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
     margin: 0 4% 0 4%;
+    max-width: 100%;
 }
 h4 {
     color: $color-text-destaque;
-    line-height: 1.5rem;
     font-weight: bold;
     font-size: 2.2em;
+    line-height: 1.5rem;
 }
 .rodape__itens__menu {
     font-weight: normal;
     font-size: 1.8em;
     line-height: 197%;
+    list-style-type: none;
     a {
         color: $color-text-destaque;
         text-decoration: none;
@@ -55,14 +56,14 @@ h4 {
     
 }
 .rodape__link__redeSociais {
-    text-align: center;
     margin-top: 1%;
+    text-align: center;
 }
 .contato {
     color: $color-text-destaque;
-    line-height: 197%;
     font-weight: normal;
     font-size: 1.8em;
+    line-height: 197%;
     svg{
         height: 15%;
         margin-left: 7%;

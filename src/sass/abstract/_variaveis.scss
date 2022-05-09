@@ -6,6 +6,45 @@ $font: Helvetica, sans-serif;
 $color-background: #ffffff;
 $color-text: #000000;
 $color-border: #C4C4C4;
-$color-background-destaque: #000000;
-$color-text-destaque: #ffffff;
-$color-preco: #666666;
+$color-background-destaque: #151515;
+$color-text-destaque: #f3eded;
+$color-preco: #fa3939;
+$color-background-button: #1C7947;
+
+//mixins
+@mixin border__pesquisa {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    border-radius: 1vh;
+}
+
+@mixin border__img {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+}
+
+@mixin border__tamanho {
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    border-radius: 15%;
+}
+
+@mixin button__sacola {
+    align-items: center;
+    background: $color-background-button;
+    border-radius: 1vh;
+    border: 1px solid $color-border;
+    
+
+    color: $color-text-destaque;
+    display: grid; 
+    font-weight: bold;
+    font-size: 1.7rem;
+    height: 3vw;
+    line-height: 6vh;
+}
+@mixin button__svg__sacola {
+    place-self: end;
+    margin-top: 3%;
+    min-block-size: fit-content;
+}
