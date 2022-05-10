@@ -78,21 +78,19 @@
 
                         <div class="price">
                             <h3>Valor</h3>
-                            <p class="item-price ">R$ 39,90</p>
+                            <p class="item-price" id="undValue">R$ 39,90</p>
                         </div>
 
                         <div class="quantity">
                             <h3>Quantidade</h3>
                             <form id='myform' class='quantity__form' action='#'>
-                                <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                                <input type='text' name='quantity' value='1' class='qty' />
-                                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                                <input type='number' name='quantity' value='2' class='qty' id="qntd" onchange="totalCalculator(document.querySelector('#qntd').value, document.querySelector('#undValue').innerHTML) ; updateCart(document.querySelector('#qntd').value)" />
                             </form>
                         </div>
 
                         <div class="subtotal">
                             <h3>Subtotal</h3>
-                            <p class="subtotal__value ">R$ 39,90</p>
+                            <label class="subtotal__value " id="total">R$ 39,90</label>
                         </div>
 
                     </div>
@@ -121,21 +119,19 @@
 
                         <div class="price">
                             <h3>Valor</h3>
-                            <p class="item-price ">R$ 39,90</p>
+                            <p class="item-price " id="undValue2">R$ 39,90</p>
                         </div>
 
                         <div class="quantity">
                             <h3>Quantidade</h3>
-                            <form id='myform' class='quantity' action='#'>
-                                <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                                <input type='text' name='quantity' value='1' class='qty' />
-                                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                            <form id='myform' class='quantity__form' action='#'>
+                                <input type='number' name='quantity' value='2' class='qty' id="qntd2" onchange="totalCalculator2(document.querySelector('#qntd2').value, document.querySelector('#undValue2').innerHTML) ; updateCart2(document.querySelector('#qntd2').value)" />
                             </form>
                         </div>
 
                         <div class="subtotal">
                             <h3>Subtotal</h3>
-                            <p class="subtotal__value ">R$ 39,90</p>
+                            <label class="subtotal__value " id="total2">R$ 39,90</label>
                         </div>
 
                     </div>
@@ -150,17 +146,19 @@
 
                         </div>
                         <div class="subtotal__values">
-                            <p>1x 39,90 = 39,90</p>
-                            <p>2x 59,90 = 119,80</p>
+                            <label for="quantity" id="qntdPayment1"> a</label>
+                            <label for="quantity" id="qntdPayment2"> b</label>
                         </div>
 
-                        <button>ir para pagamento</button>
+                        <button class="payment__button">ir para pagamento</button>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+
 
     <footer>
         <div class="footer__header-wrapper ">
@@ -221,7 +219,10 @@
 
 
     </footer>
-
+    <script src="./js/totalCalculator.js"></script>
+    <script src="./js/totalCalculator2.js"></script>
+    <script src="./js/updateCart.js"></script>
+    <script src="./js/updateCart2.js"></script>
 </body>
 
 </html>
