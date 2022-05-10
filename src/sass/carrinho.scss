@@ -23,7 +23,8 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    margin: 1rem;
+    margin: 2rem;
+    padding-left: 1rem;
     font-weight: bold;
 }
 
@@ -108,75 +109,37 @@ main {
 }
 
 
-/*----------------------------------------*/
-
-.product-details__wrapper {
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.product-details__wrapper {
-    display: flex;
-}
-
-.product-details__image {
-    margin-right: 1rem;
-}
-
-.product-details__side-infos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.product-details__description,
-.product-details__description__name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.product-details__description p {
-    margin: 0.5rem 0;
-}
-
-.product-details__price {
-    font-weight: bold;
-    color: chocolate;
-    align-self: center;
-}
-
-.thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 3rem;
-}
-
-
 /*-------------------------------------------*/
 
-.related-products {
-    margin: 1.5rem;
+.cart-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0 2rem 0 3rem;
 }
 
-.related-products__item {
-    border: 1px solid #C4C4C4;
-    border: none;
-}
-
-.related-products__sizes {
+.item-info {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
-.related-products__size {
+.item-image,
+.item-text,
+.sizes,
+.price,
+.quantity,
+.subtotal {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+}
+
+.products__sizes {
+    display: flex;
+}
+
+.products__size {
     margin: 0.5rem 0 0.5rem 0.5rem;
     padding: 0.3rem;
     border: 1px solid #C4C4C4;
@@ -185,16 +148,11 @@ main {
 .item-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .item-price {
     font-weight: bold;
     color: chocolate;
-}
-
-.item-text p {
-    margin: 0.5rem 0;
 }
 
 .add-to-bag-button {
@@ -252,37 +210,6 @@ main {
     background-color: blue;
     justify-content: center;
     transform: rotateY(180deg);
-}
-
-
-/*-------------------------------------*/
-
-.banner__wrap {
-    background-color: #D6BBA3;
-    margin: 1.5rem;
-}
-
-.banner__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 3rem;
-}
-
-.banner__text-bottom {
-    display: flex;
-}
-
-.banner__text-brand {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.banner__text-brand h1,
-p {
-    display: flex;
-    justify-content: flex-end;
 }
 
 
