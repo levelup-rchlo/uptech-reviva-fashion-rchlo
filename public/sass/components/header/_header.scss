@@ -1,0 +1,39 @@
+@import '../../assets/var';
+@import '../logo/logo';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $quaternary-color;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2%;
+    
+}
+
+.header__logo{
+    @extend %expand; 
+}
+
+.header__button{
+    background: url(../../../images/shopping-bag.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: transparent;
+    width: 32px;
+    height: 32px;
+    display: block;
+
+}
+
+
+@media(max-width:760px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar li {
+        padding: 1%;
+    }
+}

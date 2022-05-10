@@ -1,0 +1,10 @@
+@import '../../assets/var';
+
+.review{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) repeat(4,0.5fr) 2fr;
+    grid-template-rows: repeat(2,2fr);
+    row-gap: 5%;
+    grid-template-areas: "product__image--top  product__name--top   product__size--top  product__value--top  product__amount--top  product__total--top  product__dashboard--top"
+                         "product__image--bottom product__name--bottom product__size--bottom product__value--bottom product__amount--bottom product__total--bottom product__dashboard--bottom";
+}

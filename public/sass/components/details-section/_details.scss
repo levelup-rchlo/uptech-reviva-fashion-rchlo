@@ -19,8 +19,9 @@
 
 }
 
+
+
 .details {
-    @include visualizer();
     height: auto;
     width: 100%;
     padding: 2%;
@@ -31,6 +32,13 @@
         width: auto;
         height: 29em;
         justify-content: center;
+
+        &:hover {
+            transform: scale(0.97);
+            transition: 0.5s all;
+            border-left: 1px solid rgba(#00000023, 0.9);
+            border-right: 1px solid rgba(#00000023, 0.9);
+        }
     }
 
     &__info {
@@ -40,48 +48,101 @@
 
         h1,
         p {
-            padding: 1%
+            padding: 0 1% 0 1%;
+            margin-bottom: 5px;
+            margin-top: 0;
         }
     }
+
+    @media screen and (max-width:845px) {
+        display: block;
+    }
+
 }
 
 .details__grid {
-    @include visualizer();
     display: grid;
     width: 100%;
+    box-sizing: border-box;
     grid-template-columns: repeat(4, 0.5fr);
     grid-template-rows: 1fr 0.5fr;
     column-gap: 5%;
     padding: 1%;
     grid-template-areas: "details__visualize--1 details__visualize--2 details__visualize--3 details__visualize--4"
-        "details__button--size           .                    .                     . "
+        "details__button--size           .                    .                     ."
         " details__button--cart   details__button--cart       .                     .";
+
+    @media screen and (max-width:1278px) {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+        row-gap: 3%;
+        margin-left: 35px;
+        grid-template-areas:
+            "details__visualize--1 details__visualize--2 "
+            "details__visualize--3 details__visualize--4"
+            "details__button--size . "
+            "details__button--cart details__button--cart";
+
+    }
+   
+    @media screen and (max-width:520px) {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 1fr;
+        row-gap: 3%;
+        grid-template-areas:
+            "details__visualize--1"
+            "details__visualize--3"
+            "details__visualize--2"
+            " details__visualize--4"
+            "details__button--size"
+            "details__button--cart";
+
+    }
+
+   
 }
 
 //tentar refatorar
 .details__visualize--1 {
 
     @include img(small);
-
     grid-area: details__visualize--1;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
 }
 
 .details__visualize--2 {
     @include img(small);
 
     grid-area: details__visualize--2;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
 }
 
 .details__visualize--3 {
     @include img(small);
 
     grid-area: details__visualize--3;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
 }
 
 .details__visualize--4 {
     @include img(small);
 
     grid-area: details__visualize--4;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
 }
 
 //tentar refatorar @for?
@@ -94,28 +155,58 @@
     align-items: flex-start;
     font-weight: $font-weight-text;
     margin-top: 30%;
+    border: none;
 
-    button{
+
+    button {
         background-color: white;
+        border-radius: 4px;
         opacity: 70%;
+        font-weight: 300;
+
     }
-    &:hover button{
+
+    &:hover button {
         cursor: pointer;
-        background-color:black;
+        background-color: $tertiary-color;
         color: white;
     }
 }
 
 .details__button--cart {
-    grid-area: details__button--cart;
     border: none;
-    background-color: $quaternary-color;
+    border-radius: 20px;
+    background: url(../../../images/shopping-bag\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: $tertiary-color;
     border: 1px solid black;
+    display: grid;
+    grid-area: details__button--cart;
     padding: 2%;
     text-transform: uppercase;
     text-align: center;
-        &:hover{
-            cursor: pointer;
-            color: white;
-        }
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.details__button--size {
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & label {
+        color: transparent;
+    }
+
+}
+
+.details__model{
+    @media screen and (max-width: 845px){
+        text-align: center;
+    }
 }

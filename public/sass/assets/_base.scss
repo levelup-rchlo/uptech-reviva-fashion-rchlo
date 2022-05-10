@@ -3,3 +3,8 @@
 body {
     font-family: $font-family-page;
 }
+
+body,html{
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+}

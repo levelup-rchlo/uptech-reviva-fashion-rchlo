@@ -1,0 +1,147 @@
+@import '../../assets/var';
+@import '../logo/logo';
+
+.footer {
+    background-color: $quaternary-color;
+    font-size: $font-size-text;
+
+    & li {
+        margin-top: 12px;
+    }
+}
+
+
+.footer__infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.5fr;
+    grid-template-rows: 280px;
+    padding: 1%;
+
+    & ul li:first-child {
+        font-weight: $font-weight-title;
+        margin-bottom: 20px;
+    }
+
+    &--menu,
+    &--networks,
+    &--contact,
+    &--newsletter {
+        list-style: none;
+    }
+
+    .footer__icons {
+
+        &--medias {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        &--contact {
+            display: flex;
+            align-items: center;
+
+            & img {
+                margin-left: 20%;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+    }
+}
+
+.footer__input {
+    display: flex;
+    justify-content: center;
+
+    & input {
+        width: 280px;
+        height: 32px;
+        margin-right: 20px;
+    }
+
+    & button {
+        width: 160px;
+        height: 38px;
+        background-color: $tertiary-color;
+        border: none;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.footer__logo {
+    @extend %expand;
+    width: 318px;
+}
+
+
+
+@media(max-width: 1180px) {
+
+
+    .footer__infos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "menu contact"
+            "networks newsletter";
+    }
+}
+
+
+@media(max-width: 1010px) {
+
+
+
+
+    .footer__infos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "menu"
+            "contact"
+            "networks"
+            "newsletter";
+    }
+
+    .newsletter,
+    .contact,
+    .networks,
+    .menu {
+        justify-self: center;
+    }
+
+    .footer__infos {
+        text-align: center;
+
+
+    }
+
+    .footer__icons--contact {
+
+        justify-content: center;
+
+    }
+}
+
+
+@media(max-width: 510px) {
+
+    .footer__infos {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__input {
+        flex-direction: column;
+        width: auto;
+
+        & button {
+            width: auto;
+        }
+    }
+}
