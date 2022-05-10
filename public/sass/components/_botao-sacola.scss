@@ -1,0 +1,56 @@
+.produto_botao-sacola {
+  grid-area: botao;
+  perspective: 500px;
+
+  &:hover .botao-sacola_conteudo {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.botao-sacola_conteudo {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .5s 1s;
+}
+
+.conteudo_frente-botao {
+  align-items: center;
+  backface-visibility: hidden;
+  background: url(../assets/svg/logo-sacola-branca.svg) $cor-primaria right no-repeat;
+  border: .5em solid transparent;
+  box-shadow: 0 0 15px #0000000a;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.conteudo_costas-botao {
+  background: no-repeat center $cores-detalhes url(../../assets/svg/check-solid.svg);
+  color: $cor-primaria-negativa;
+  transform: rotateY(180deg);
+
+  @extend .conteudo_frente-botao;
+
+  &:focus {
+    background: no-repeat center #008844 url(../../assets/svg/check-solid-branco.svg);
+  }
+}
+
+.botao-sacola {
+  background: none;
+  border: none;
+  color: $cor-primaria-negativa;
+  font-size: 1.4em;
+}

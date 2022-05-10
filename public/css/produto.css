@@ -1,0 +1,191 @@
+.produto {
+  display: grid;
+  grid-template: auto 4em auto 4em/50% 50%;
+  margin: 4.2em 2vw;
+  width: 100%;
+  grid-template-areas: "imagem imagem" "imagem imagem" "detalhes detalhes" "botao botao";
+}
+@media screen and (max-width: 992px) {
+  .produto:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produto:nth-child(4) {
+    display: grid;
+  }
+}
+.produto:nth-child(5) {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .produto:nth-child(5) {
+    margin-right: auto;
+  }
+}
+.produto:nth-child(2) {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .produto:nth-child(2) {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .produto {
+    margin: 4.2em 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produto {
+    margin: 5em auto 0 auto;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .produto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .produtos_titulo {
+    font-size: 1.2em;
+    width: 90%;
+  }
+}
+
+.produto_link-imagem {
+  background-color: #ffffff;
+  grid-area: imagem;
+}
+.produto_link-imagem img {
+  border: solid 1px #c4c4c4;
+  box-sizing: border-box;
+  padding: 0.2em;
+}
+
+.produto_imagem {
+  height: 100%;
+  width: 100%;
+}
+
+.produto_tamanhos {
+  display: flex;
+  font-size: 1.8em;
+  font-weight: 800;
+  grid-area: 2/1/3/3;
+  justify-content: space-around;
+  justify-self: flex-end;
+  margin: 0 0.5em;
+  padding: 0;
+  text-align: center;
+}
+
+.tamanhos_input {
+  display: none;
+}
+.tamanhos_input:checked + .tamanhos_label {
+  background-color: black;
+  border: solid 1px #C4C4C4;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.tamanhos_label {
+  background-color: rgba(255, 255, 255, 0.6784313725);
+  border-radius: 0.3em;
+  border: solid 1px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 1.5em;
+  margin: 0.2em;
+  padding-top: 0.1em;
+  text-align: center;
+  width: 1.5em;
+}
+.tamanhos_label:hover {
+  background-color: #e6e6e6;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2666666667);
+  cursor: pointer;
+}
+
+.produtos_especificacoes {
+  color: inherit;
+  font-size: 1.8em;
+  grid-area: detalhes;
+  text-decoration: none;
+}
+
+.especificacoes_nome {
+  font-weight: 400;
+  height: 3.5em;
+  margin: 0.3em 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .especificacoes_nome {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .especificacoes_nome {
+    font-size: 0.8em;
+  }
+}
+
+.especificacoes_valor {
+  font-family: "Franklin Gothic Medium";
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 0.5em 0;
+}
+
+.produto_botao-sacola {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  perspective: 500px;
+}
+
+.botao-sacola_conteudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.botao-sacola_conteudo {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+
+.produto_botao-sacola:hover .botao-sacola_conteudo {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.conteudo_frente-botao,
+.conteudo_costas-botao {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo_costas-botao {
+  background: #03446A;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.s {
+  background-color: red;
+}
+
+/*# sourceMappingURL=produto.css.map */

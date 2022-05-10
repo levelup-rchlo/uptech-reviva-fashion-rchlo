@@ -1,19 +1,23 @@
 @import "../abstract/variaveis";
+@import "../abstract/base";
 
 $font-size-carrinho: 1.2em;
 .conteudo {
     position: relative;
 }
+
 .conteudo_carrinho {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
-    @media screen and(max-width: 992px) {
+
+    @media screen and(max-width: $large) {
         width: 100%;
     }
-    @media screen and(max-width: 768px) {
+
+    @media screen and(max-width: $medium) {
         justify-content: flex-start;
     }
 }
@@ -30,32 +34,35 @@ $font-size-carrinho: 1.2em;
     grid-template-columns: 15% 20% 20% 10% 15% 10%;
     grid-template-rows: auto 20em;
     height: 22em;
+    @include bordas-imagens;
     grid-template-areas:
         "imagem descricao tamanhos valor quantidade subtotal";
-        @media screen and(max-width: 768px) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas:
-        "imagem descricao"
-        "imagem tamanhos"
-        "imagem valor"
-        "imagem quantidade"
-        "imagem subtotal";
-            height: auto;
-            margin: 1em 0;
-        }
-        @media screen and(max-width: 576px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto auto;
-            grid-template-areas:
-        "imagem "
-        "descricao "
-        "tamanhos "
-        "valor "
-        "quantidade"
-        "subtotal";
+
+    @media screen and(max-width: $medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "imagem descricao"
+            "imagem tamanhos"
+            "imagem valor"
+            "imagem quantidade"
+            "imagem subtotal";
+        height: auto;
+        margin: 1em 0;
+    }
+
+    @media screen and(max-width: $small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "imagem "
+            "descricao "
+            "tamanhos "
+            "valor "
+            "quantidade"
+            "subtotal";
         row-gap: 1em;
-        }
+    }
 }
 
 .produto_imagem {
@@ -87,7 +94,7 @@ $font-size-carrinho: 1.2em;
 
 .tamanho-label-sacola {
     font-size: $font-size-carrinho;
-    text-align: center;
+    @extend .tamanhos_label;
 }
 
 .produto_valor {
@@ -105,14 +112,14 @@ $font-size-carrinho: 1.2em;
 }
 
 .produto_quantidade {
-    font-size: $font-size-carrinho;
-    grid-area: quantidade;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    @media screen and(max-width: 768px) {
+    font-size: $font-size-carrinho;
+    grid-area: quantidade;
+
+    @media screen and(max-width: $medium) {
         align-items: flex-start;
-       
     }
 }
 
@@ -121,11 +128,11 @@ $font-size-carrinho: 1.2em;
 }
 
 .quantidade {
+    border-radius: .3em;
+    border: 1px solid;
     margin: .2em 0;
     text-align: center;
     width: 3em;
-    border-radius: .3em;
-    border: 1px solid
 }
 
 .produto_subtotal {
@@ -145,7 +152,7 @@ $font-size-carrinho: 1.2em;
 .carrinho_checkout {
     background-color: $cor-primaria;
     box-sizing: border-box;
-    color: #ffffff;
+    color: $cor-primaria-negativa;
     display: flex;
     flex-direction: column;
     font-size: 2em;
@@ -158,7 +165,8 @@ $font-size-carrinho: 1.2em;
     right: 0;
     text-align: center;
     width: 20%;
-    @media screen and(max-width: 992px) {
+
+    @media screen and(max-width: $large) {
         margin: 0;
         position: relative;
         width: 100%;
@@ -168,7 +176,8 @@ $font-size-carrinho: 1.2em;
 .checkout_total {
     margin-top: 0;
     word-spacing: 20;
-    @media screen and(max-width: 992px) {
+
+    @media screen and(max-width: $large) {
         font-size: $font-size-carrinho;
     }
 }
@@ -189,7 +198,9 @@ $font-size-carrinho: 1.2em;
     height: auto;
     margin: auto 0 0 0;
     padding: .5em;
+    text-decoration: none;
     width: 100%;
+
     &:hover {
         background-color: $cor-terciaria;
         cursor: pointer;

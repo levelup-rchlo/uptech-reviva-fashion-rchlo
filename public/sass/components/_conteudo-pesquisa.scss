@@ -1,0 +1,47 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.conteudo_pesquisa {
+  display: flex;
+  height: 5em;
+  margin: 1.2em 0;
+}
+
+.pesquisa_campo {
+  border: solid 1px $cores-detalhes;
+  box-sizing: border-box;
+  font-size: 1.8em;
+  padding: 0 1.2em;
+  width: 90%;
+
+  &::placeholder {
+    @media screen and (max-width: $small) {
+      font-size: .8em;
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: 1.5em;
+  }
+
+  @media screen and (max-width: $small) {
+    padding: .2em;
+    width: 100%;
+  }
+}
+
+.pesquisa_botao {
+  background: $cor-primaria center no-repeat url(../assets/svg/logo-pesquisar.svg);
+  border: none;
+  margin-left: .5%;
+  width: 10%;
+
+  &:hover {
+    background-color: $cor-secundaria;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}

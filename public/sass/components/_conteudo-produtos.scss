@@ -1,0 +1,19 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.conteudo_produtos {
+    display: flex;
+    @media screen and (max-width: $medium){
+      flex-wrap: wrap;
+    }
+  }
+  
+  .produtos_titulo {
+    position: absolute;
+  }
+  
+  .produtos_link {
+    color: inherit;
+    font-size: 1.3em;
+    text-decoration: none;
+  }

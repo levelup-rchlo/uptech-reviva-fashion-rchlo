@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/carrinho.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,24 +20,23 @@
             <h1 class="logo_superior">Reviva Fashion</h1>
             <span class="logo_inferior">by RCHLO</span>
         </a>
-        <a href="#"><img class="cabecalho_carrinho" alt="carrinho de compra"
-                src="assets/svg/logo-carrinho-compras.svg"></a>
+        <a href="#" class="cabecalho_carrinho" aria-label="carrinho de compra"></a>
     </header>
     <nav class="menu-navegacao">
         <button class="menu-navegacao_botao">Menu</button>
-        <ul class="menu-navegacao_items">
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Página Inicial</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Masculina</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Feminina</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Infantíl</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Manual de Moda</a></li>
-        </ul>
+        <div class="menu-navegacao_items">
+            <a class="item_link" href="#">Página Inicial</a></li>
+            <a class="item_link" href="#">Moda Masculina</a></li>
+            <a class="item_link" href="#">Moda Feminina</a></li>
+            <a class="item_link" href="#">Moda Infantíl</a></li>
+            <a class="item_link" href="#">Manual de Moda</a></li>
+        </div>
     </nav>
     <main class="conteudo">
         <section class="conteudo_pesquisa">
             <input class="pesquisa_campo" placeholder="Faça sua busca aqui se já souber o que está procurando..."
                 type="text">
-            <button class="pesquisa_botao"></button>
+            <button class="pesquisa_botao" aria-label="Pesquisar"></button>
         </section>
         <section class="conteudo_carrinho">
             <h1 class="carrinho_titulo">Minha Sacola</h1>
@@ -53,11 +51,11 @@
                 <div class="produto_tamanho">
                     <h2 class="tamanho_titulo">Tamanho escolhido</h2>
                     <input type="radio" id="tamanho-p-8" name="tamanhos_modelo-8" class="tamanhos_input">
-                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-p-8">P</label>
+                    <label class="tamanho-label-sacola" for="tamanho-p-8">P</label>
                     <input type="radio" id="tamanho-m-8" name="tamanhos_modelo-8" class="tamanhos_input">
-                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-m-8">M</label>
+                    <label class="tamanho-label-sacola" for="tamanho-m-8">M</label>
                     <input type="radio" id="tamanho-g-8" name="tamanhos_modelo-8" class="tamanhos_input">
-                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-g-8">G</label>
+                    <label class="tamanho-label-sacola" for="tamanho-g-8">G</label>
                 </div>
                 <div class="produto_valor">
                     <h2 class="valor_titulo">Valor</h2>
@@ -105,7 +103,7 @@
                 <p class="checkout_total">Total R$ 159,70</p>
                 <p class="checkout_valores">1x39,90 = 39,90</p>
                 <p class="checkout_valores">2x59,90 = 119,80</p>
-                <button class="checkout_botao">Ir para pagamento</button>
+                <a href="#" class="checkout_botao">Ir para pagamento</a>
             </div>
         </section>
     </main>

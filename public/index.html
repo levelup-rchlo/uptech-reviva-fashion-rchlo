@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -20,33 +20,32 @@
             <h1 class="logo_superior">Reviva Fashion</h1>
             <span class="logo_inferior">by RCHLO</span>
         </a>
-        <a href="carrinho.html"><img class="cabecalho_carrinho" alt="carrinho de compra"
-                src="assets/svg/logo-carrinho-compras.svg"></a>
+        <a href="carrinho.html" class="cabecalho_carrinho" aria-label="carrinho de compra"></a>
     </header>
     <nav class="menu-navegacao">
         <button class="menu-navegacao_botao">Menu</button>
-        <ul class="menu-navegacao_items">
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Página Inicial</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Masculina</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Feminina</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Moda Infantíl</a></li>
-            <li class="item_menu-navegacao"><a class="item_link" href="#">Manual de Moda</a></li>
-        </ul>
+        <div class="menu-navegacao_items">
+            <a class="item_link" href="#">Página Inicial</a></li>
+            <a class="item_link" href="#">Moda Masculina</a></li>
+            <a class="item_link" href="#">Moda Feminina</a></li>
+            <a class="item_link" href="#">Moda Infantíl</a></li>
+            <a class="item_link" href="#">Manual de Moda</a></li>
+        </div>
     </nav>
     <main class="conteudo">
         <section class="conteudo_pesquisa">
             <input class="pesquisa_campo" placeholder="Faça sua busca aqui se já souber o que está procurando..."
                 type="text">
-            <button class="pesquisa_botao"></button>
+            <button class="pesquisa_botao" aria-label="Pesquisar" ></button>
         </section>
         <section class="conteudo_produtos">
             <h2 class="produtos_titulo"><a class="produtos_link" href="#">Últimos lançamentos</a></h2>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-1/img1.jpg"
-                            alt="Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-1/img1.jpg"
+                        alt="Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege">
+                    <img class="produto_imagem" src="assets/img/produto-1/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-1/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-1" name="tamanhos_modelo-1" class="tamanhos_input">
@@ -61,14 +60,21 @@
                         Reviva Fashion</h4>
                     <p class="especificacoes_valor">R$ 139,90</p>
                 </a>
-                <button class="produto_botao-sacola ">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-2/img1.jpg"
-                            alt="Modelo com Blusa Preta, Plus Size, Gola Canoa, Manga Curta, Estampa de Folhas na Cor Verde na Barra">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-2/img1.jpg"
+                        alt="Modelo com Blusa Preta, Plus Size, Gola Canoa, Manga Curta, Estampa de Folhas na Cor Verde na Barra">
+                    <img class="produto_imagem" src="assets/img/produto-2/img2.jpg" alt>
+                    <img class="produto_imagem" src="assets/img/produto-2/img3.jpg" alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-2" name="tamanhos_modelo-2" class="tamanhos_input">
@@ -83,14 +89,21 @@
                         Fashion</h4>
                     <p class="especificacoes_valor">R$ 89,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-3/img1.jpg"
-                            alt="Modelo com Blusa Verde, Plus Size, Gola Alta Redonda, Manga Longa, Sem Estampas">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-3/img1.jpg"
+                        alt="Modelo com Blusa Verde, Plus Size, Gola Alta Redonda, Manga Longa, Sem Estampas">
+                    <img class="produto_imagem" src="assets/img/produto-3/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-3/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-3" name="tamanhos_modelo-3" class="tamanhos_input">
@@ -106,14 +119,21 @@
                     </h4>
                     <p class="especificacoes_valor">R$ 79,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-4/img1.jpg"
-                            alt="Modelo com Blusa na Cor Vermelho Escuro Mescla, Plus Size, Gola Redonda, Manga 7/8, Sem Estampas">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-4/img1.jpg"
+                        alt="Modelo com Blusa na Cor Vermelho Escuro Mescla, Plus Size, Gola Redonda, Manga 7/8, Sem Estampas">
+                    <img class="produto_imagem" src="assets/img/produto-4/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-4/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-4" name="tamanhos_modelo-4" class="tamanhos_input">
@@ -129,7 +149,14 @@
                     </h4>
                     <p class="especificacoes_valor">R$ 89,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
         </section>
         <a href="#" title="Ir para menu da moda" class="conteudo_banner">
@@ -144,10 +171,10 @@
             <h2 class="produtos_titulo"><a class="produtos_link" href="#">Coleção de Verão 2022</a></h2>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-5/img1.jpg"
-                            alt="Modelo com Calça Jeans Cor Denim Médio, Plus Size, 2 Bolsos Frontais e 2 Traseiros, Comprimento Cigarrete, com Lavagem">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-5/img1.jpg"
+                        alt="Modelo com Calça Jeans Cor Denim Médio, Plus Size, 2 Bolsos Frontais e 2 Traseiros, Comprimento Cigarrete, com Lavagem">
+                    <img class="produto_imagem" src="assets/img/produto-5/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-5/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-5" name="tamanhos_modelo-5" class="tamanhos_input">
@@ -162,14 +189,21 @@
                         Reviva Fashion</h4>
                     <p class="especificacoes_valor">R$ 159,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-6/img1.jpg"
-                            alt="Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-6/img1.jpg"
+                        alt="Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa">
+                    <img class="produto_imagem" src="assets/img/produto-6/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-6/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-6" name="tamanhos_modelo-6" class="tamanhos_input">
@@ -183,14 +217,21 @@
                     <h4 class="especificacoes_nome">Top Cropped Jeans Feminino Denim Escuro Pool by Reviva Fashion</h4>
                     <p class="especificacoes_valor">R$ 99,90</p>
                 </a>
-                <button class="produto_botao-sacola ">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-7/img1.jpg"
-                            alt="Modelo com Top Cropped, Plus Size, com Recorte Alça Média, Decote Princesa, Estampa Abstrata Marrom">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-7/img1.jpg"
+                        alt="Modelo com Top Cropped, Plus Size, com Recorte Alça Média, Decote Princesa, Estampa Abstrata Marrom">
+                    <img class="produto_imagem" src="assets/img/produto-7/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-7/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-7" name="tamanhos_modelo-7" class="tamanhos_input">
@@ -205,14 +246,21 @@
                         Filipa by Reviva Fashion</h4>
                     <p class="especificacoes_valor">R$ 129,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
             <div class="produto">
                 <a class="produto_link-imagem" href="detalhes.html">
-                    <picture>
-                        <img class="produto_imagem" src="assets/img/produto-8/img1.jpg"
-                            alt="Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom">
-                    </picture>
+                    <img class="produto_imagem" src="assets/img/produto-8/img1.jpg"
+                        alt="Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom">
+                    <img class="produto_imagem" src="assets/img/produto-8/img2.jpg"alt>
+                    <img class="produto_imagem" src="assets/img/produto-8/img3.jpg"alt>
                 </a>
                 <div class="produto_tamanhos">
                     <input type="radio" id="tamanho-p-8" name="tamanhos_modelo-8" class="tamanhos_input">
@@ -227,7 +275,14 @@
                         Reviva Fashion</h4>
                     <p class="especificacoes_valor">R$ 179,90</p>
                 </a>
-                <button class="produto_botao-sacola">POR NA SACOLA</button>
+                <div class="produto_botao-sacola">
+                    <div class="botao-sacola_conteudo">
+                        <div class="conteudo_frente-botao">
+                            <button class="botao-sacola">POR NA SACOLA</button>
+                        </div>
+                        <button class="conteudo_costas-botao"></button>
+                    </div>
+                </div>
             </div>
         </section>
         <article class="conteudo_noticias-blog">

@@ -1,0 +1,84 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.conteudo_banner {
+  align-items: center;
+  background: left/cover url(../assets/img/banner.jpg);
+  color: inherit;
+  display: flex;
+  font-weight: bold;
+  height: 20em;
+  justify-content: center;
+  margin: 2em 0;
+  position: relative;
+  text-decoration: none;
+
+  @media screen and (max-width: $extra-large) {
+    height: 15em;
+  }
+
+  @media screen and (max-width: $large) {
+    height: 12em;
+  }
+
+  @media screen and (max-width: $medium) {
+    background: left/100% no-repeat url(../assets/img/banner-menor.jpg);
+    height: 18em;
+    justify-content: flex-end;
+  }
+
+  @media screen and (max-width: $small) {
+    height: 12em;
+  }
+}
+
+.banner_texto {
+  font-size: 2.0em;
+  letter-spacing: .5em;
+  text-align: center;
+
+  &::first-line {
+    letter-spacing: 0;
+  }
+
+  @media screen and (max-width: $extra-large) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: $large) {
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: $medium) {
+    display: none;
+    font-size: 1.6em;
+    letter-spacing: normal;
+    margin: 0 1em 3em 0;
+    width: 50%;
+  }
+
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+.banner_logo {
+  bottom: 0;
+  font-size: .9em;
+  margin: 1em;
+  position: absolute;
+  right: 0;
+  text-align: end;
+
+  @media screen and (max-width: $extra-large) {
+    font-size: .7em;
+  }
+
+  @media screen and (max-width: $large) {
+    font-size: .5em;
+  }
+
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}

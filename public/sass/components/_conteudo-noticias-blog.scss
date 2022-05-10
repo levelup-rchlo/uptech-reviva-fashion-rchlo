@@ -1,0 +1,100 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.conteudo_noticias-blog {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "banner-1 banner-1 banner-2 texto-2"
+    "banner-1 banner-1 banner-2 texto-2"
+    "banner-1 banner-1 banner-3 texto-3"
+    "texto-1 texto-1 banner-3 texto-3";
+
+  @media screen and (max-width: $medium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "titulo"
+      "banner-1"
+      "texto-1"
+      "banner-2"
+      "texto-2"
+      "banner-3"
+      "texto-3";
+  }
+}
+
+.noticias-blog_titulo {
+  font-size: 2.2em;
+  grid-area: titulo;
+  margin: 2em 0 0 0;
+
+  @media screen and (max-width: $medium) {
+    font-size: 1.8em;
+  }
+}
+
+.noticias-blog_imagem-1 {
+  grid-area: banner-1;
+  height: 100%;
+  width: 100%;
+}
+
+.noticias-blog_texto-1 {
+  color: inherit;
+  font-size: 2.2em;
+  grid-area: texto-1;
+  text-decoration: none;
+  width: 90%;
+
+  @media screen and (max-width: $large) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: 2em;
+  }
+}
+
+.noticias-blog_imagem-2 {
+  grid-area: banner-2;
+  width: 100%;
+}
+
+.noticias-blog_texto-2 {
+  color: inherit;
+  font-size: 2em;
+  grid-area: texto-2;
+  text-decoration: none;
+
+  @media screen and (max-width: $large) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: 2em;
+  }
+}
+
+.noticias-blog_imagem-3 {
+  grid-area: banner-3;
+  width: 100%;
+}
+
+.noticias-blog_texto-3 {
+  color: inherit;
+  font-size: 2em;
+  grid-area: texto-3;
+  text-decoration: none;
+
+  @media screen and (max-width: $large) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: 2em;
+  }
+}

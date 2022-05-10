@@ -1,17 +1,21 @@
 $cor-primaria: #2b6099;
+$cor-primaria-negativa: #ffffff;
 $cor-secundaria: #134376;
 $cor-terciaria: #0d335b;
-$fonte-x-small: 1.6em;
-$fonte-small: 1.8em;
-$fonte-medium: 2.0em;
-$fonte-large: 2.2em;
-$fonte-extra-large: 2.4em;
+$cores-detalhes: #c4c4c4;
+$cor-fontes: #000000;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+$extra-extra-large: 1400px;
+
 
 @mixin bordas-imagens {
-    img {
-        border: solid 1px #c4c4c4;
-        box-sizing: border-box;
-        padding: 1px;
-    }
-
+  img {
+    border: solid 1px $cores-detalhes;
+    box-sizing: border-box;
+    padding: .2em;
+  }
 }
