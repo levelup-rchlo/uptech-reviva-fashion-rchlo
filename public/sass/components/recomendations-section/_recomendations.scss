@@ -1,0 +1,33 @@
+@mixin img($scale) {
+
+    @if $scale ==medium {
+        width: 14em;
+        height: 16em;
+    }
+
+    //refatorar e isolar mixins and functions
+}
+
+.recomendations{
+    margin-bottom:20px ;
+}
+.recomendations__visualize {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    .recomendations__products img {
+        @include img(medium);
+
+
+    }
+    .recomendations__products:hover img{
+        cursor: pointer;
+        transform: scale(0.97);
+        transition: 0.5s all;
+        border-left: 1px solid rgba(#00000023, 0.9);
+        border-right: 1px solid rgba(#00000023, 0.9);
+    }
+
+}

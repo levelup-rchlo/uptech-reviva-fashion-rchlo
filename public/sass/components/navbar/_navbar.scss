@@ -1,0 +1,22 @@
+@import '../../assets/var';
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding: 1%;
+    border-top: 1px solid  rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, $quaternary-color, $tertiary-color);
+    list-style: none;
+}
+
+.navbar__link{
+ 
+    text-decoration: none;
+    color: black;
+    font-weight: $font-weight-text;
+    font-size: $font-size-text;
+
+    
+}
