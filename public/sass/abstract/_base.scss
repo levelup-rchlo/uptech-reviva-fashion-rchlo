@@ -43,7 +43,7 @@ table {
 }
 //iniciando estilo
 html {
-  @include padrao();
+  @include padronizacao();
 }
 
 body {
