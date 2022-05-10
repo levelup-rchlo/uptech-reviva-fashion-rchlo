@@ -10,3 +10,7 @@ $cor-terciaria: #487680;
   font-family: $fonte-tipo;
   color: $cor-primaria;
 }
+
+@mixin componentizacao {
+  //O projeto ja foi elaborado em componentes, usando partials.
+}
