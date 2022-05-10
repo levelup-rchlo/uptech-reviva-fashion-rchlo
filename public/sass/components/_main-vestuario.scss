@@ -23,9 +23,9 @@
           padding-top: 1rem;
         }
         &__preco {
+          @extend .produto__imagem__descricao ;
           color: #888;
           font-weight: bolder;
-          padding-top: 1rem;
         }
       }
       &__imagem__tamanho {

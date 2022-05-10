@@ -262,13 +262,12 @@ header .cabecalho__responsivo {
 .vestuario__grid .produto__imagem {
   width: 100%;
 }
-.vestuario__grid .produto__imagem__descricao {
+.vestuario__grid .produto__imagem__descricao, .vestuario__grid .produto__imagem__preco {
   padding-top: 1rem;
 }
 .vestuario__grid .produto__imagem__preco {
   color: #888;
   font-weight: bolder;
-  padding-top: 1rem;
 }
 .vestuario__grid .produto__imagem__tamanho {
   padding: 1.25rem 0.5rem;
