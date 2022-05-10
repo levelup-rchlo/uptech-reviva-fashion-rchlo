@@ -8,6 +8,21 @@ $main-menu-background-color: #C4C4C4;
 
 /*-----------------------------------------------------*/
 
+@mixin button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@mixin button-item {
+    margin: 0.5rem 0.5rem 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid #C4C4C4;
+}
+
+
+/*------------------------------------------------------*/
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -44,7 +59,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .header__brand--bottom {
+    &--bottom {
+        @extend .header;
         display: flex;
         justify-content: flex-end;
     }
@@ -76,11 +92,13 @@ main {
     background: $main-menu-background-color;
     align-content: center;
     padding: 1rem 0 1rem 0;
-    .main-menu__list {
+    &__list {
+        @extend .main-menu;
         display: flex;
         justify-content: space-around;
         padding: 1rem 0 1rem 0;
-        .main-menu__list__itens {
+        &__itens {
+            @extend &__list;
             text-decoration: none;
             color: black;
             font-weight: bold;
@@ -95,13 +113,15 @@ main {
     display: flex;
     flex-direction: row;
     margin: 1.5rem;
-    .search-form__input {
+    &__input {
+        @extend .search-form;
         width: 100%;
         height: 100%;
         border: 1px solid #C4C4C4;
         padding: 1rem;
     }
-    .search-form__button {
+    &__button {
+        @extend .search-form;
         background-color: #C4C4C4;
         border: none;
     }
@@ -115,10 +135,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.product-details__wrapper {
-    display: flex;
 }
 
 .product-details__image {
@@ -155,6 +171,23 @@ main {
     margin-top: 3rem;
 }
 
+.detail-product__sizes {
+    @include button-wrapper;
+}
+
+.detail-product__size {
+    @include button-item;
+}
+
+.detail-radio {
+    display: none;
+}
+
+.detail-radio:checked+.detail-product__size {
+    background-color: #008844;
+    color: white;
+}
+
 
 /*-------------------------------------------*/
 
@@ -171,15 +204,20 @@ main {
 }
 
 .related-products__sizes {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    @include button-wrapper;
 }
 
 .related-products__size {
-    margin: 0.5rem 0 0.5rem 0.5rem;
-    padding: 0.3rem;
-    border: 1px solid #C4C4C4;
+    @include button-item;
+}
+
+.size-radio {
+    display: none;
+}
+
+.size-radio:checked+.related-products__size {
+    background-color: #008844;
+    color: white;
 }
 
 .item-text {

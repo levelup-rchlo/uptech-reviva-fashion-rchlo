@@ -187,85 +187,39 @@ main {
   color: chocolate;
 }
 
-.add-to-bag-button {
-  color: #FFFFFF;
-  background-color: #008844;
-  border-radius: 4px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto auto auto auto;
-  margin: 0.5rem 0;
-  -webkit-perspective: 500px;
-          perspective: 500px;
+.qty {
+  width: 1.5rem;
+  text-align: center;
 }
 
-.card-inner {
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 8;
+.payment {
+  background-color: #C4C4C4;
+  width: 15%;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
-.add-to-bag-button:hover .card-inner {
-  opacity: 0.9;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+.total {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.card-front {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 8;
-}
-
-.card-front,
-.card-back {
-  display: -ms-grid;
-  display: grid;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.card-front__text {
-  font-size: 0.8em;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 6;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.shopping-cart {
-  border-radius: 4px;
-  background-color: #008844;
-  border: none;
-  -ms-grid-column: 8;
-      grid-column-start: 8;
-}
-
-.card-back {
-  position: absolute;
-  background-color: blue;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.total__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*-----------------------------*/

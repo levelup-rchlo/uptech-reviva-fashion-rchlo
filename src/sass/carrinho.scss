@@ -155,61 +155,28 @@ main {
     color: chocolate;
 }
 
-.add-to-bag-button {
-    color: #FFFFFF;
-    background-color: #008844;
-    border-radius: 4px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    margin: 0.5rem 0;
-    perspective: 500px;
+.qty {
+    width: 1.5rem;
+    text-align: center;
 }
 
-.card-inner {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: grid;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    grid-column-start: 1;
-    grid-column-end: 8;
+.payment {
+    background-color: $main-menu-background-color;
+    width: 15%;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-.add-to-bag-button:hover .card-inner {
-    opacity: 0.9;
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
+.total {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-front {
-    grid-column-start: 1;
-    grid-column-end: 8;
-}
-
-.card-front,
-.card-back {
-    display: grid;
-    backface-visibility: hidden;
-}
-
-.card-front__text {
-    font-size: 0.8em;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    align-self: center;
-}
-
-.shopping-cart {
-    border-radius: 4px;
-    background-color: #008844;
-    border: none;
-    grid-column-start: 8;
-}
-
-.card-back {
-    position: absolute;
-    background-color: blue;
-    justify-content: center;
-    transform: rotateY(180deg);
+.total__values {
+    display: flex;
+    justify-content: space-between;
 }
 
 
