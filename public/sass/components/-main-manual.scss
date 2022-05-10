@@ -1,0 +1,33 @@
+@import '../abstract/variaveis';
+
+.manual {
+	width: 75vw;
+	height: 20vh;
+	margin: 5rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background: $cor-secundaria;
+  &__paragrafo {
+    padding: 1rem 0;
+    &__junto {
+      letter-spacing: -0.109rem;
+    }
+    &__espacado {
+      letter-spacing: 0.516rem;
+    }
+  }
+  &__marca {
+    align-self: flex-end;
+    text-align: right;
+    padding-right: 0.188rem;
+    &__titulo {
+      font-size: 3rem;
+    }
+    &__paragrafo {
+      font-size: 1rem;
+      padding-bottom: 0.188rem;
+    }
+  }
+}

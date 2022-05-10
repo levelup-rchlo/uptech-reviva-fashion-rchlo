@@ -1,0 +1,71 @@
+@import '../abstract/variaveis';
+
+.principal {
+	width: 100%;
+	font-size: 1.5rem;
+  .detalhes {
+    display: grid;
+    margin: 5rem auto;
+    grid-template-columns: 1fr 1fr;
+    width: 75vw;
+    &__imagem {
+      grid-row: span 4;
+    }
+    &__info {
+      &__titulo {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+      }
+    }
+    &__imagens {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      & img {
+        width: 108px;
+        height: 108px;
+      }
+    }
+    &__imagem__tamanho {
+      align-self: flex-end;
+      input[type="radio"] {
+        display: none;
+        &:checked {
+          + {
+            button {
+              background-color: $cor-terciaria;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      &__botao {
+        font-size: 1.5rem;
+        margin: 0 0.576rem 0.313rem 0;
+        padding: 0.313rem 0.576rem;
+        border: 1px solid #bbb;
+      }
+    }
+    .detalhes__sacola {
+      margin-top: 1.25rem;
+      width: 40%;
+      height: 5vh;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $cor-terciaria;
+      color: $cor-secundaria;
+      border: none;
+      border-radius: 5px;
+      &__vazio {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  } 
+}
+

@@ -1,0 +1,45 @@
+@import '../abstract/variaveis';
+
+.rodape {
+	width: 100%;
+	background: #EFF2F7;
+	margin-top: 1.25rem;
+  &__box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.25rem;
+    width: 75vw;
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  &__marca {
+    grid-column: span 4;
+    padding-bottom: 1.5rem;
+    &__titulo {
+      font-size: 3rem;
+    }
+    &__paragrafo {
+      font-size: 1rem;
+      margin-left: 16.2rem;
+    }
+  }
+  &__menu__item {
+    text-decoration: none;
+	  color: $cor-terciaria;
+	  line-height: 3rem;
+  }
+  &__subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+}
+.redes-sociais__icones__item {
+	padding-right: 1.2rem;
+	max-width: 24px;
+	max-height: 24px;
+}
+.contato {
+	line-height: 2rem;
+}

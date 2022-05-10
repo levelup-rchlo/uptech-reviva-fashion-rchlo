@@ -47,11 +47,11 @@ table {
 
 html {
   font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
   color: #212B36;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   width: 100%;
 }
 
@@ -198,13 +198,6 @@ h2 {
   flex-direction: row;
 }
 
-.produto__imagem__tamanho__botao {
-  font-size: 1.5rem;
-  margin: 0 0.576rem 0.313rem 0;
-  padding: 0.313rem 0.576rem;
-  border: 1px solid #bbb;
-}
-
 .produto__imagem__tamanho input[type="radio"] {
   display: none;
 }
@@ -215,6 +208,12 @@ h2 {
   font-weight: bold;
 }
 
+.produto__imagem__tamanho__botao {
+  font-size: 1.5rem;
+  margin: 0 0.576rem 0.313rem 0;
+  padding: 0.313rem 0.576rem;
+  border: 1px solid #bbb;
+}
 
 .produto__imagem__descricao, 
 .produto__imagem__preco, 
