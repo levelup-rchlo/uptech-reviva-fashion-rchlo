@@ -12,9 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Up!Tech - Reviva</title>
-
-    <head>
-    </head>
+  </head>
 
 <body>
     <header>
@@ -40,15 +38,14 @@
             <li><a class="menu__link__item" href="#">Manual de Moda</a></li>
         </ul>
     </nav>
+    <div class="busca">
+      <input type="search" name="busca__input" class="busca__input"
+          placeholder="Faça sua busca aqui se já souber o que está procurando...">
+      <button class="busca__botao">
+          <img src="img/lupa.svg" id="btnBusca" class="busca__botao__lupa" alt="Buscar">
+      </button>
+    </div>
     <main class="principal">
-        <div class="busca">
-            <input type="search" name="busca__input" class="busca__input"
-                placeholder="Faça sua busca aqui se já souber o que está procurando...">
-            <button class="busca__botao">
-                <img src="img/lupa.svg" id="btnBusca" class="busca__botao__lupa" alt="Buscar">
-            </button>
-        </div>
-
         <section class="vestuario">
             <h2>Últimos lançamentos</h2>
             <div class="vestuario__grid">
@@ -56,7 +53,7 @@
                     <div class="produto">
                             <picture>
                                 <source media="(max-width: 576px)" srcset="img/roupas/camisa.png" type="image/png">
-                                <img src="img/roupas/g/camisa.png" class="produto__imagem" alt="Camisa">
+                                <a href="detalhes.html"><img src="img/roupas/g/camisa.png" class="produto__imagem" alt="Camisa"></a>
                             </picture>
                         <fieldset class="produto__imagem__tamanho">
                             <input type="radio" name="tamanho1" id="p1">
@@ -85,7 +82,7 @@
                     <div class="produto">
                         <picture>
                             <source media="(max-width: 576px)" srcset="img/roupas/camisa02.png" type="image/png">
-                            <img src="img/roupas/g/camisa02.png" class="produto__imagem" alt="Camisa">
+                            <a href="detalhes.html"><img src="img/roupas/g/camisa02.png" class="produto__imagem" alt="Camisa"></a>
                         </picture>
                         <fieldset class="produto__imagem__tamanho">
                             <input type="radio" name="tamanho2" id="p2">
