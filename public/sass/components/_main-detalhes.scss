@@ -10,6 +10,7 @@
     width: 75vw;
     &__imagem {
       grid-row: span 4;
+      justify-self: center;
     }
     &__info {
       &__titulo {
@@ -51,8 +52,8 @@
     }
     .detalhes__sacola {
       margin-top: 1.25rem;
-      width: 40%;
-      height: 5vh;
+      width: 200px;
+      height: 10vh;
       text-align: center;
       display: flex;
       justify-content: space-between;
@@ -64,6 +65,28 @@
       &__vazio {
         width: 24px;
         height: 24px;
+      }
+    }
+  }
+  @media only screen and (max-device-width: 1200px)  {
+    .detalhes {
+      gap: 1.25rem;
+      &__imagem {
+        grid-column: span 2;
+        justify-self: center;
+      }
+      &__info {
+        grid-row: 6;
+        grid-column: span 2;
+      }
+      &__imagens {
+        gap: 0 2rem;
+        grid-row: 5;
+        grid-column: span 2;
+        justify-self: center;
+      }
+      &__imagem__tamanho {
+        grid-column: span 2;
       }
     }
   } 

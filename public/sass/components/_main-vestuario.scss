@@ -12,6 +12,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.875rem;
+    @media only screen and (max-device-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-device-width: 576px) {
+      grid-template-columns: 1fr;
+    }
     .produto {
       width: 100%;
       border: 1px solid #c5c5c5;
