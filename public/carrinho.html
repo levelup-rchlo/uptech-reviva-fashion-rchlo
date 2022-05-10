@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/carrinho.css">
+  <title>Carrinho</title>
+</head>
+<body>
+
+  <header>
+    <div class="cabecalho">
+        <div class="cabecalho__responsivo">
+            <div class="navMenu">
+                <span class="navMenu__hamburguer"></span>
+            </div>
+            <div class="cabecalho__marca">
+                <h1 class="cabecalho__marca__titulo">Reviva Fashion</h1>
+                <p class="cabecalho__marca__paragrafo">by RCHLO</p>
+            </div>
+            <img class="cabecalho__carrinho" src="img/sacola2.png" alt="">
+        </div>
+    </div>
+</header>
+<nav class="menu">
+    <ul class="menu__link">
+        <li><a class="menu__link__item" href="#">Página Inicial</a></li>
+        <li><a class="menu__link__item" href="#">Moda Masculina</a></li>
+        <li><a class="menu__link__item" href="#">Moda Feminina</a></li>
+        <li><a class="menu__link__item" href="#">Moda Infantil</a></li>
+        <li><a class="menu__link__item" href="#">Manual de Moda</a></li>
+    </ul>
+</nav>
+<div class="busca">
+  <input type="search" name="busca__input" class="busca__input"
+      placeholder="Faça sua busca aqui se já souber o que está procurando...">
+  <button class="busca__botao">
+      <img src="img/lupa.svg" id="btnBusca" class="busca__botao__lupa" alt="Buscar">
+  </button>
+</div>
+
+<main class="principal">
+  <h2>Minha sacola</h2>
+    <div class="box">
+      <div class="carrinho">
+        <div class="carrinho__grid">
+          <div class="carrinho__grid__imagem">
+            <img src="img/carrinho/camisa.png" alt="">
+          </div>
+          <div class="carrinho__grid__info">
+            <p class="carrinho__grid__titulo">Produto</p>
+            <p>Camiseta K2K, preta</p>
+          </div>
+          <div class="carrinho__grid__tamanho">
+            <p class="carrinho__grid__titulo">Tamanho Escolhido</p>
+            <fieldset class="carrinho__grid__tamanho__select">
+              <input type="radio" name="tamanho5" id="p5">
+              <button class="carrinho__tamanho__botao">
+                  <label for="p5">P</label>
+              </button>
+              <input type="radio" name="tamanho5" id="m5">
+              <button class="carrinho__tamanho__botao">
+                  <label for="m5">M</label>
+              </button>
+              <input type="radio" name="tamanho5" id="g5">
+              <button class="carrinho__tamanho__botao">
+                  <label for="g5">G</label>
+              </button>
+          </fieldset>
+          </div>
+          <div class="carrinho__valor">
+            <p class="carrinho__grid__titulo">Valor</p>
+            <p class="carrinho__grid__valor">R$ 39,00</p>
+          </div>
+          <div class="carrinho__quantidade">
+            <p class="carrinho__grid__titulo">Quantidade</p>
+            <input type="number" name="qtd" id="qtd" value="1" min="1">
+          </div>
+          <div class="subtotal">
+            <p class="carrinho__grid__titulo">Subtotal</p>
+            <p class="carrinho__grid__valor">R$ 39,99</p>
+          </div>
+        </div>
+        <div class="carrinho__grid">
+          <div class="carrinho__grid__imagem">
+            <img src="img/carrinho/camisa02.png" alt="">
+          </div>
+          <div class="carrinho__grid__info">
+            <p class="carrinho__grid__titulo">Produto</p>
+            <p>Camiseta Laranja T-Shirt</p>
+          </div>
+          <div class="carrinho__grid__tamanho">
+            <p class="carrinho__grid__titulo">Tamanho Escolhido</p>
+            <fieldset class="carrinho__grid__tamanho__select">
+              <input type="radio" name="tamanho6" id="p6">
+              <button class="carrinho__tamanho__botao">
+                  <label for="p6">P</label>
+              </button>
+              <input type="radio" name="tamanho6" id="m6">
+              <button class="carrinho__tamanho__botao">
+                  <label for="m6">M</label>
+              </button>
+              <input type="radio" name="tamanho6" id="g6">
+              <button class="carrinho__tamanho__botao">
+                  <label for="g6">G</label>
+              </button>
+          </fieldset>
+          </div>
+          <div class="carrinho__valor">
+            <p class="carrinho__grid__titulo">Valor</p>
+            <p class="carrinho__grid__valor">R$ 39,00</p>
+          </div>
+          <div class="carrinho__quantidade">
+            <p class="carrinho__grid__titulo">Quantidade</p>
+            <input type="number" name="qtd" id="qtd" value="1" min="1">
+          </div>
+          <div class="subtotal">
+            <p class="carrinho__grid__titulo">Subtotal</p>
+            <p class="carrinho__grid__valor">R$ 39,99</p>
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <p class="total__titulo">Total</p>
+        <p>R$ 159,70</p>
+        <p>1 x 39,90</p>
+        <p>=</p>
+        <p>39,90</p>
+        <p>2 x 59,90</p>
+        <p>=</p>
+        <p>119,80</p>
+        <button class="total__botao">
+          Ir para pagamento
+        </button>
+      </div>
+    </div>
+</main>
+<footer class="rodape">
+  <div class="rodape__box">
+      <div class="rodape__marca">
+          <h3 class="rodape__marca__titulo">Reviva Fashion</h3>
+          <p class="rodape__marca__paragrafo">by RCHLO</p>
+      </div>
+      <div class="rodape__menu">
+          <ul class="rodape__menu__lista">
+              <p class="rodape__subtitulo">Menu</p>
+              <li><a href="#" class="rodape__menu__item">Página Inicial</a></li>
+              <li><a href="#" class="rodape__menu__item">Moda Masculina</a></li>
+              <li><a href="#" class="rodape__menu__item">Moda Feminina</a></li>
+              <li><a href="#" class="rodape__menu__item">Moda Infantil</a></li>
+          </ul>
+      </div>
+      <div class="redes-sociais">
+          <p class="rodape__subtitulo">Siga-nos nas redes sociais</p>
+          <div class="redes-sociais__icones">
+              <img src="img/face.svg" class="redes-sociais__icones__item" alt="face">
+              <img src="img/twitter.svg" class="redes-sociais__icones__item" alt="twitter">
+              <img src="img/insta.svg" class="redes-sociais__icones__item" alt="insta">
+              <img src="img/youtube.svg" class="redes-sociais__icones__item" alt="youtube">
+          </div>
+          </div>
+      <div class="contato">
+          <p class="rodape__subtitulo">Entre em contato</p>
+          <p>Contato</p>
+          <a href="mailto:reviva@rchlo.com.br">reviva@rchlo.com.br</a>
+          <p>Whatsapp <img src="img/whatsapp.svg" alt=""></p>
+          <p>11 2123-3321 <img src="img/phone.svg" alt=""></p>
+      </div>
+      <div class="newsletter">
+          <p class="rodape__subtitulo">Assine nossa newsletter</p>
+          <input type="text" name="newsletter" id="newsletter">
+          <button id="newsletter">
+            ASSINAR JÁ
+          </button>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
