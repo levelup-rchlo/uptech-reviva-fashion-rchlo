@@ -111,6 +111,9 @@ h4 {
         width: 90%;
         margin: 0 0 0 1%;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        width: 70%;
+    }
 }
 .newletter__botao {
     background: $color-border;
@@ -118,5 +121,8 @@ h4 {
     @extend .newsletter;
     @media screen and (max-width: 576px){
         width: 95%;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        width: 70%;
     }
 }

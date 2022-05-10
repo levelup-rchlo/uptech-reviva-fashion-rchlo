@@ -9,6 +9,9 @@
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        grid-template-columns: 1fr;
+    }  
 }
 
 .detalhes__produto__imagem {
@@ -18,6 +21,10 @@
     width: 37vw;
     margin: 0%; 
     @media screen and (max-width: 576px){
+        width: 86vw;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 87vh;
         width: 86vw;
     }       
 }
@@ -61,6 +68,11 @@
         height: 37vh;
         width: 43vw;
         margin: .2%;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 28vh;
+        width: 21vw;
+        margin: .2%;
     } 
 }
 .detalhes__imagem__descricao {
@@ -80,6 +92,10 @@
             top: 10vw;
             width: 2.3vw;
             @media screen and (max-width: 576px){
+                height: 5vh;
+                width: 5vw;
+            }
+            @media screen and (min-width: 577px) and (max-width: 768px){
                 height: 5vh;
                 width: 5vw;
             }

@@ -1,3 +1,4 @@
+
 //fontes
 
 $font: Helvetica, sans-serif;
@@ -40,6 +41,10 @@ $color-background-button: #1C7947;
     height: 3vw;
     line-height: 6vh;
     @media screen and (max-width: 576px){
+        height: 8vh;
+        line-height: 8vh;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
         height: 8vh;
         line-height: 8vh;
     }

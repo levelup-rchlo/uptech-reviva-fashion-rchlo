@@ -11,6 +11,9 @@
     @media screen and (max-width: 576px){
         height: 26vw;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 26vw;
+    }
 }
 .banner__conteudo{
     grid-column: 1 / -1;
@@ -25,6 +28,10 @@
         font-size: 2em;
         margin: 8% 0 0 0;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        font-size: 2.5em;
+        margin: 10% 0 0 0;
+    }
 }
 .banner__conteudo__titulo{
     align-items: center;
@@ -35,6 +42,10 @@
     @extend .banner__conteudo__texto;
     @media screen and (max-width: 576px){
         font-size: 2.2rem;
+        margin: .3% 0 0 0;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        font-size: 2.5rem;
         margin: .3% 0 0 0;
     }
 }
@@ -54,6 +65,11 @@
             font-size: 2.2rem;
             line-height: 1.6vh;
             margin: 21% 0 0 0;
+        }
+        @media screen and (min-width: 577px) and (max-width: 768px){
+            font-size: 2.5rem;
+            line-height: 1.6vh;
+            margin: 23% 0 0 0;
         }
     }
     .logo__texto{

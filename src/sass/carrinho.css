@@ -28,12 +28,6 @@ html *, body * {
   width: 90%;
 }
 
-@media screen and (max-width: 576px) {
-  .cabecalho {
-    width: 90%;
-  }
-}
-
 .cabecalho__logo {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -163,6 +157,12 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .menu__link {
+    font-size: 2.2em;
+  }
+}
+
 .formulario {
   display: -ms-grid;
   display: grid;
@@ -181,7 +181,14 @@ a:hover,
   .formulario__pesquisar {
     height: 8vh;
     width: 70%;
-    font-size: 2em;
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .formulario__pesquisar {
+    height: 8vh;
+    width: 80%;
   }
 }
 
@@ -211,6 +218,15 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .formulario__botao__pesquisa {
+    height: 8vh;
+    margin: 0 0 0 85%;
+    margin-top: -8%;
+    width: 13vw;
+  }
+}
+
 .minha__sacola {
   display: -ms-grid;
   display: grid;
@@ -228,6 +244,13 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .minha__sacola {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 .minha__sacola__imagem, .minha__sacola__imagem2 {
   border: 1px solid #C4C4C4;
   height: 33vh;
@@ -240,6 +263,13 @@ a:hover,
     height: 50vh;
     margin: 0 20% 0 22%;
     width: 51vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .minha__sacola__imagem, .minha__sacola__imagem2 {
+    height: 31vh;
+    width: 22vw;
   }
 }
 
@@ -261,6 +291,12 @@ a:hover,
   .minha__sacola__produto__titulo, .minha__sacola__produto__descericao, .minha__sacola__total__conteudo {
     font-size: 2.8em;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .minha__sacola__produto__titulo, .minha__sacola__produto__descericao, .minha__sacola__total__conteudo {
+    line-height: 7vh;
   }
 }
 
@@ -449,6 +485,13 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .minha__sacola__botao__total__pagamento {
+    height: 8vh;
+    line-height: 8vh;
+  }
+}
+
 .rodape {
   background: #151515;
   margin-top: 5%;
@@ -613,6 +656,12 @@ h4 {
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .rodape__newsletter {
+    width: 70%;
+  }
+}
+
 .newletter__botao {
   background: #C4C4C4;
   height: 4vh;
@@ -621,6 +670,12 @@ h4 {
 @media screen and (max-width: 576px) {
   .newletter__botao {
     width: 95%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .newletter__botao {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=carrinho.css.map */

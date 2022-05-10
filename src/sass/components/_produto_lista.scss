@@ -23,6 +23,9 @@
     @media screen and (max-width: 576px){
         grid-template-columns: 1fr;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .produto__lista__imagem {
     flex: 1 1 2%;
@@ -39,9 +42,13 @@
     width: 17vw;
     @media screen and (max-width: 576px){
         height: 45vh;
-        margin: 0%;
         width: 47vw;
     }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 45vh;
+        width: 36vw;
+    }
+    
 }
 .produto__lista__imagem__tamanhos {
     height: 220px;
@@ -62,6 +69,10 @@
     width: 2vw;
     @media screen and (max-width: 576px){
         height: 4vh;
+        width: 5vw;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 5vh;
         width: 5vw;
     }
 }
