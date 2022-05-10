@@ -10,6 +10,11 @@
     margin: 1% 0 0 4%;
     top: 40%;
     width: 85%;
+    @media screen and (max-width: 576px){
+        height: 8vh;
+        width: 70%;
+        font-size: 2em;
+    }
 }
 .formulario__botao__pesquisa {
     @include border__pesquisa;
@@ -22,5 +27,11 @@
         bottom: -0.01%;    
         transform: matrix(-1, 0, 0, 1, 0, 0);
         top: 0%;
+    }
+    @media screen and (max-width: 576px){
+        height: 8vh;
+        margin: 0 0 0 75%;
+        margin-top: -10%;
+        width: 15vw;
     }
 }

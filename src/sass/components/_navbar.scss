@@ -1,6 +1,27 @@
 @import '../abstract/variaveis';
 
-
+.menu__botao{
+    background-color: transparent;
+    border: none;
+    color: $color-text-destaque;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    :hover {
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: $color-text-destaque;
+    }
+    :focus~.menu__link {
+        height: 260px;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+    }
+}
+a:hover,
 .menu {
     background: $color-background-destaque;
     height: 10vh;
@@ -11,7 +32,21 @@
 .menu__lista {
     display: flex;
     justify-content: space-evenly;
-}
+    @media screen and (max-width: 576px){
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        background: $color-background-destaque;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        margin: 0;
+        height: 0;
+        padding: 0;
+    }
+    }
 .menu__link {
     color: $color-text-destaque;
     font-weight: 400;
@@ -19,6 +54,11 @@
     line-height: 10vh;
     list-style-type: none;        
     justify-content: space-between;
+    overflow: hidden;
     text-decoration: none;
     top: 4vh;
+    @media screen and (max-width: 576px) {
+        transition:all .4s;
+        text-align: center;
+    }
 }        

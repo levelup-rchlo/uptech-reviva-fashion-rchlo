@@ -3,16 +3,24 @@
 .minha__sacola {
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(3, 15%) repeat(3, 10%) 18%;
+    grid-template-columns: repeat(3, 15%) repeat(3, 10%);
     
     margin: 2% 4%;
     width: 90%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+    }
 }
 .minha__sacola__imagem {
     @include border__img;
     height: 33vh;
     margin: 0%;
     width: 12vw;
+    @media screen and (max-width: 576px){
+        height: 50vh;
+        margin: 0 20% 0 22%;
+        width: 51vw;
+    }
 }
 .minha__sacola__imagem__produto {
     height: 95%;
@@ -26,24 +34,39 @@
     font-weight: bold;
     font-size: 2.3em;
     line-height: 5vh;
+    @media screen and (max-width: 576px){
+        font-size: 2.8em;
+        text-align: center;
+    }
 }
 .minha__sacola__produto__descericao {
     @extend .minha__sacola__produto__titulo;
     font-weight: 400;
     font-size: 2.1em;
     line-height: 0vh;
+    @media screen and (max-width: 576px){
+        font-size: 2.5em;
+        text-align: center;
+    }
 }
 .minha__sacola__imagem__botao {
     align-items: flex-start;
     display: flex;
     gap: 1em;       
     width: 100%;
+    @media screen and (max-width: 576px){
+        justify-content:center;
+    }
 }
 .minha__sacola__botao__tamanho {
     width: 15%;
     height: 5vh;
 
     @include border__tamanho;
+    @media screen and (max-width: 576px){
+        height: 8vh;
+        width: 8vw;
+    }
 }
 .minha__sacola__produto__preco {
     color: $color-preco;
@@ -52,6 +75,10 @@
     line-height: 0%;
     text-align: start;
     width: 100%;
+    @media screen and (max-width: 576px){
+        text-align:center;
+        font-size: 3.2em;
+    }
 }
 .minha__sacola__botao__quantidade {
     display: flex;
@@ -59,23 +86,52 @@
     
     height: 0%;
     line-height: 0%;
+    @media screen and (max-width: 576px){
+        justify-content:center;
+    }
 }
 .minha__sacola__quantidade__botao {
     background-color: $color-background;
     border: none;
     color: $color-preco;
+    @media screen and (max-width: 576px){
+        height: 8vh;
+        width: 8vw;
+    }
 }
 .minha__sacola__quantidade__valor {
     color: $color-preco;
     font-weight: bold;
     font-size: 3em;
     margin-top: 5%;
+    @media screen and (max-width: 576px){
+        text-align:center;
+        font-size: 3.2em;
+    }
     
+}
+.minha__sacola2 {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 15%) repeat(3, 10%) 18%;
+    
+    margin: 2% 4%;
+    width: 90%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+    }
 }
 .minha__sacola__total {
     background-color: #EDEDED;
     width: 125%;
     grid-row: span 2 / span 2;
+    margin-top: -111%;
+    @media screen and (max-width: 576px){
+        justify-content:center;
+        margin: 0 0 0 6%;
+        width: 90%;
+        margin-top: 0%;
+    }
 }
 .minha__sacola__total__final {
     display: flex;

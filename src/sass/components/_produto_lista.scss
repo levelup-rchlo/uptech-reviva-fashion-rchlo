@@ -10,15 +10,25 @@
     font-weight: bold;
     font-style: normal;
     line-height: 2%;
+    @media screen and (max-width: 576px){
+        font-size: 1.8rem;
+        text-align: center;
+    }
 }
 .produto__lista__conteudo {
     display: grid;
     gap: 10em;
     grid-template-columns: repeat(4, 1fr);
     max-width: 95%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+    }
 }
 .produto__lista__imagem {
     flex: 1 1 2%;
+    @media screen and (max-width: 576px){
+        margin: 0 20% 0 22%
+    }
 }
 .produto__lista__imagem__borda {
     @include border__img;
@@ -27,6 +37,11 @@
     height: 42vh;
     margin: 0%;
     width: 17vw;
+    @media screen and (max-width: 576px){
+        height: 45vh;
+        margin: 0%;
+        width: 47vw;
+    }
 }
 .produto__lista__imagem__tamanhos {
     height: 220px;
@@ -45,6 +60,10 @@
     height: 4vh;
     margin: 1%;
     width: 2vw;
+    @media screen and (max-width: 576px){
+        height: 4vh;
+        width: 5vw;
+    }
 }
 .produto__lista__texto {    
     font-weight: 400;
@@ -61,6 +80,9 @@
     text-align: start;
     width: 100%;
     margin-top: 0%;
+    @media screen and (max-width: 576px){
+        text-align: center;
+    }
 }
 .produto__lista__botao__sacola {
     @include button__sacola;

@@ -6,6 +6,9 @@
 
     margin: 2% 4%;
     width: 90%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .detalhes__produto__imagem {
@@ -13,7 +16,10 @@
 
     height: 79vh;
     width: 37vw;
-    margin: 0%;        
+    margin: 0%; 
+    @media screen and (max-width: 576px){
+        width: 86vw;
+    }       
 }
 .detalhes__produto__imagem__destaque {
     height: 95%;
@@ -51,6 +57,11 @@
     padding: 1%;
     width: 10vw;
     margin: 0%;
+    @media screen and (max-width: 576px){
+        height: 37vh;
+        width: 43vw;
+        margin: .2%;
+    } 
 }
 .detalhes__imagem__descricao {
     height: 100%;
@@ -68,11 +79,15 @@
             margin:  1%;
             top: 10vw;
             width: 2.3vw;
+            @media screen and (max-width: 576px){
+                height: 5vh;
+                width: 5vw;
+            }
         }
 }
 .botao__compra{
     @include button__sacola;
-    width: 40%;
+    width: 50%;
 }    
 .botao__iamgem__svg {
     @include button__svg__sacola;
