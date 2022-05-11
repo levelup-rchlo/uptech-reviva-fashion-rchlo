@@ -5,19 +5,20 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width">
     <title>Reviva Fashion</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="../src/sass/detalhes.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div class="header__content__brand">
+        <div class="header__brand">
             <h1>Reviva Fashion</h1>
-            <p>by RCHLO</p>
+            <p class="header__brand--bottom">by RCHLO</p>
         </div>
-        <div class="header__content__shopping-cart">
-            <button>
+        <div class="header__shopping-cart">
+            <button class="header__shopping-cart__button">
                 <svg width="28" height="32" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061 24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911 2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6 13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143 11.1232Z" fill="white"/>
                     </svg>
@@ -27,25 +28,94 @@
 
     <main>
 
-        <nav class="main__section--main-menu">
-            <ul>
-                <li class="main__section--main-menu__itens "><a href="">Página Inicial</a></li>
-                <li class="main__section--main-menu__itens"><a href="">Masculino</a></li>
-                <li class="main__section--main-menu__itens"><a href="">Feminino</a></li>
-                <li class="main__section--main-menu__itens"><a href="">Infantil</a></li>
-                <li class="main__section--main-menu__itens"><a href="">Manual de Moda</a></li>
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li><a class="main-menu__list__itens" href="">Página Inicial</a></li>
+                <li><a class="main-menu__list__itens" href="">Masculino</a></li>
+                <li><a class="main-menu__list__itens" href="">Feminino</a></li>
+                <li><a class="main-menu__list__itens" href="">Infantil</a></li>
+                <li><a class="main-menu__list__itens" href="">Manual de Moda</a></li>
             </ul>
         </nav>
 
-        <form class="main__section--search-form">
-            <input type="text" class="main__section--search-form__input" placeholder=" Faça sua busca aqui se já souber o que está procurando " name="search ">
-            <button type="submit "><svg width="28 " height="28 " viewBox="0 0 28 28 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+        <form class="search-form">
+            <input class="search-form__input" type="text" placeholder=" Faça sua busca aqui se já souber o que está procurando " name="search ">
+            <button class="search-form__button" type="submit "><svg width="28 " height="28 " viewBox="0 0 28 28 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                         <path d="M0.639851 24.2648L7.18594 17.7187C5.69735 15.5088 4.9629 12.7476 5.3561 9.80546C6.02657 4.80101 10.1281 0.728433 15.1375 0.0942229C22.5854 -0.848206 28.8482 5.4146 27.9057 12.8625C27.2713 17.874 23.1982 21.9789 18.1932
                         22.6461C15.251 23.0392 12.4893 22.305 10.2799 20.8162L3.73385 27.3623C2.87963 28.2165 1.4944 28.2165 0.640177 27.3623C-0.213276 26.507 -0.213274 25.1179 0.639851 24.2648ZM23.6742 11.375C23.6742 7.51515 20.5341 4.37499 16.6742 4.37499C12.8144
                         4.37499 9.67422 7.51515 9.67422 11.375C9.67422 15.2348 12.8144 18.375 16.6742 18.375C20.5341 18.375 23.6742 15.2359 23.6742 11.375Z " fill="white "/>
                         </svg>
                 </button>
         </form>
+
+        <section class="product-details">
+            <div class="product-details__wrapper">
+                <div class="product-details__image">
+                    <img src="../src/vestido_longo.png " alt="Foto do produto " width="564px " height="593px ">
+                </div>
+
+                <div class="product-details__side-infos">
+                    <div>
+                        <div class="product-details__description">
+                            <div class="product-details__description__name">
+                                <p class="product-details__description__name">Vestido Longo Feminino Evasê Uma Maria Abstrata Azul Claro AK by Riachuelo</p>
+                                <p class="product-details__price ">R$ 229,90</p>
+                                <p>Crie um look jovem e estiloso com o Vestido Longo Feminino Evasê Uma Maria Abstrata Azul Claro AK by Riachuelo! Confeccionado em viscose, o vestido pode ser combinado com tênis casual, deixando seus looks muito descolados!
+                                    100% em Viscose Modelo evasê marias Estampa abstrata Decote reto Alças finas Barra em babados A cor do produto nas fotos reproduzidas com modelos, pode sofrer alteração em decorrência do uso do flash</p>
+                            </div>
+                        </div>
+
+                        <div class="thumbnails">
+                            <div>
+                                <img src="../src/cropped.png " alt="crooped preto " width="140px " height="109px ">
+                            </div>
+                            <div>
+                                <img src="../src/vestido_longo.png" alt="Vestido longo azul estampado " width="140px " height="109px ">
+                            </div>
+                            <div>
+                                <img src="../src/listrada.png " alt="blusa listrada " width="140px " height="109px ">
+                            </div>
+                            <div>
+                                <img src="../src/calca.png" alt="calça preta " width="140px " height="109px ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-footer">
+                        <div>
+                            <div class="detail-product__sizes">
+                                <input class="detail-radio" type="radio" id="PP" name="sizes">
+                                <label class="detail-product__size" for="PP">PP</label>
+                                <input class="detail-radio" type="radio" id="P" name="sizes">
+                                <label class="detail-product__size" for="P">P</label>
+                                <input class="detail-radio" type="radio" id="M" name="sizes">
+                                <label class="detail-product__size" for="M">M</label>
+                                <input class="detail-radio" type="radio" id="G" name="sizes">
+                                <label class="detail-product__size" for="G">G</label>
+                                <input class="detail-radio" type="radio" id="GG" name="sizes">
+                                <label class="detail-product__size" for="GG">GG</label>
+                            </div>
+                        </div>
+
+                        <div class="add-to-bag-button ">
+                            <div class="card-inner ">
+                                <div class="card-front ">
+                                    <p class="card-front__text ">ADICIONAR À SACOLA</p>
+                                    <button class="shopping-cart ">
+                                    <svg width="24 " height="28 " viewBox="0 0 24 28 " fill="none " xmlns="http://www.w3.org/2000/svg "><path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061
+                                    24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911
+                                    2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6
+                                    13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143
+                                    11.1232Z " fill="white "/>
+                                    </svg>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="banner ">
             <div class="banner__wrap ">
@@ -60,6 +130,170 @@
                 </div>
             </div>
         </section>
+
+        <section id="related">
+            <h2>Quem comprou camiseta Reviva K22, também levou um desses pra casa!</h2>
+
+            <div class="related-products">
+                <div>
+                    <div class="related-products__item ">
+                        <img src="../src/cropped.png " alt="Foto do produto " width="269px " height="209px ">
+                        <div class="related-products__sizes">
+                            <input class="size-radio" type="radio" id="PP" name="sizes3">
+                            <label class="related-products__size" for="PP">PP</label>
+                            <input class="size-radio" type="radio" id="P" name="sizes3">
+                            <label class="related-products__size" for="P">P</label>
+                            <input class="size-radio" type="radio" id="M" name="size3s">
+                            <label class="related-products__size" for="M">M</label>
+                            <input class="size-radio" type="radio" id="G" name="sizes3">
+                            <label class="related-products__size" for="G">G</label>
+                            <input class="size-radio" type="radio" id="GG" name="sizes3">
+                            <label class="related-products__size" for="GG">GG</label>
+
+                        </div>
+                    </div>
+
+                    <div class="item-text ">
+                        <p>Camiseta Reviva K22, Preta</p>
+                        <p class="item-price ">R$ 39,90</p>
+                    </div>
+
+                    <div class="add-to-bag-button ">
+                        <div class="card-inner ">
+                            <div class="card-front ">
+                                <p class="card-front__text ">ADICIONAR À SACOLA</p>
+                                <button class="shopping-cart ">
+                                    <svg width="24 " height="28 " viewBox="0 0 24 28 " fill="none " xmlns="http://www.w3.org/2000/svg "><path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061
+                                    24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911
+                                    2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6
+                                    13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143
+                                    11.1232Z " fill="white "/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="related-products__item ">
+                        <img src="../src/listrada.png " alt="Foto do produto " width="269px " height="209px ">
+                        <div class="related-products__sizes ">
+                            <input class="size-radio" type="radio" id="PP" name="sizes3">
+                            <label class="related-products__size" for="PP">PP</label>
+                            <input class="size-radio" type="radio" id="P" name="sizes3">
+                            <label class="related-products__size" for="P">P</label>
+                            <input class="size-radio" type="radio" id="M" name="size3s">
+                            <label class="related-products__size" for="M">M</label>
+                            <input class="size-radio" type="radio" id="G" name="sizes3">
+                            <label class="related-products__size" for="G">G</label>
+                            <input class="size-radio" type="radio" id="GG" name="sizes3">
+                            <label class="related-products__size" for="GG">GG</label>
+                        </div>
+                    </div>
+
+                    <div class="item-text ">
+                        <p>Camiseta Reviva K22, Preta</p>
+                        <p class="item-price ">R$ 39,90</p>
+                    </div>
+
+                    <div class="add-to-bag-button ">
+                        <div class="card-inner ">
+                            <div class="card-front ">
+                                <p class="card-front__text ">ADICIONAR À SACOLA</p>
+                                <button class="shopping-cart ">
+                                    <svg width="24 " height="28 " viewBox="0 0 24 28 " fill="none " xmlns="http://www.w3.org/2000/svg "><path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061
+                                    24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911
+                                    2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6
+                                    13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143
+                                    11.1232Z " fill="white "/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="related-products__item ">
+                        <img src="../src/calca.png " alt="Foto do produto " width="269px " height="209px ">
+                        <div class="related-products__sizes ">
+                            <input class="size-radio" type="radio" id="PP" name="sizes4">
+                            <label class="related-products__size" for="PP">PP</label>
+                            <input class="size-radio" type="radio" id="P" name="sizes4">
+                            <label class="related-products__size" for="P">P</label>
+                            <input class="size-radio" type="radio" id="M" name="sizes4">
+                            <label class="related-products__size" for="M">M</label>
+                            <input class="size-radio" type="radio" id="G" name="sizes4">
+                            <label class="related-products__size" for="G">G</label>
+                            <input class="size-radio" type="radio" id="GG" name="sizes4">
+                            <label class="related-products__size" for="GG">GG</label>
+                        </div>
+                    </div>
+
+                    <div class="item-text ">
+                        <p>Camiseta Reviva K22, Preta</p>
+                        <p class="item-price ">R$ 39,90</p>
+                    </div>
+
+                    <div class="add-to-bag-button ">
+                        <div class="card-inner ">
+                            <div class="card-front ">
+                                <p class="card-front__text ">ADICIONAR À SACOLA</p>
+                                <button class="shopping-cart ">
+                                    <svg width="24 " height="28 " viewBox="0 0 24 28 " fill="none " xmlns="http://www.w3.org/2000/svg "><path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061
+                                    24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911
+                                    2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6
+                                    13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143
+                                    11.1232Z " fill="white "/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="related-products__item ">
+                        <img src="../src/vestido.png " alt="Foto do produto " width="269px " height="209px ">
+                        <div class="related-products__sizes ">
+                            <input class="size-radio" type="radio" id="PP" name="sizes">
+                            <label class="related-products__size" for="PP">PP</label>
+                            <input class="size-radio" type="radio" id="P" name="sizes">
+                            <label class="related-products__size" for="P">P</label>
+                            <input class="size-radio" type="radio" id="M" name="sizes">
+                            <label class="related-products__size" for="M">M</label>
+                            <input class="size-radio" type="radio" id="G" name="sizes">
+                            <label class="related-products__size" for="G">G</label>
+                            <input class="size-radio" type="radio" id="GG" name="sizes">
+                            <label class="related-products__size" for="GG">GG</label>
+                        </div>
+                    </div>
+
+                    <div class="item-text ">
+                        <p>Camiseta Reviva K22, Preta</p>
+                        <p class="item-price ">R$ 39,90</p>
+                    </div>
+
+                    <div class="add-to-bag-button ">
+                        <div class="card-inner ">
+                            <div class="card-front ">
+                                <p class="card-front__text ">ADICIONAR À SACOLA</p>
+                                <button class="shopping-cart ">
+                                    <svg width="24 " height="28 " viewBox="0 0 24 28 " fill="none " xmlns="http://www.w3.org/2000/svg "><path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061
+                                    24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911
+                                    2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6
+                                    13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143
+                                    11.1232Z " fill="white "/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 

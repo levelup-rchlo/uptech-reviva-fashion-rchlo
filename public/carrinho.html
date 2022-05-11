@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Reviva Fashion</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="../src/sass/carrinho.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header__brand">
+            <h1>Reviva Fashion</h1>
+            <p class="header__brand--bottom">by RCHLO</p>
+        </div>
+        <div class="header__shopping-cart">
+            <button class="header__shopping-cart__button">
+                <svg width="28" height="32" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 5.98944C6 2.68134 8.68393 0 12 0C15.3161 0 18 2.68134 18 5.98944V8.55634H21.4286C22.8482 8.55634 24 9.7061 24 11.1232V22.2465C24 25.0808 21.6964 27.3803 18.8571 27.3803H5.14286C2.3025 27.3803 0 25.0808 0 22.2465V11.1232C0 9.7061 1.15125 8.55634 2.57143 8.55634H6V5.98944ZM8.57143 8.55634H15.4286V5.98944C15.4286 4.09902 13.8911 2.5669 12 2.5669C10.1089 2.5669 8.57143 4.09902 8.57143 5.98944V8.55634ZM7.28571 13.6901C7.99821 13.6901 8.57143 13.1179 8.57143 12.4067C8.57143 11.6954 7.99821 11.1232 7.28571 11.1232C6.57321 11.1232 6 11.6954 6 12.4067C6 13.1179 6.57321 13.6901 7.28571 13.6901ZM16.7143 11.1232C16.0018 11.1232 15.4286 11.6954 15.4286 12.4067C15.4286 13.1179 16.0018 13.6901 16.7143 13.6901C17.4268 13.6901 18 13.1179 18 12.4067C18 11.6954 17.4268 11.1232 16.7143 11.1232Z" fill="white"/>
+                    </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li><a class="main-menu__list__itens" href="">Página Inicial</a></li>
+                <li><a class="main-menu__list__itens" href="">Masculino</a></li>
+                <li><a class="main-menu__list__itens" href="">Feminino</a></li>
+                <li><a class="main-menu__list__itens" href="">Infantil</a></li>
+                <li><a class="main-menu__list__itens" href="">Manual de Moda</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form">
+            <input class="search-form__input" type="text" placeholder=" Faça sua busca aqui se já souber o que está procurando " name="search ">
+            <button class="search-form__button" type="submit "><svg width="28 " height="28 " viewBox="0 0 28 28 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <path d="M0.639851 24.2648L7.18594 17.7187C5.69735 15.5088 4.9629 12.7476 5.3561 9.80546C6.02657 4.80101 10.1281 0.728433 15.1375 0.0942229C22.5854 -0.848206 28.8482 5.4146 27.9057 12.8625C27.2713 17.874 23.1982 21.9789 18.1932
+                        22.6461C15.251 23.0392 12.4893 22.305 10.2799 20.8162L3.73385 27.3623C2.87963 28.2165 1.4944 28.2165 0.640177 27.3623C-0.213276 26.507 -0.213274 25.1179 0.639851 24.2648ZM23.6742 11.375C23.6742 7.51515 20.5341 4.37499 16.6742 4.37499C12.8144
+                        4.37499 9.67422 7.51515 9.67422 11.375C9.67422 15.2348 12.8144 18.375 16.6742 18.375C20.5341 18.375 23.6742 15.2359 23.6742 11.375Z " fill="white "/>
+                        </svg>
+                </button>
+        </form>
+
+        <section id="sacola">
+            <h2>Minha sacola</h2>
+
+            <div class="cart-wrapper">
+                <div class="items-wrapper">
+                    <div class="item-info">
+                        <div class="item-image">
+                            <img src="../src/cropped.png " alt="Foto do produto " width="189px " height="146px ">
+                        </div>
+
+                        <div class="item-text ">
+                            <h3>Produto</h3>
+                            <p>Camiseta Reviva K22, Preta</p>
+                        </div>
+
+                        <div class="sizes ">
+                            <div>
+                                <h3>Tamanho escolhido</h3>
+                            </div>
+
+                            <div class="products__sizes">
+                                <p class="products__size ">P</p>
+                                <p class="products__size ">M</p>
+                                <p class="products__size ">G</p>
+                            </div>
+
+                        </div>
+
+                        <div class="price">
+                            <h3>Valor</h3>
+                            <p class="item-price" id="undValue">R$ 39,90</p>
+                        </div>
+
+                        <div class="quantity">
+                            <h3>Quantidade</h3>
+                            <form id='myform' class='quantity__form' action='#'>
+                                <input type='number' name='quantity' value='2' class='qty' id="qntd" onchange="totalCalculator(document.querySelector('#qntd').value, document.querySelector('#undValue').innerHTML) ; updateCart(document.querySelector('#qntd').value)" />
+                            </form>
+                        </div>
+
+                        <div class="subtotal">
+                            <h3>Subtotal</h3>
+                            <label class="subtotal__value " id="total">R$ 39,90</label>
+                        </div>
+
+                    </div>
+                    <div class="item-info">
+                        <div class="item-image">
+                            <img src="../src/cropped.png " alt="Foto do produto " width="189px " height="146px ">
+                        </div>
+
+                        <div class="item-text ">
+                            <h3>Produto</h3>
+                            <p>Camiseta Reviva K22, Preta</p>
+                        </div>
+
+                        <div class="sizes ">
+                            <div>
+                                <h3>Tamanho escolhido</h3>
+                            </div>
+
+                            <div class="products__sizes">
+                                <p class="products__size ">P</p>
+                                <p class="products__size ">M</p>
+                                <p class="products__size ">G</p>
+                            </div>
+
+                        </div>
+
+                        <div class="price">
+                            <h3>Valor</h3>
+                            <p class="item-price " id="undValue2">R$ 39,90</p>
+                        </div>
+
+                        <div class="quantity">
+                            <h3>Quantidade</h3>
+                            <form id='myform' class='quantity__form' action='#'>
+                                <input type='number' name='quantity' value='2' class='qty' id="qntd2" onchange="totalCalculator2(document.querySelector('#qntd2').value, document.querySelector('#undValue2').innerHTML) ; updateCart2(document.querySelector('#qntd2').value)" />
+                            </form>
+                        </div>
+
+                        <div class="subtotal">
+                            <h3>Subtotal</h3>
+                            <label class="subtotal__value " id="total2">R$ 39,90</label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="payment">
+                    <div class="total">
+                        <div class="total__values">
+                            <p>Total</p>
+                            <p>R$ 159,70</p>
+
+                        </div>
+                        <div class="subtotal__values">
+                            <label for="quantity" id="qntdPayment1"> a</label>
+                            <label for="quantity" id="qntdPayment2"> b</label>
+                        </div>
+
+                        <button class="payment__button">ir para pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer__header-wrapper ">
+            <div class="content-brand ">
+                <h1>Reviva Fashion</h1>
+                <p>by RCHLO</p>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="footer-wrapper ">
+            <div class="footer-menu ">
+                <nav>
+                    <h3>Menu</h3>
+                    <ul>
+                        <li class="footer-menu__itens "><a href=" ">Página Inicial</a></li>
+                        <li class="footer-menu__itens "><a href=" ">Masculino</a></li>
+                        <li class="footer-menu__itens "><a href=" ">Feminino</a></li>
+                        <li class="footer-menu__itens "><a href=" ">Infantil</a></li>
+                        <li class="footer-menu__itens "><a href=" ">Manual de Moda</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-medias ">
+                <h3>Siga-nos nas redes sociais</h3>
+                <div>
+                    <img src="../src/facebook-logo.png " alt="logo do facebook ">
+                    <img src="../src/twitter-logo.png " alt="logo do twitter ">
+                    <img src="../src/instagram-logo.png " alt="logo do instagram ">
+                    <img src="../src/youtube-logo.png " alt="logo do youtube ">
+                </div>
+            </div>
+
+            <div class="footer-contact ">
+                <h3>Entre em contato</h3>
+                <p>Contato</p>
+                <p>reviva@rchlo.com.br</p>
+                <div class="whatsapp ">
+                    <p>Whatsapp</p>
+                    <img src="../src/whatsapp-logo.png " alt="logo do whatsapp ">
+                </div>
+                <div class="telefone ">
+                    <p>11 2123-3321</p>
+                    <img src="../src/telephone-logo.png " alt="logo do telefone ">
+                </div>
+            </div>
+
+            <div class="newsletter ">
+                <h3>Assine nossa newsletter</h3>
+                <div>
+                    <input type="email " id="email " placeholder="Digite seu email ">
+                    <input type="submit " class="newsletter__button " value="CADASTRAR ">
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="./js/totalCalculator.js"></script>
+    <script src="./js/totalCalculator2.js"></script>
+    <script src="./js/updateCart.js"></script>
+    <script src="./js/updateCart2.js"></script>
+</body>
+
+</html>
