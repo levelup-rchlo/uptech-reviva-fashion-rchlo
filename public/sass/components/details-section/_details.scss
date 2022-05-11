@@ -193,20 +193,99 @@
     }
 }
 
-.details__button--size {
-
-    & input[type="radio"] {
-        display: none;
-    }
-
-    & label {
-        color: transparent;
-    }
-
-}
-
 .details__model{
     @media screen and (max-width: 845px){
         text-align: center;
     }
 }
+
+.details__button--size {
+    & input[type="radio"] {
+       display: none;
+    }
+    & label {
+       display: none;
+   }
+
+}
+
+.details__button--size--g input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/m\ \(1\).png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--m input:checked + label:before {
+    border:5px solid $tertiary-color ;
+
+    padding: 4px;
+  }
+  .details__button--size--m input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/m.png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--p input:checked + label:before {
+    border:5px solid $tertiary-color ;
+
+    padding: 4px;
+  }
+
+  .details__button--size--p input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/p.png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--g input:checked + label:before {
+    border:5px solid $tertiary-color ;
+    padding: 4px;
+  }
+
+  .details__button--size--g input:hover + label:before{
+    cursor: pointer;
+
+  }
+  .details__button--size--m input:hover + label:before{
+    cursor: pointer;
+
+  }
+  .details__button--size--p input:hover + label:before{
+    cursor: pointer;
+
+  }
+  
