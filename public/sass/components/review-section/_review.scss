@@ -1,0 +1,242 @@
+@import '../../assets/var';
+
+//componetizar posteriormente
+
+@mixin img($scale) {
+
+    @if $scale ==small {
+        width: auto;
+        height: 14em;
+    }
+
+    @else {
+        width: 14em;
+        height: 16em;
+    }
+
+}
+
+//componetizar posteriormente
+
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) repeat(4, 1fr) 2fr;
+    grid-template-rows: repeat(2, 2fr);
+    font-size: $font-size-text;
+    font-weight: $font-weight-text;
+    padding: 1% 1% 4% 0;
+    row-gap: 5%;
+    column-gap: 5%;
+    grid-template-areas: "review__image--top    review__description--top    review__size--top    review__value--top    review__amount--top    review__subtotal--top    review__payment"
+        "review__image--bottom review__description--bottom review__size--bottom review__value--bottom review__amount--bottom review__subtotal--bottom review__payment";
+
+
+    strong {
+        display: block;
+        width: max-content;
+
+    }
+
+
+    & img {
+        @include img(small);
+    }
+
+    &__payment {
+        background-color: $quaternary-color;
+    }
+
+    &__image {
+        grid-area: review__image--top;
+
+    }
+
+    &__description {
+        grid-area: review__description--top;
+    }
+
+    &__size {
+        grid-area: review__size--top;
+
+    }
+
+    &__value {
+        grid-area: review__value--top;
+    }
+
+    &__amount {
+        grid-area: review__value--top;
+
+    }
+
+    &__subtotal {
+        grid-area: review__subtotal--top;
+    }
+
+    &__payment {
+        grid-area: review__payment;
+
+        div {
+            padding: 11%;
+            padding-top: 0;
+            font-weight: $font-weight-text;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 159%;
+            border: none;
+            height: 3em;
+            background-color: $tertiary-color;
+
+        }
+
+        button:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+
+    .review__select {
+        display: flex;
+        margin-top: 12px;
+        justify-content: space-between;
+
+        input {
+            width: 25px;
+        }
+
+        button {
+            background-color: $tertiary-color;
+            border-radius: 4px;
+            border: none;
+            width: 20px;
+        }
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+
+        }
+    }
+
+    .review__size--button {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 17px;
+    }
+}
+
+
+@media screen and (max-width:958px) {
+
+    .review{
+        grid-template-columns: repeat(2, 2fr) repeat(4, 1fr);
+        grid-template-rows: repeat(3 , 0.2fr);
+        grid-template-areas:
+            "review__image--top review__description--top review__size--top review__value--top review__amount--top review__subtotal--top"
+            "review__image--bottom review__description--bottom review__size--bottom review__value--bottom review__amount--bottom review__subtotal--bottom"
+            "review__payment review__payment review__payment review__payment review__payment review__payment";
+    }
+    .review__payment {
+        width: 100%;
+        height: 11%;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+
+.details__button--size {
+    & input[type="radio"] {
+       display: none;
+    }
+    & label {
+       display: none;
+   }
+
+}
+
+.details__button--size--g input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/m\ \(1\).png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--m input:checked + label:before {
+    border:5px solid $tertiary-color ;
+
+    padding: 4px;
+  }
+  .details__button--size--m input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/m.png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--p input:checked + label:before {
+    border:5px solid $tertiary-color ;
+
+    padding: 4px;
+  }
+
+  .details__button--size--p input + label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url(../../../images/p.png);
+    background-position:center ;
+    background-size: cover;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .details__button--size--g input:checked + label:before {
+    border:5px solid $tertiary-color ;
+    padding: 4px;
+  }
+
+  .details__button--size--g input:hover + label:before{
+    cursor: pointer;
+
+  }
+  .details__button--size--m input:hover + label:before{
+    cursor: pointer;
+
+  }
+  .details__button--size--p input:hover + label:before{
+    cursor: pointer;
+
+  }
+  

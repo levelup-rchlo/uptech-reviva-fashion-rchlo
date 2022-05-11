@@ -143,17 +143,95 @@
   color: white;
 }
 
-.details__button--size input[type=radio] {
-  display: none;
-}
-.details__button--size label {
-  color: transparent;
-}
-
 @media screen and (max-width: 845px) {
   .details__model {
     text-align: center;
   }
+}
+
+.details__button--size input[type=radio] {
+  display: none;
+}
+.details__button--size label {
+  display: none;
+}
+
+.details__button--size--g input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/m\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--m input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--m input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/m.png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--p input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--p input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/p.png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--g input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--g input:hover + label:before {
+  cursor: pointer;
+}
+
+.details__button--size--m input:hover + label:before {
+  cursor: pointer;
+}
+
+.details__button--size--p input:hover + label:before {
+  cursor: pointer;
 }
 
 .header__logo, .footer__logo, .logo {
@@ -457,10 +535,194 @@
   height: 55px;
   width: 8%;
   height: 3em;
+  border: none;
 }
 .searchBar__button:hover {
   transition: 0.5s all ease-in;
   transform: scale(1.1);
+}
+
+.review {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) repeat(4, 1fr) 2fr;
+  grid-template-rows: repeat(2, 2fr);
+  font-size: 1em;
+  font-weight: 300;
+  padding: 1% 1% 4% 0;
+  row-gap: 5%;
+  column-gap: 5%;
+  grid-template-areas: "review__image--top    review__description--top    review__size--top    review__value--top    review__amount--top    review__subtotal--top    review__payment" "review__image--bottom review__description--bottom review__size--bottom review__value--bottom review__amount--bottom review__subtotal--bottom review__payment";
+}
+.review strong {
+  display: block;
+  width: max-content;
+}
+.review img {
+  width: auto;
+  height: 14em;
+}
+.review__payment {
+  background-color: #82954B;
+}
+.review__image {
+  grid-area: review__image--top;
+}
+.review__description {
+  grid-area: review__description--top;
+}
+.review__size {
+  grid-area: review__size--top;
+}
+.review__value {
+  grid-area: review__value--top;
+}
+.review__amount {
+  grid-area: review__value--top;
+}
+.review__subtotal {
+  grid-area: review__subtotal--top;
+}
+.review__payment {
+  grid-area: review__payment;
+}
+.review__payment div {
+  padding: 11%;
+  padding-top: 0;
+  font-weight: 300;
+}
+.review__payment button {
+  display: block;
+  margin: auto;
+  margin-top: 159%;
+  border: none;
+  height: 3em;
+  background-color: #BABD42;
+}
+.review__payment button:hover {
+  color: white;
+  cursor: pointer;
+}
+.review .review__select {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+.review .review__select input {
+  width: 25px;
+}
+.review .review__select button {
+  background-color: #BABD42;
+  border-radius: 4px;
+  border: none;
+  width: 20px;
+}
+.review .review__select:hover {
+  color: white;
+  cursor: pointer;
+}
+.review .review__size--button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 17px;
+}
+
+@media screen and (max-width: 958px) {
+  .review {
+    grid-template-columns: repeat(2, 2fr) repeat(4, 1fr);
+    grid-template-rows: repeat(3, 0.2fr);
+    grid-template-areas: "review__image--top review__description--top review__size--top review__value--top review__amount--top review__subtotal--top" "review__image--bottom review__description--bottom review__size--bottom review__value--bottom review__amount--bottom review__subtotal--bottom" "review__payment review__payment review__payment review__payment review__payment review__payment";
+  }
+
+  .review__payment {
+    width: 100%;
+    height: 11%;
+    text-align: center;
+    justify-self: center;
+  }
+}
+.details__button--size input[type=radio] {
+  display: none;
+}
+.details__button--size label {
+  display: none;
+}
+
+.details__button--size--g input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/m\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--m input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--m input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/m.png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--p input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--p input + label:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../../images/p.png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.details__button--size--g input:checked + label:before {
+  border: 5px solid #BABD42;
+  padding: 4px;
+}
+
+.details__button--size--g input:hover + label:before {
+  cursor: pointer;
+}
+
+.details__button--size--m input:hover + label:before {
+  cursor: pointer;
+}
+
+.details__button--size--p input:hover + label:before {
+  cursor: pointer;
 }
 
 body {
