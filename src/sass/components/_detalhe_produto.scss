@@ -43,6 +43,7 @@
         font-size: 2rem;
     }
 }
+
 .detalhes__produto__conteudo__descericao {
     color: $color_text;
     font-style: normal;
@@ -56,8 +57,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5% 0 0 0;
-    @extend .detalhes__produto__conteudo;
+    width: 100%;
 }
+
 .detalhes__imagem__borda {
     @include border__img;
     height: 25vh;
@@ -75,10 +77,12 @@
         margin: .2%;
     } 
 }
+
 .detalhes__imagem__descricao {
     height: 100%;
     @extend .detalhes__produto__conteudo;
 }
+
 .imagem__botao {
     align-items: flex-start;
     display: flex;        
