@@ -1,0 +1,88 @@
+@import "../abstract/variaveis";
+
+.conteudo_detalhes {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 10% 30% 40% 10% 10%;
+    grid-template-areas:
+        "imagem-principal titulo"
+        "imagem-principal descricao"
+        "imagem-principal produtos"
+        "imagem-principal tamanhos"
+        "imagem-principal botao";
+    margin: 7.2em 0;
+
+    .detalhes_titulo {
+        grid-area: titulo;
+        font-size: 2.4em;
+        margin: 0;
+    }
+
+    .detalhes_descricao {
+        grid-area: descricao;
+        font-size: 2.4em;
+        margin: 0.5em 0;
+    }
+
+    .detalhes_imagem-principal {
+        grid-area: imagem-principal;
+        height: 65em;
+        @include bordas-imagens;
+
+        .imagem-principal_principal {
+            height: 100%;
+        }
+    }
+
+    .detalhes_imagens {
+        grid-area: produtos;
+        height: 18em;
+        display: flex;
+        justify-content: space-between;
+        @include bordas-imagens;
+
+        .imagem_secundaria-1 {
+            height: 100%;
+        }
+
+        .imagem_secundaria-2 {
+            height: 100%;
+        }
+
+        .imagem_secundaria-3 {
+            height: 100%;
+        }
+
+        .imagem_secundaria-4 {
+            height: 100%;
+        }
+    }
+
+    .detalhes_tamanhos {
+        grid-area: tamanhos;
+        padding: 0;
+        margin: 0;
+        align-self: flex-end;
+
+        .tamanhos_label {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+
+    .detalhes_botao-sacola {
+        grid-area: botao;
+        height: 50px;
+        width: 315px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        color: #ffffff;
+        background: url(../assets/svg/logo-sacola-branca.svg) $cor-primaria right no-repeat;
+        border: .5em solid transparent;
+
+        &:hover {
+            background-color: $cor-secundaria;
+        }
+    }
+}
