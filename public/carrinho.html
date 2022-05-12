@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/Logo_favicon.webp" type="image/x-icon">
+    <script src="js/main.js" async></script>
+    <title>Reviva Fashion - Carrinho</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho_logo">
+            <h1 class="logo_superior">Reviva Fashion</h1>
+            <span class="logo_inferior">by RCHLO</span>
+        </a>
+        <a href="#" class="cabecalho_carrinho" aria-label="carrinho de compra"></a>
+    </header>
+    <nav class="menu-navegacao">
+        <button class="menu-navegacao_botao">Menu</button>
+        <div class="menu-navegacao_items">
+            <a class="item_link" href="#">Página Inicial</a></li>
+            <a class="item_link" href="#">Moda Masculina</a></li>
+            <a class="item_link" href="#">Moda Feminina</a></li>
+            <a class="item_link" href="#">Moda Infantíl</a></li>
+            <a class="item_link" href="#">Manual de Moda</a></li>
+        </div>
+    </nav>
+    <main class="conteudo">
+        <section class="conteudo_pesquisa">
+            <input class="pesquisa_campo" placeholder="Faça sua busca aqui se já souber o que está procurando..."
+                type="text">
+            <button class="pesquisa_botao" aria-label="Pesquisar"></button>
+        </section>
+        <section class="conteudo_carrinho">
+            <h1 class="carrinho_titulo">Minha Sacola</h1>
+            <section class="carrinho_produto">
+                <img class="produto_imagem" src="assets/img/produto-8/img1.jpg"
+                    alt="Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom">
+                <div class="produto_descricao">
+                    <h2 class="descricao_titulo">Produto</h2>
+                    <p class="descricao">Camisa Plus Size Feminina Manga Longa Abstrata Marrom Filipa by
+                        Reviva Fashion</p>
+                </div>
+                <div class="produto_tamanho">
+                    <h2 class="tamanho_titulo">Tamanho escolhido</h2>
+                    <input type="radio" id="tamanho-p-8" name="tamanhos_modelo-8" class="tamanhos_input">
+                    <label class="tamanho-label-sacola" for="tamanho-p-8">P</label>
+                    <input type="radio" id="tamanho-m-8" name="tamanhos_modelo-8" class="tamanhos_input">
+                    <label class="tamanho-label-sacola" for="tamanho-m-8">M</label>
+                    <input type="radio" id="tamanho-g-8" name="tamanhos_modelo-8" class="tamanhos_input">
+                    <label class="tamanho-label-sacola" for="tamanho-g-8">G</label>
+                </div>
+                <div class="produto_valor">
+                    <h2 class="valor_titulo">Valor</h2>
+                    <p class="valor">R$ 179,90</p>
+                </div>
+                <div class="produto_quantidade">
+                    <h2 class="quantidade_titulo">Quantidade</h2>
+                    <input class="quantidade" type="number" min="1" value="1">
+                </div>
+                <div class="produto_subtotal">
+                    <h2 class="subtotal_titulo">Subtotal</h2>
+                    <p class="subtotal">R$ 179,90</p>
+                </div>
+            </section>
+            <section class="carrinho_produto">
+                <img class="produto_imagem" src="assets/img/produto-6/img1.jpg"
+                    alt="Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa">
+                <div class="produto_descricao">
+                    <h2 class="descricao_titulo">Produto</h2>
+                    <p class="descricao">Top Cropped Jeans Feminino Denim Escuro Pool by Reviva Fashion</p>
+                </div>
+                <div class="produto_tamanho">
+                    <h2 class="tamanho_titulo">Tamanho escolhido</h2>
+                    <input type="radio" id="tamanho-p-6" name="tamanhos_modelo-6" class="tamanhos_input">
+                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-p-6">P</label>
+                    <input type="radio" id="tamanho-m-6" name="tamanhos_modelo-6" class="tamanhos_input">
+                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-m-6">M</label>
+                    <input type="radio" id="tamanho-g-6" name="tamanhos_modelo-6" class="tamanhos_input">
+                    <label class="tamanhos_label tamanho-label-sacola" for="tamanho-g-6">G</label>
+                </div>
+                <div class="produto_valor">
+                    <h2 class="valor_titulo">Valor</h2>
+                    <p class="valor">R$ 99,90</p>
+                </div>
+                <div class="produto_quantidade">
+                    <h2 class="quantidade_titulo">Quantidade</h2>
+                    <input class="quantidade" type="number" min="1" value="1">
+                </div>
+                <div class="produto_subtotal">
+                    <h2 class="subtotal_titulo">Subtotal</h2>
+                    <p class="subtotal">R$ 99,90</p>
+                </div>
+            </section>
+            <div class="carrinho_checkout">
+                <p class="checkout_total">Total R$ 159,70</p>
+                <p class="checkout_valores">1x39,90 = 39,90</p>
+                <p class="checkout_valores">2x59,90 = 119,80</p>
+                <a href="#" class="checkout_botao">Ir para pagamento</a>
+            </div>
+        </section>
+    </main>
+    <footer class="base-rodape">
+        <section class="rodape">
+            <a href="index.html" class="rodape_logo">
+                <h1 class="logo_superior">Reviva Fashion</h1>
+                <span class="logo_inferior">by RCHLO</span>
+            </a>
+            <ul class="rodape_menu-navegacao">
+                <li class="menu-navegacao_titulo">Menu</li>
+                <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Página Inicial</a></li>
+                <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Masculina</a></li>
+                <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Feminina</a></li>
+                <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Moda Infantíl</a></li>
+                <li class="menu-navegacao_item"><a class="menu-navegacao_link" href="#">Manual de Moda</a></li>
+            </ul>
+            <nav class="rodape_redes-sociais">
+                <p class="redes-sociais_titulo">Siga-nos nas redes sociais</p>
+                <ul class="redes-sociais_lista-icones">
+                    <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-facebook.svg"
+                                alt="facebook"></a></li>
+                    <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-instagram.svg"
+                                alt="instagram"></a></li>
+                    <li><a href="#"><img class="lista-icones_icone" src="assets/svg/logo-youtube.svg" alt="youtube"></a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="rodape_contatos">
+                <li class="contatos_item">Entre em contato</li>
+                <li class="contatos_item"><a class="contatos_link" href="#">Contato</a></li>
+                <li class="contatos_item"><a class="contatos_link"
+                        href="mailto:reviva@rchlo.com.br?">reviva@rchlo.com.br</a></li>
+                <li class="contatos_item"><a class="contatos_link contatos_link-whats"
+                        href="https://web.whatsapp.com/send?phone=#############">WhatsApp</a></li>
+                <li class="contatos_item"><a class="contatos_link contatos_link-tel" href="tel:+551121233321">11
+                        2123-3321</a></li>
+            </ul>
+            <fieldset class="rodape_newsletter">
+                <label class="newsletter_label" for="newsletter_campo">Assine nossa newsletter</label>
+                <input class="newsletter_input" type="text" id="newsletter_campo">
+                <button class="newsletter_botao">ASSINAR JÁ</button>
+            </fieldset>
+        </section>
+    </footer>
+</body>
+
+</html>

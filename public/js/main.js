@@ -1,6 +1,6 @@
-const botao = document.querySelector(".menu-navegacao_botao");
-const painel = document.querySelector(".menu-navegacao_items");
+const botaoMenuNavegacao = document.querySelector(".menu-navegacao_botao");
+const painelMenuNavegacao = document.querySelector(".menu-navegacao_items");
 
-botao.addEventListener("click" , ()=>{
-    painel.classList.toggle("menu-navegacao--ativo")
+botaoMenuNavegacao.addEventListener("click" , ()=>{
+    painelMenuNavegacao.classList.toggle("menu-navegacao--ativo")
 })

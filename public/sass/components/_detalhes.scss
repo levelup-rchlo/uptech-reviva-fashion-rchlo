@@ -2,87 +2,125 @@
 
 .conteudo_detalhes {
     display: grid;
-    grid-template-columns: 45% 55%;
-    grid-template-rows: 10% 30% 40% 10% 10%;
+    gap: 0 2em;
     grid-template-areas:
         "imagem-principal titulo"
         "imagem-principal descricao"
         "imagem-principal produtos"
         "imagem-principal tamanhos"
         "imagem-principal botao";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 10% 28% 42% 10% 10%;
     margin: 7.2em 0;
+    width: calc(100% - 2em);
 
-    .detalhes_titulo {
-        grid-area: titulo;
-        font-size: 2.4em;
+    @media screen and(max-width: $extra-large) {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 10% 30% 35% 13% 10%;
+    }
+
+    @media screen and(max-width: $large) {
+        grid-template-areas:
+            "imagem-principal titulo"
+            "imagem-principal descricao"
+            "produtos produtos"
+            "tamanhos tamanhos"
+            "botao botao";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 6em auto 30% 5% 10%;
+        row-gap: 1em;
+    }
+
+    @media screen and(max-width: $medium) {
+        grid-template-areas:
+            "imagem-principal"
+            "titulo"
+            "descricao"
+            "produtos "
+            "tamanhos"
+            "botao";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
         margin: 0;
+        row-gap: 1em;
+        width: 100%;
     }
+}
 
-    .detalhes_descricao {
-        grid-area: descricao;
-        font-size: 2.4em;
-        margin: 0.5em 0;
+.detalhes_titulo {
+    font-size: 2.4em;
+    grid-area: titulo;
+    margin: 0;
+    width: calc(100% - 1em);
+
+    @media screen and(min-width: 0) {
+        font-size: 2em;
     }
+}
 
-    .detalhes_imagem-principal {
-        grid-area: imagem-principal;
-        height: 65em;
-        @include bordas-imagens;
+.detalhes_descricao {
+    font-size: 2em;
+    grid-area: descricao;
+    margin: .5em 0;
+    width: calc(100% - 1em);
 
-        .imagem-principal_principal {
-            height: 100%;
-        }
+    @media screen and(max-width: $extra-large) {
+        font-size: 1.7em;
+        margin: 1em 0;
     }
+}
 
-    .detalhes_imagens {
-        grid-area: produtos;
-        height: 18em;
-        display: flex;
-        justify-content: space-between;
-        @include bordas-imagens;
+.detalhes_imagens {
+    align-items: center;
+    display: flex;
+    grid-area: produtos;
+    height: auto;
+    justify-content: space-between;
+    width: 100%;
+    @include bordas-imagens;
+}
 
-        .imagem_secundaria-1 {
-            height: 100%;
-        }
+.imagem_secundaria {
+    width: 20%;
+}
 
-        .imagem_secundaria-2 {
-            height: 100%;
-        }
+.imagem_link {
+    max-width: 15em;
+    margin: .5em;
+}
 
-        .imagem_secundaria-3 {
-            height: 100%;
-        }
+.detalhes_imagem-principal {
+    grid-area: imagem-principal;
+    @include bordas-imagens;
+}
 
-        .imagem_secundaria-4 {
-            height: 100%;
-        }
+.imagem-principal_principal {
+    width: 100%;
+}
+
+.detalhes_tamanhos {
+    align-self: flex-end;
+    grid-area: tamanhos;
+    margin: auto 0;
+}
+
+.tamanhos_label-sacola {
+    font-size: 2em;
+    @extend .tamanhos_label;
+}
+
+.produto_botao-sacola-detalhes {
+    @extend .produto_botao-sacola;
+    align-self: flex-end;
+    grid-area: botao;
+    height: 4.5em;
+    width: 25em;
+
+    @media screen and(max-width: $medium) {
+        width: 100%;
     }
+}
 
-    .detalhes_tamanhos {
-        grid-area: tamanhos;
-        padding: 0;
-        margin: 0;
-        align-self: flex-end;
-
-        .tamanhos_label {
-            font-size: 2em;
-            text-align: center;
-        }
-    }
-
-    .detalhes_botao-sacola {
-        grid-area: botao;
-        height: 50px;
-        width: 315px;
-        align-self: flex-end;
-        font-size: 20px;
-        border: none;
-        color: #ffffff;
-        background: url(../assets/svg/logo-sacola-branca.svg) $cor-primaria right no-repeat;
-        border: .5em solid transparent;
-
-        &:hover {
-            background-color: $cor-secundaria;
-        }
-    }
+.botao-sacola-detalhes {
+    @extend .botao-sacola;
 }

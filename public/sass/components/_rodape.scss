@@ -1,0 +1,262 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.base-rodape {
+  background-color: $cor-primaria;
+}
+
+.rodape {
+  background-color: $cor-primaria;
+  box-sizing: border-box;
+  color: $cor-primaria-negativa;
+  display: grid;
+  grid-template-areas:
+    "logo logo logo logo"
+    "menu sociais contato newsletter";
+  grid-template-columns: 21% 21% 21% 37%;
+  grid-template-rows: 30% 70%;
+  margin: 7.2em auto auto auto;
+  max-width: $extra-extra-large;
+  padding: 4.2em 4.2em;
+
+  @media screen and (max-width: $large) {
+    gap: 2em;
+    grid-template-areas:
+      "logo logo"
+      "menu sociais"
+      "contato newsletter";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8em 1fr 1fr;
+    padding: 1em;
+  }
+
+  @media screen and (max-width: $medium) {
+    grid-template-areas:
+      "logo"
+      "menu"
+      "contato"
+      "newsletter"
+      "sociais";
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em;
+  }
+}
+
+.rodape_logo {
+  color: inherit;
+  grid-area: logo;
+  text-align: end;
+  text-decoration: none;
+  width: 25.4em;
+
+  @media screen and (max-width: $large) {
+    margin: auto;
+  }
+}
+
+.rodape_menu-navegacao {
+  font-size: 1.8em;
+  grid-area: menu;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: $large) {
+    justify-self: center;
+  }
+}
+
+.menu-navegacao_titulo {
+  font-weight: bold;
+  margin: 0 0 .7em 0;
+
+  @media screen and (max-width: $large) {
+    text-align: center;
+  }
+}
+
+.menu-navegacao_item {
+  margin: 0 0 .7em 0;
+
+  @media screen and (max-width: $large) {
+    text-align: center;
+  }
+}
+
+.menu-navegacao_link {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    font-weight: bolder;
+  }
+}
+
+.rodape_redes-sociais {
+  grid-area: sociais;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: $large) {
+    justify-self: center;
+  }
+}
+
+.redes-sociais_titulo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0 0 .5em 0;
+}
+
+.redes-sociais_lista-icones {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+
+  @media screen and (max-width: $extra-large) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $large) {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.lista-icones_icone {
+  transition: .2s all ease-in-out;
+  &:hover {
+    margin: 0 1em;
+    transform: scale(1.1);
+  }
+}
+
+.rodape_contatos {
+  grid-area: contato;
+  justify-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  word-wrap: break-word;
+  &::first-line {
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: $large) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.contatos_item {
+  font-size: 1.8em;
+  margin: 0 0 .7em 0;
+}
+
+.contatos_link {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.contato_icone-whatsapp {
+  height: 1em;
+  margin-left: .3em;
+}
+
+.contatos_link-whats::after {
+  background: center/100% url(../assets/svg/logo-whats.svg);
+  content: "";
+  display: inline-block;
+  height: .8em;
+  margin: 0 .2em;
+  width: .8em;
+}
+
+.contato_icone-telefone {
+  height: 1em;
+  margin-left: .3em;
+}
+
+.contatos_link-tel::after {
+  background: center/100% url(../assets/svg/logo-telefone.svg);
+  content: "";
+  display: inline-block;
+  height: .8em;
+  margin: 0 .2em;
+  width: .8em;
+}
+
+.rodape_newsletter {
+  align-content: flex-start;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: newsletter;
+  justify-content: space-between;
+  justify-self: end;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+
+  @media screen and (max-width: $large) {
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+.newsletter_label {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: .5em;
+
+  @media screen and (max-width: $large) {
+    margin: 0;
+  }
+}
+
+.newsletter_input {
+  border: none;
+  box-sizing: border-box;
+  font-size: 1.7em;
+  height: 2em;
+  padding: 0 .5em;
+  width: 65%;
+
+  @media screen and (max-width: $large) {
+    margin: 0;
+    width: 20em;
+  }
+
+  @media screen and (max-width: $medium) {
+    width: 85%;
+  }
+}
+
+.newsletter_botao {
+  background-color: $cor-terciaria;
+  border: none;
+  color: $cor-primaria-negativa;
+  font-size: 1.4em;
+  margin-left: .2em;
+  width: 33%;
+  &:hover {
+    background-color: $cor-secundaria;
+    cursor: pointer;
+  }
+  @media screen and (max-width: $large) {
+    height: 2em;
+    margin: .3em auto;
+  }
+
+  @media screen and (max-width: $medium) {
+    height: max-content;
+  }
+}
+

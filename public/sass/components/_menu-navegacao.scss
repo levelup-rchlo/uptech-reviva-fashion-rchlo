@@ -1,0 +1,86 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.menu-navegacao {
+  background-color: $cor-primaria;
+  color: $cor-primaria-negativa;
+
+  @media screen and (max-width: $medium) {
+    display: flex;
+    height: 6.2em;
+  }
+}
+
+.menu-navegacao_botao {
+  display: none;
+
+  @media screen and (max-width: $medium) {
+    background: no-repeat left url(../assets/svg/logo-menu.svg);
+    border: none;
+    color: $cor-primaria-negativa;
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0 1em;
+    text-align: end;
+    width: 5em;
+  }
+}
+
+.menu-navegacao_items {
+  align-items: center;
+  display: flex;
+  font-size: 1.8em;
+  font-weight: 700;
+  height: 3.5em;
+  justify-content: space-around;
+  list-style: none;
+  margin: auto;
+  max-width: $extra-extra-large;
+  padding: 0;
+
+  @media screen and (max-width: $medium) {
+    background-color: $cor-primaria;
+    border-radius: 0 0 30px;
+    font-size: 1.6em;
+    flex-direction: column;
+    height: 50vh;
+    left: -100vw;
+    line-height: 1.5em;
+    margin-top: 3.2em;
+    padding: 0 2em;
+    position: absolute;
+    text-align: center;
+    transition: .5s all;
+    width: 40%;
+    z-index: 999;
+  }
+}
+
+
+
+.menu-navegacao--ativo {
+  @media screen and (max-width: $medium) {
+    left: 0;
+  }
+}
+
+.menu-navegacao_botao:hover {
+  @media screen and (max-width: $medium) {
+    cursor: pointer;
+  }
+}
+
+.item_link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: .2s linear;
+  }
+
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+}

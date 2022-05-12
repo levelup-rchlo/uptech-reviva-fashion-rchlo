@@ -1,0 +1,208 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+$font-size-carrinho: 1.2em;
+.conteudo {
+    position: relative;
+}
+
+.conteudo_carrinho {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+
+    @media screen and(max-width: $large) {
+        width: 100%;
+    }
+
+    @media screen and(max-width: $medium) {
+        justify-content: flex-start;
+    }
+}
+
+.carrinho_titulo {
+    font-size: 2.5em;
+    grid-area: titulo;
+    margin: .5em 0;
+}
+
+.carrinho_produto {
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 10% 15% 10%;
+    grid-template-rows: auto 20em;
+    height: 22em;
+    @include bordas-imagens;
+    grid-template-areas:
+        "imagem descricao tamanhos valor quantidade subtotal";
+
+    @media screen and(max-width: $medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "imagem descricao"
+            "imagem tamanhos"
+            "imagem valor"
+            "imagem quantidade"
+            "imagem subtotal";
+        height: auto;
+        margin: 1em 0;
+    }
+
+    @media screen and(max-width: $small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "imagem "
+            "descricao "
+            "tamanhos "
+            "valor "
+            "quantidade"
+            "subtotal";
+        row-gap: 1em;
+    }
+}
+
+.produto_imagem {
+    grid-area: imagem;
+}
+
+.produto_descricao {
+    font-size: $font-size-carrinho;
+    grid-area: descricao;
+}
+
+.descricao_titulo {
+    margin: 0;
+}
+
+.descricao {
+    font-size: $font-size-carrinho;
+    margin: .2em 0;
+}
+
+.produto_tamanho {
+    font-size: $font-size-carrinho;
+    grid-area: tamanhos;
+}
+
+.tamanho_titulo {
+    margin: 0;
+}
+
+.tamanho-label-sacola {
+    font-size: $font-size-carrinho;
+    @extend .tamanhos_label;
+}
+
+.produto_valor {
+    font-size: $font-size-carrinho;
+    grid-area: valor;
+}
+
+.valor_titulo {
+    margin: 0;
+}
+
+.valor {
+    font-size: $font-size-carrinho;
+    margin: .2em 0;
+}
+
+.produto_quantidade {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-carrinho;
+    grid-area: quantidade;
+
+    @media screen and(max-width: $medium) {
+        align-items: flex-start;
+    }
+}
+
+.quantidade_titulo {
+    margin: 0;
+}
+
+.quantidade {
+    border-radius: .3em;
+    border: 1px solid;
+    margin: .2em 0;
+    text-align: center;
+    width: 3em;
+}
+
+.produto_subtotal {
+    font-size: $font-size-carrinho;
+    grid-area: subtotal;
+}
+
+.subtotal_titulo {
+    margin: 0;
+}
+
+.subtotal {
+    font-size: $font-size-carrinho;
+    margin: .2em 0;
+}
+
+.carrinho_checkout {
+    background-color: $cor-primaria;
+    box-sizing: border-box;
+    color: $cor-primaria-negativa;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: bold;
+    grid-area: checkout;
+    line-height: 1em;
+    margin: 2em;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 20%;
+
+    @media screen and(max-width: $large) {
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.checkout_total {
+    margin-top: 0;
+    word-spacing: 20;
+
+    @media screen and(max-width: $large) {
+        font-size: $font-size-carrinho;
+    }
+}
+
+.total {
+    text-align: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.checkout_botao {
+    background-color: $cor-secundaria;
+    border: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    height: auto;
+    margin: auto 0 0 0;
+    padding: .5em;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+        background-color: $cor-terciaria;
+        cursor: pointer;
+    }
+}

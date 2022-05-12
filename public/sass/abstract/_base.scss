@@ -1,0 +1,17 @@
+@import "../abstract/variaveis";
+
+body {
+    color: $cor-fontes;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+}
+.conteudo {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: $extra-extra-large;
+    padding: 0 4.2em;
+    @media screen and (max-width: $medium){
+      padding: 2em;
+    }
+}

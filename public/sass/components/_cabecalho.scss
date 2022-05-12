@@ -1,0 +1,37 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
+.cabecalho {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 18em;
+  justify-content: space-between;
+  margin: auto;
+  max-width: $extra-extra-large;
+  padding: 0 6em;
+
+  @media screen and (max-width: $large) {
+    padding: 0 3em;
+  }
+}
+
+.cabecalho_logo {
+  color: inherit;
+  text-align: end;
+  text-decoration: none;
+
+  @media screen and (max-width: $small) {
+    font-size: .8em;
+  }
+}
+
+.cabecalho_carrinho {
+  background: center no-repeat url(../../assets/svg/logo-carrinho-compras.svg);
+  transition: .4s all;
+  height: 5em;
+  width: 5em;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
