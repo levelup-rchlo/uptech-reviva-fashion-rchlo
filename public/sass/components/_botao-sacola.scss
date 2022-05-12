@@ -4,7 +4,7 @@
 
   &:hover .botao-sacola_conteudo {
     transform: rotateY(180deg);
-    transition: transform 0.5s;
+    transition: transform 0.5s .5s;
   }
 
   &:active {
