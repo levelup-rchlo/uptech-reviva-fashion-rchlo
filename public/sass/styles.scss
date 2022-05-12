@@ -1,11 +1,10 @@
-@import 'components/details-section/details';
+@import 'components/details-page/details-section/details';
+@import 'components/details-page/recomendations-section/recomendations';
 @import 'components/slogan-section/slogan';
-@import 'components/recomendations-section/recomendations';
-@import 'components/cart-page/cart';
 @import 'components/footer/footer';
 @import 'components/header/header';
 @import 'components/navbar/navbar';
 @import 'components/searchBar/searchBar';
-@import 'components/review-section/_review';
+@import 'components/cart-page/review-section/review';
 @import 'assets/var';
 @import 'assets/base';

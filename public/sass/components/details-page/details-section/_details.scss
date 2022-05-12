@@ -1,25 +1,8 @@
-@import '../../assets/var';
+@import '../../../assets/var';
 @import 'details-responsive';
-
-@mixin visualizer() {
-    outline: 1px solid red;
-}
-
-@mixin img($scale) {
-
-    @if $scale ==small {
-        width: auto;
-        height: 14em;
-    }
-
-    @else {
-        width: 14em;
-        height: 16em;
-    }
-
-}
-
-
+@import '../../../utils/mixins/visualizer';
+@import '../../../utils/mixins/handler-button-size';
+@import '../../../utils/mixins/handler-image';
 
 .details {
     height: auto;
@@ -85,7 +68,7 @@
             "details__button--cart details__button--cart";
 
     }
-   
+
     @media screen and (max-width:520px) {
 
         grid-template-columns: 1fr 1fr;
@@ -101,7 +84,7 @@
 
     }
 
-   
+
 }
 
 //tentar refatorar
@@ -154,7 +137,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     font-weight: $font-weight-text;
-    margin-top: 30%;
+    margin-top: 5%;
     border: none;
 
 
@@ -193,99 +176,74 @@
     }
 }
 
-.details__model{
-    @media screen and (max-width: 845px){
+.details__model {
+    @media screen and (max-width: 845px) {
         text-align: center;
+        
     }
 }
 
-.details__button--size {
-    & input[type="radio"] {
-       display: none;
+.details__button--size{
+    
+    & label{
+        color: transparent;
+        font-size: 0.1px;
     }
-    & label {
-       display: none;
-   }
+    & input{
+        display: none;
+    }
 
 }
 
-.details__button--size--g input + label:before {
-    content: '';
-    width: 22px;
-    height: 22px;
-    border-radius: 4px;
-    background: url(../../../images/m\ \(1\).png);
-    background-position:center ;
-    background-size: cover;
-    border: 1px solid gray;
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    padding: 2px;
-    margin-right: 8px;
-    margin-bottom: 3px;
-  }
-  
-  .details__button--size--m input:checked + label:before {
-    border:5px solid $tertiary-color ;
 
-    padding: 4px;
-  }
-  .details__button--size--m input + label:before {
-    content: '';
-    width: 22px;
-    height: 22px;
-    border-radius: 4px;
-    background: url(../../../images/m.png);
-    background-position:center ;
-    background-size: cover;
-    border: 1px solid gray;
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    padding: 2px;
-    margin-right: 8px;
-    margin-bottom: 3px;
-  }
-  
-  .details__button--size--p input:checked + label:before {
-    border:5px solid $tertiary-color ;
 
-    padding: 4px;
-  }
 
-  .details__button--size--p input + label:before {
-    content: '';
-    width: 22px;
-    height: 22px;
-    border-radius: 4px;
-    background: url(../../../images/p.png);
-    background-position:center ;
-    background-size: cover;
-    border: 1px solid gray;
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    padding: 2px;
-    margin-right: 8px;
-    margin-bottom: 3px;
-  }
-  
-  .details__button--size--g input:checked + label:before {
-    border:5px solid $tertiary-color ;
-    padding: 4px;
-  }
 
-  .details__button--size--g input:hover + label:before{
+
+
+
+
+
+.details__button--size--p input+label:before {
+    border: none;
     cursor: pointer;
+    border: 2px solid $tertiary-color ;
+    @include button-size(p);
+}
 
-  }
-  .details__button--size--m input:hover + label:before{
+.details__button--size--p input:checked+label:before {
+    background-color: rgba( $tertiary-color,  0.5);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
+.details__button--size--m input+label:before {
+    border: none;
     cursor: pointer;
+    border: 2px solid $tertiary-color ;
+    @include button-size(m);
+}
 
-  }
-  .details__button--size--p input:hover + label:before{
+.details__button--size--m input:checked+label:before {
+    background-color: rgba( $tertiary-color,  0.5);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
+.details__button--size--g input+label:before {
+    border: none;
     cursor: pointer;
+    border: 2px solid $tertiary-color ;
+    @include button-size(g);
+}
 
-  }
-  
+.details__button--size--g input:checked+label:before {
+    background-color: rgba( $tertiary-color,  0.5);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+

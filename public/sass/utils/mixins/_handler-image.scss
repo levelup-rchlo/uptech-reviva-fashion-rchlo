@@ -1,0 +1,14 @@
+
+@mixin img($scale) {
+    
+    @if $scale==small {
+        width: auto;
+        height: 14em;
+    }
+
+    @else {
+        width: 14em;
+        height: 16em;
+    }
+
+}
