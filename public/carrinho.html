@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/sass/carrinho.css">
+    <script src="./js/total-carrinho.js"> </script>
+    <script src="./js/total-carrinho-taxado.js"> </script>
+    <script src="./js/carrinho-total-descontos.js"> </script>
     <title>Reviva Fashion Carrinho</title>
 </head>
 <body>
@@ -52,9 +55,9 @@
                         Tamanho escolhido
                     </h3>
                     <div class="minha__sacola__imagem__botao">
-                        <button type="radio" name="P" class="minha__sacola__botao__tamanho">P</button>
-                        <button type="radio" name="M" class="minha__sacola__botao__tamanho">M</button>
-                        <button type="radio" name="G" class="minha__sacola__botao__tamanho">G</button>
+                        <input type="radio" name="P" class="minha__sacola__botao__tamanho">P</input>
+                        <input type="radio" name="M" class="minha__sacola__botao__tamanho">M</input>
+                        <input type="radio" name="G" class="minha__sacola__botao__tamanho">G</input>
                     </div>
                 </div>
                 <div class="minha__sacola__valor__produto">
@@ -95,9 +98,9 @@
                         Tamanho escolhido
                     </h3>
                     <div class="minha__sacola__imagem__botao">
-                        <button type="radio" name="P" class="minha__sacola__botao__tamanho">P</button>
-                        <button type="radio" name="M" class="minha__sacola__botao__tamanho">M</button>
-                        <button type="radio" name="G" class="minha__sacola__botao__tamanho">G</button>
+                        <input type="radio" name="P" class="minha__sacola__botao__tamanho">P</input>
+                        <input type="radio" name="M" class="minha__sacola__botao__tamanho">M</input>
+                        <input type="radio" name="G" class="minha__sacola__botao__tamanho">G</input>
                     </div>
                 </div>
                 <div class="minha__sacola__valor__produto">
@@ -134,7 +137,7 @@
                         <p class="minha__sacola__total__conteudo">R$ 119,80</p>
                     </div>
                 <div class="minha__sacola__botao__total">
-                    <button class="minha__sacola__botao__total__pagamento">Ir para pagamento</button>               
+                    <button class="minha__sacola__botao__total__pagamento" onclick="total_da_Compra()">Ir para pagamento</button>               
                 </div>
                 </div>
         </section>
