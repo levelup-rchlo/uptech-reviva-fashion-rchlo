@@ -9,7 +9,6 @@ const totalSemDesconto = carrinho
     .map((valorProduto, indiceAtual) => {
         if (!produtosParaDesconto.includes(valorProduto) && carrinho.includes(valorProduto, indiceAtual + 1)) {
             produtosParaDesconto.push(valorProduto);
-            return valorProduto;
         }
         return valorProduto;
         
