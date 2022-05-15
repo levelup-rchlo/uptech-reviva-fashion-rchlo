@@ -1,47 +1,33 @@
-const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
+const produtos = ['Camiseta Básica','Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
 
 const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
-const desconto = 0.9;
+const descontoTodasCamisetas = 0.9;
 const taxaCalcaJeans = 3.99;
 
 // ----------------------------------------------------------------------------------------------------
 // Pegando o índice pelo nome do produto e separando o índex
 
-let indiceCamisetas = [];
-const camisetas = produtos.filter((modeloProduto, index) => {
-    if (modeloProduto.includes("Camiseta")) {
-        indiceCamisetas.push(index);
-        return modeloProduto.includes("Camiseta")
-    }
-})
+let pegaIndice = (nomeProduto) => { 
+    let somaIndices = [];
+    produtos.filter((modeloProduto, index) => {
+        if (modeloProduto.includes(nomeProduto)) {
+            somaIndices.push(index);
+        }})
+        return somaIndices;
+}
 
-let indiceCalcaJeans = [];
-const calcaJeans = produtos.filter((modeloProduto, index) => {
-    if (modeloProduto.includes("Calça Jeans")) {
-        indiceCalcaJeans.push(index);
-        return modeloProduto.includes("Calça Jeans")
-    }
-})
-
-let indiceBermuda = [];
-const bermuda = produtos.filter((modeloProduto, index) => {
-    if (modeloProduto.includes("Bermuda")) {
-        indiceBermuda.push(index);
-        return modeloProduto.includes("Bermuda")
-    }
-})
+let indiceCamisetas = pegaIndice("Camiseta");
+let indiceCalcaJeans = pegaIndice("Calça Jeans");
+let indiceBermuda = pegaIndice("Bermuda");
 
 // ----------------------------------------------------------------------------------------------------
 // Desconto de 10% aplicado nas camisetas
 
-const camisetasComDescontoAplicado = indiceCamisetas.map((valor) => {
-    return precos[valor] * desconto;
-})
+const camisetasComDescontoAplicado = indiceCamisetas.map((valor) => precos[valor] * descontoTodasCamisetas)
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Desconto de 5% para mais de uma camiseta
 
-camisetasComDescontoAplicado
 const descontosAdicional = 0.95;
 
 const calculaTotal = (valor1, valor2) => valor1 + valor2;
@@ -66,28 +52,17 @@ const totalASerSubtraindoDoTotal = produtosParaDesconto.reduce(calculaTotal);
 const totalDeCamisetaComDescontos = (totalSemDesconto - totalASerSubtraindoDoTotal + totalDosProdutosComDesconto);
 // ---------------------------------------------------------------------------------------------------------------------
 // Valor Calças Jeans com taxa
-const calcasComTaxa = indiceCalcaJeans.map(valor => precos[valor] + taxaCalcaJeans);
+const calcasComTaxa = indiceCalcaJeans.map(valor => precos[valor]).reduce((acc, valor) => acc += valor);
+
 // ---------------------------------------------------------------------------------------------------------------------
 // Valor Bermudas
-const valorTotalBermudas = indiceBermuda.map((valor) => {
-    return precos[valor];
-})
+const valorTotalBermudas = indiceBermuda.map(valor => precos[valor])
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-const totalCalcas = calcasComTaxa.reduce((accm, valorAtual) => accm + valorAtual )
 const totalBermudas = valorTotalBermudas.reduce((accm, valorAtual) => accm + valorAtual)
 
-const resultadoFinal = totalDeCamisetaComDescontos + totalCalcas + totalBermudas;
-
-console.log(camisetas);
-console.log(calcaJeans);
-console.log(bermuda);
-console.log(indiceCamisetas);
-console.log(indiceCalcaJeans);
-console.log(indiceBermuda);
-console.log(camisetasComDescontoAplicado);
-console.log(totalCalcas);
+const resultadoFinal = totalDeCamisetaComDescontos + calcasComTaxa + totalBermudas + (taxaCalcaJeans * 2);
 
 console.log(resultadoFinal);
 
