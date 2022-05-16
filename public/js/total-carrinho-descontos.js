@@ -22,7 +22,7 @@ for (let i = 0; i < carrinhoRepetidos.length; i++) {
     carrinhoRepetidos[i] -= 0.1 * carrinhoRepetidos[i]
 }
 
-const arrayPrincipal = semRepetidos.concat(carrinhoExtras.concat(carrinhoRepetidos))
+const arrayPrincipal = semRepetidos.concat(carrinhoExtras, carrinhoRepetidos)
 
 total = 0
 
