@@ -13,7 +13,6 @@ cart.filter((element, index) => {
     }
 
 })
-console.log("Primeira lista parcial " + listaParcialSemDuplicados);
 
 for (let i = 0; i < 1; i++) {
     let elementoListaProdutoDuplicado = produtosDuplicados[i];
@@ -24,25 +23,21 @@ for (let i = 0; i < 1; i++) {
         if(elementoDoCart === elementoListaProdutoDuplicado){
             let produtoComDescontoAplicado =  elementoListaProdutoDuplicado*0.9
             cart.splice(cart.indexOf(elementoDoCart),1,produtoComDescontoAplicado);
-            elementoListaProdutoDuplicado = produtosDuplicados[i+1]
-            
+            elementoListaProdutoDuplicado = produtosDuplicados[i+1]        
         }
-        
     }
-
 }
 
 const totalDoCarrinho = cart.reduce((acc, e) => {
     return acc += e
 })
 
-
 console.log("---------------------------------------------------");
 console.log("Carrinho de compras com descontos aplicados" + "[" + cart + "]");
 console.log("---------------------------------------------------");
 console.log("Total do carrinho " + totalDoCarrinho.toFixed(2));
 
-
+produtosDuplicados.push()
 
 
 
