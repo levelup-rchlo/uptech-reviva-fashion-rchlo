@@ -1,49 +1,30 @@
-const produtos = [{
-  nome: "Camiseta Básica",
-  preco: 29.90,
-},
-{
-  nome: "Camiseta Polo",
-  preco: 49.90,
-},
-{
-  nome: "Bermuda Moletom",
-  preco: 35,
-},
-{
-  nome: "Calça Jeans Masculina",
-  preco: 89.99,
-},
-{
-  nome: "Camiseta Básica",
-  preco: 29.90,
-},
-{
-  nome: "Calça Jeans Feminina",
-  preco: 109.99,
-},
-{
-  nome: "Camiseta Básica",
-  preco: 29.99,
-},
-]
-
+const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calça Jeans Masculina', 'Camiseta Básica', 'Calça Jeans Feminina', 'Camiseta Básica'];
+const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 const distincao = []
+const carrinho = []
 
-const produtosNovo = produtos.map(function(produto){
-  if (!distincao.includes(produto.nome)){
-    const ocorrencias = produtos.filter(function(produtoIgual){
-      return produtoIgual.nome == produto.nome
+const carrinhoProcessado = produtos.map((itemAtual, indice) => {
+    let produto = {
+      categoria: itemAtual,
+      preco: precos[indice]
+    }
+    return produto;
+  })
+
+carrinhoProcessado.forEach((produto) => {
+  if (!distincao.includes(produto.categoria)){
+    const ocorrencias = carrinhoProcessado.filter((produtoIgual) => {
+      return produtoIgual.categoria == produto.categoria
     }).length;
 
-    distincao.push(produto.nome)
+    distincao.push(produto.categoria)
 
-    return {
-      nome:produto.nome, 
+    carrinho.push({
+      categoria:produto.categoria, 
       preco:produto.preco, 
-      ocorrencias
-    }
+      quantidade:ocorrencias
+    }) 
   }
 })
 
-console.log(produtosNovo)
+console.log(carrinho)
