@@ -6,7 +6,7 @@ const produtos = [
   ['Calça Jeans Feminina', 1, 150.00]
 ]
 
-const carrinho = produtos.map((valorAtual, indice) => {
+const carrinho = produtos.map((valorAtual) => {
   const nome = valorAtual[0];
   const quantidade = valorAtual[1];
   const valorUnitario = valorAtual[2];
