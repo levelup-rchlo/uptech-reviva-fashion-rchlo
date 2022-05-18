@@ -20,8 +20,16 @@ const precos = [
 
 
 
-function transformaObjeto(element) {
-    let obj = { nome: element, valor: precos[produtos.indexOf(element)], id: produtos.indexOf(element) }
+function transformaObjeto(element, id) {
+    let obj = { nome: element, valor: precos[produtos.indexOf(element)], id: id }
+
+    if(id ===2){
+        obj.valor = obj.valor + 3.99
+    }
+    if(id == 0 ){
+        obj.valor = obj.valor*0.9
+    }
+    
     return obj
 }
 
@@ -30,13 +38,17 @@ const listaIndexada = produtos.map(element => {
 
 
      if (element.includes("Camiseta")) {
-         obj = transformaObjeto(element)
+         id = 0 
+         obj = transformaObjeto(element,id)
+         
 
     } if (element.includes("Bermuda")) {
-        obj = transformaObjeto(element)
+        id = 1
+        obj = transformaObjeto(element,id)
 
     } if (element.includes("Calça")) {
-        obj = transformaObjeto(element)
+        id = 2
+        obj = transformaObjeto(element,id)
 
     }
 
@@ -71,4 +83,3 @@ const totalDeCompras = listaIndexada.reduce((acc, element) =>
     acc + element.valor, 0)
 
 console.log(`O valor total do carrinho com os descontos aplicados é de R$ ${totalDeCompras.toFixed(2).replace("." , ",")}`);
-

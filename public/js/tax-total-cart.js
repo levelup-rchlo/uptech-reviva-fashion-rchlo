@@ -6,7 +6,7 @@ const taxItems = cart.map((value) => {
 
        if(value<70.00){
            
-              return value
+              return value 
           }
           else{
               let newValue = value + (value*0.07) 
