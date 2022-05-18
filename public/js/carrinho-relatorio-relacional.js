@@ -3,13 +3,10 @@ const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90]
 const distincao = []
 const carrinho = []
 
-const carrinhoProcessado = produtos.map((itemAtual, indice) => {
-    let produto = {
+const carrinhoProcessado = produtos.map((itemAtual, indice) => ( {
       categoria: itemAtual,
       preco: precos[indice]
-    }
-    return produto;
-  })
+  }))
 
 carrinhoProcessado.forEach((produto) => {
   if (!distincao.includes(produto.categoria)){
