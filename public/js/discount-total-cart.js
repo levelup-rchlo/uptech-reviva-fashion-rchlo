@@ -8,8 +8,8 @@ cart.filter((element, index) => {
     }
     if(!produtosDuplicados.includes(element)){
         produtosDuplicados.push(element)
-    }{
     }
+    
     
 })
 
@@ -24,9 +24,7 @@ const buscaDuplicatas= cart.map(element => {
 })
 
 
-const totalDoCarrinho = buscaDuplicatas.reduce((acc, e) => {
-    return acc += e
-})
+const totalDoCarrinho = buscaDuplicatas.reduce((acc, e) => (acc += e))
 
 
 console.log("---------------------------------------------------");
