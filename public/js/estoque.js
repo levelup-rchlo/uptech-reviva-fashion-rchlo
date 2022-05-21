@@ -80,5 +80,21 @@ const estoque = [{
     ],
 }];
 
+//--Adicionando itens do estoque no localStorage ------------------
+localStorage.setItem('itens', JSON.stringify(estoque));
 
+//--Botão ------------------
+const botoesSacola = document.querySelectorAll('.produto_botao-sacola');
+const itens = JSON.parse(localStorage.getItem("itens"));
+
+botoesSacola.forEach((botao, index) =>{
+    botao.addEventListener('click', () =>{
+        removeProduto(index);
+    });
+});
+
+function removeProduto(id){
+    itens[id].quantidade_disponivel -= 1;
+    localStorage.setItem('itens', JSON.stringify(itens));
+}
 
