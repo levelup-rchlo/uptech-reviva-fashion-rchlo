@@ -6,7 +6,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 2,
     imagens: [
-        { url: 'assets/img/produto-1/img1.jpg', descricao: 'Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege' }
+        { url: 'assets/img/produto-1/img1.jpg', descricao: 'Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege' },
+        { url: 'assets/img/produto-1/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-1/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Blusa Plus Size Feminina Ampla Folhagem Preto Filipa by Reviva Fashion',
@@ -16,7 +18,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 5,
     imagens: [
-        { url: 'assets/img/produto-2/img1.jpg', descricao: 'Modelo com Blusa Preta, Plus Size, Gola Canoa, Manga Curta, Estampa de Folhas na Cor Verde na Barra' }
+        { url: 'assets/img/produto-2/img1.jpg', descricao: 'Modelo com Blusa Preta, Plus Size, Gola Canoa, Manga Curta, Estampa de Folhas na Cor Verde na Barra' },
+        { url: 'assets/img/produto-2/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-2/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Blusa Plus Size Feminina Gola Alta Manga Longa Canelada Verde Filipa by Reviva Fashion',
@@ -26,7 +30,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 7,
     imagens: [
-        { url: 'assets/img/produto-3/img1.jpg', descricao: 'Modelo com Blusa Verde, Plus Size, Gola Alta Redonda, Manga Longa, Sem Estampas' }
+        { url: 'assets/img/produto-3/img1.jpg', descricao: 'Modelo com Blusa Verde, Plus Size, Gola Alta Redonda, Manga Longa, Sem Estampas' },
+        { url: 'assets/img/produto-3/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-3/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Blusa Plus Size Feminina Manga 7-8 Tricot Canelado Vermelho Filipa by Reviva Fashion',
@@ -36,7 +42,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 9,
     imagens: [
-        { url: 'assets/img/produto-4/img1.jpg', descricao: 'Modelo com Blusa na Cor Vermelho Escuro Mescla, Plus Size, Gola Redonda, Manga 7/8, Sem Estampas' }
+        { url: 'assets/img/produto-4/img1.jpg', descricao: 'Modelo com Blusa na Cor Vermelho Escuro Mescla, Plus Size, Gola Redonda, Manga 7/8, Sem Estampas' },
+        { url: 'assets/img/produto-4/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-4/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Calça Jeans Plus Size Feminina Cigarrete Denim Médio Filipa by Reviva Fashion',
@@ -46,7 +54,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 12,
     imagens: [
-        { url: 'assets/img/produto-5/img1.jpg', descricao: 'Modelo com Calça Jeans Cor Denim Médio, Plus Size, 2 Bolsos Frontais e 2 Traseiros, Comprimento Cigarrete, com Lavagem' }
+        { url: 'assets/img/produto-5/img1.jpg', descricao: 'Modelo com Calça Jeans Cor Denim Médio, Plus Size, 2 Bolsos Frontais e 2 Traseiros, Comprimento Cigarrete, com Lavagem' },
+        { url: 'assets/img/produto-5/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-5/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Top Cropped Jeans Feminino Denim Escuro Pool by Reviva Fashion',
@@ -56,7 +66,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 15,
     imagens: [
-        { url: 'assets/img/produto-6/img1.jpg', descricao: 'Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa' }
+        { url: 'assets/img/produto-6/img1.jpg', descricao: 'Modelo com Top Cropped Jeans, com Recorte Alça Média, Decote Princesa' },
+        { url: 'assets/img/produto-6/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-6/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Top Cropped Plus Size Feminino Alças Franzidas Abstrato Marrom Filipa by Reviva Fashion',
@@ -66,7 +78,9 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 11,
     imagens: [
-        { url: 'assets/img/produto-7/img1.jpg', descricao: 'Modelo com Top Cropped, Plus Size, com Recorte Alça Média, Decote Princesa, Estampa Abstrata Marrom' }
+        { url: 'assets/img/produto-7/img1.jpg', descricao: 'Modelo com Top Cropped, Plus Size, com Recorte Alça Média, Decote Princesa, Estampa Abstrata Marrom' },
+        { url: 'assets/img/produto-7/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-7/img3.jpg', descricao: '' }
     ],
 }, {
     nome: 'Camisa Plus Size Feminina Manga Longa Abstrata Marrom Filipa by Reviva Fashion',
@@ -76,9 +90,12 @@ const estoque = [{
     tamanhos_disponiveis: ['P', 'M', 'G'],
     quantidade_disponivel: 10,
     imagens: [
-        { url: 'assets/img/produto-8/img1.jpg', descricao: 'Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom' }
+        { url: 'assets/img/produto-8/img1.jpg', descricao: 'Modelo com Camisa, Manga Longa, Estampa Abstrata Marrom' },
+        { url: 'assets/img/produto-8/img2.jpg', descricao: '' },
+        { url: 'assets/img/produto-8/img3.jpg', descricao: '' }
     ],
 }];
+
 
 //--Adicionando itens do estoque no localStorage ------------------
 localStorage.setItem('itens', JSON.stringify(estoque));
