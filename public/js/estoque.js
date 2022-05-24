@@ -1,5 +1,6 @@
-const estoque = [{
+let estoque = [{
         nome: 'Cropped preto AK by Riachuelo',
+        id: 'cropped',
         url: 'cropped-preto-ak-by-riachuelo',
         preco: 29.90,
         descricao: 'O Cropped preto AK by Riachuelo tem o charme do preto e básico. Ótimo para looks de verão!',
@@ -12,6 +13,7 @@ const estoque = [{
 
     {
         nome: 'Regata listrada AK by Riachuelo',
+        id: 'regata',
         url: 'regata-listrada-ak-by-riachuelo',
         preco: 39.90,
         descricao: 'Confeccionada em mix de fibras, a Regata listrada AK by Riachuelo vai fazer você se apaixonar! Com design único, a peça apresenta caimento perfeito e tecido super confortável, perfeita para diversas ocasiões, aposte!',
@@ -24,6 +26,7 @@ const estoque = [{
 
     {
         nome: 'Calça larga preto AK by Riachuelo',
+        id: 'calca',
         url: 'calça-larga-preto-ak-by-riachuelo',
         preco: 99.90,
         descricao: 'A Calça larga preto AK by Riachuelo é a escolha certa para criar looks com muito estilo! Confeccionada em sarja, a calça apresenta modelagem paper bag, a queridinha do momento! Perfeita para ocasiões especiais, encontros com os amigos e com o crush, aposte!',
@@ -36,6 +39,7 @@ const estoque = [{
 
     {
         nome: 'Vestido amarelo AK by Riachuelo',
+        id: 'vestido',
         url: 'calca-alfaiataria',
         preco: 179.90,
         descricao: 'Blazer Cropped Feminino Manga Longa com Ombreira Linho Bege AK by Riachuelo confeccionado em tecido com linho, a peça conta com modelagem curta e gola tailleur com fechamento por botão. Queridinho do momento, o blazer pode ser usado em várias composições, como em peças com jeans destroyed e tênis casual ou com calça de alfaiataria e salto fino, formando um look super elegante. Inspire-se!',
@@ -46,3 +50,25 @@ const estoque = [{
         ],
     }
 ]
+
+if (localStorage.length === 0) {
+    //saveobjects to localStorage
+    localStorage.setItem('estoque', JSON.stringify(estoque));
+}
+
+//load from localStorage
+let novoObjeto = localStorage.getItem('estoque');
+
+//cast from String to object
+novoObjeto = JSON.parse(novoObjeto);
+console.log(novoObjeto);
+
+function removeEstoque(nomeProduto) {
+    novoObjeto.forEach(elemento => {
+        if (elemento.nome == nomeProduto) {
+            elemento.quantidade_disponivel--;
+        }
+    });
+    console.log(novoObjeto);
+    localStorage.setItem('estoque', JSON.stringify(novoObjeto));
+}
