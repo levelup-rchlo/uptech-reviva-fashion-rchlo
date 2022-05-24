@@ -165,10 +165,9 @@
         grid-column-end: 8;
     }
     
-    .add-to-bag-button:hover .card-inner {
-        opacity: 0.9;
-        transform: rotateY(180deg);
-        transition: transform 0.5s;
+    .add-to-bag-button:hover {
+        opacity: 0.7;
+        cursor: pointer;
     }
     
     .card-front {
