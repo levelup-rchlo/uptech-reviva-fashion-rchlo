@@ -99,18 +99,44 @@ const estoque = [{
 
 //--Adicionando itens do estoque no localStorage ------------------
 localStorage.setItem('itens', JSON.stringify(estoque));
+const itensLocalStorage = JSON.parse(localStorage.getItem('itensSacola'));
+let itensLocal = [];
 
-//--Botão ------------------
+if (JSON.parse(localStorage.getItem("itensSacola")) !== null) {
+    itensLocal = JSON.parse(localStorage.getItem("itensSacola"));
+}else{
+    itensLocal = [];
+}
+
 const botoesSacola = document.querySelectorAll('.produto_botao-sacola');
 const itens = JSON.parse(localStorage.getItem("itens"));
 
-botoesSacola.forEach((botao, index) =>{
-    botao.addEventListener('click', () =>{
+const verificaProdutoSacola = (array, string) => array.some((value) => value.url === string);
+
+function adicionarProduto(id) {
+    const item = itens[id]
+    return item;
+}
+
+botoesSacola.forEach((botao, index, array) => {
+
+    botao.addEventListener('click', () => {
         removeProduto(index);
+        const produtos = adicionarProduto(index);
+        if (!verificaProdutoSacola(itensLocal, produtos.url)) {
+            produtos["quantidade_carrinho"] = 1;
+            itensLocal.push(produtos)
+        } else {
+            itensLocal.forEach((item, index) => {
+                if (item.url === produtos.url) {
+                    item.quantidade_carrinho += 1;
+                }
+            })
+        }
+        localStorage.setItem('itensSacola', JSON.stringify(itensLocal));
     });
 });
-
-function removeProduto(id){
+function removeProduto(id) {
     itens[id].quantidade_disponivel -= 1;
     localStorage.setItem('itens', JSON.stringify(itens));
 }

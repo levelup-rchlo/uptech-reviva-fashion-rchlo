@@ -575,7 +575,7 @@ body {
 }
 .produto_botao-sacola:hover .botao-sacola_conteudo {
   transform: rotateY(180deg);
-  transition: transform 0.5s 0.5s;
+  transition: transform 0.2s;
 }
 .produto_botao-sacola:active {
   transform: scale(1.05);
@@ -584,7 +584,7 @@ body {
 .botao-sacola_conteudo {
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.5s 1s;
+  transition: transform 0.2s;
 }
 
 .conteudo_frente-botao, .conteudo_costas-botao {

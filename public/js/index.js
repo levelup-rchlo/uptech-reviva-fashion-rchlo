@@ -1,14 +1,22 @@
 const itensMemoria = JSON.parse(localStorage.getItem("itens"));
-const produtos = document.querySelectorAll('[produtos-dinamicos]')
-// const container = document.querySelector('conteudo_produtos')
+const containerProdutos = document.querySelectorAll("[lista-itens]");
 
+function renderizarProdutos(itemDestino){
+    for (let i = 0; i < 4; i++) {
+        const listaProdutos = document.createElement("div");
+        listaProdutos.classList.add("produto");
+        listaProdutos.setAttribute("produtos-dinamicos", "")
+        itemDestino.appendChild(listaProdutos)
+    }
+}
+containerProdutos.forEach(item => renderizarProdutos(item))
+
+const produtos = document.querySelectorAll("[produtos-dinamicos]")
 itensMemoria.map((valor, index) => {
     if (valor.quantidade_disponivel > 0) {
         aplicaProdutos(produtos[index], valor.nome, valor.url, valor.preco, valor.descricao, valor.tamanhos_disponiveis, valor.quantidade_disponivel, valor.imagens, index);
     }
-    
 });
-
 
 function aplicaProdutos(local, nome, url, preco, descricao, tamanhos_disponiveis, quantidade_disponivel, imagens, index) {
 
@@ -21,7 +29,7 @@ function aplicaProdutos(local, nome, url, preco, descricao, tamanhos_disponiveis
     const produtoImagem1 = document.createElement("img")
     produtoImagem1.classList.add("produto_imagem")
     produtoImagem1.setAttribute("src", imagens[0].url.toString())
-    produtoImagem1.setAttribute("alt", "Modelo com Blusa Preta, Plus Size, Gola Redonda, Manga 3/4, Pequenas Estampas de Onças na Cor Bege")
+    produtoImagem1.setAttribute("alt", imagens[0].descricao)
     produtoLinkImagem.appendChild(produtoImagem1);
     const produtoImagem2 = document.createElement("img")
     produtoImagem2.classList.add("produto_imagem")
