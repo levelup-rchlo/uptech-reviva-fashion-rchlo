@@ -1,6 +1,6 @@
 const itensMemoria = JSON.parse(localStorage.getItem("itensSacola"));
 
-function renderizar(){
+function renderizar() {
     itensMemoria.forEach((valor, index, array) => {
         aplicaProdutos(valor.nome, valor.url, valor.preco, valor.descricao, valor.tamanhos_disponiveis, valor.quantidade_disponivel, valor.imagens, valor.quantidade_carrinho);
         renderizarSubtotal(array);
@@ -9,7 +9,7 @@ function renderizar(){
 renderizar();
 function aplicaProdutos(nome, url, preco, descricoes, tamanhos_disponiveis, quantidade_disponivel, imagens, quantidade_carrinho) {
 
-    const produtosCarrinho = document.querySelector("[produtos-carrinho]");
+    const produtosCarrinho = document.querySelector("#carrinho");
 
     const carrinhoProduto = document.createElement("section");
     carrinhoProduto.classList.add("carrinho_produto");
@@ -116,7 +116,7 @@ function aplicaProdutos(nome, url, preco, descricoes, tamanhos_disponiveis, quan
 
 
 function renderizarSubtotal(arrayTotal) {
-    const produtosCarrinho = document.querySelector("[produtos-carrinho]");
+    const produtosCarrinho = document.querySelector("#carrinho");
     const total = calculaSubtotal(arrayTotal);
     const carrinhoCheckout = document.createElement("div");
     carrinhoCheckout.classList.add("carrinho_checkout");
@@ -142,17 +142,15 @@ function renderizarSubtotal(arrayTotal) {
 }
 
 function calculaSubtotal(array) {
-    let subtotal = 0;
-    array.forEach(function (item) {
-        subtotal += item.quantidade_carrinho * item.preco;
-    });
-    return subtotal;
+    return array.reduce(function (acumulador, item) {
+        return acumulador + item.quantidade_carrinho * item.preco;
+    }, 0);  
 }
 
-function alterarQuantidade(){
+function alterarQuantidade() {
     const listaInputs = document.querySelectorAll(".quantidade");
-    listaInputs.forEach((input, index) =>{
-        input.addEventListener("change", function(){
+    listaInputs.forEach((input, index) => {
+        input.addEventListener("change", function () {
             console.log(index);
             itensMemoria[index].quantidade_carrinho = Number(input.value);
             localStorage.setItem('itensSacola', JSON.stringify(itensMemoria));

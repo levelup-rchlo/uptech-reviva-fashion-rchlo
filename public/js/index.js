@@ -1,18 +1,18 @@
 const itensMemoria = JSON.parse(localStorage.getItem("itens"));
-const containerProdutos = document.querySelectorAll("[lista-itens]");
+const containerProdutos = document.querySelectorAll(".lista-itens");
 
 function renderizarProdutos(itemDestino){
     for (let i = 0; i < 4; i++) {
         const listaProdutos = document.createElement("div");
         listaProdutos.classList.add("produto");
-        listaProdutos.setAttribute("produtos-dinamicos", "")
+        listaProdutos.setAttribute("id", "produtos-dinamicos")
         itemDestino.appendChild(listaProdutos)
     }
 }
 containerProdutos.forEach(item => renderizarProdutos(item))
 
-const produtos = document.querySelectorAll("[produtos-dinamicos]")
-itensMemoria.map((valor, index) => {
+const produtos = document.querySelectorAll("#produtos-dinamicos")
+itensMemoria.forEach((valor, index) => {
     if (valor.quantidade_disponivel > 0) {
         aplicaProdutos(produtos[index], valor.nome, valor.url, valor.preco, valor.descricao, valor.tamanhos_disponiveis, valor.quantidade_disponivel, valor.imagens, index);
     }
