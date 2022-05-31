@@ -1,3 +1,6 @@
+@import "../abstract/variaveis";
+@import "../abstract/base";
+
 .produto_botao-sacola {
   grid-area: botao;
   perspective: 500px;
@@ -37,14 +40,30 @@
 }
 
 .conteudo_costas-botao {
-  background: no-repeat center $cores-detalhes url(../../assets/svg/check-solid.svg);
+  background: no-repeat center $cores-detalhes url(../assets/svg/check-solid.svg);
   color: $cor-primaria-negativa;
   transform: rotateY(180deg);
 
   @extend .conteudo_frente-botao;
 
   &:focus {
-    background: no-repeat center #008844 url(../../assets/svg/check-solid-branco.svg);
+    background: no-repeat center #008844 url(../assets/svg/check-solid-branco.svg);
+  }
+}
+
+.costas-botao_indisponivel {
+  background-image: none;
+  color: $cor-fontes;
+  font-weight: bold;
+
+  &::before {
+    content: "PRODUTO INDISPONÍVEL";
+  }
+
+  &:focus {
+    background: $cores-detalhes;
+    background-image: none;
+
   }
 }
 

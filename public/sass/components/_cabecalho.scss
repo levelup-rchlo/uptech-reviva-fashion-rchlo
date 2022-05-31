@@ -27,10 +27,11 @@
 }
 
 .cabecalho_carrinho {
-  background: center no-repeat url(../../assets/svg/logo-carrinho-compras.svg);
+  background: center no-repeat url(../assets/svg/logo-carrinho-compras.svg);
   transition: .4s all;
   height: 5em;
   width: 5em;
+
   &:hover {
     transform: scale(1.1);
   }

@@ -1,4 +1,6 @@
+import { Produto } from "./modulos/produto.js";
 import { pullLocalStorage, pushLocalStorage } from "./modulos/local-storage.js";
+
 // const produto: Produto[] = [{
 //     nome: 'Blusa Plus Size Feminina Ampla Decote Malha Onça Preto Filipa by Reviva Fashion',
 //     url: 'blusa-plus-onca-preto',
@@ -96,46 +98,56 @@ import { pullLocalStorage, pushLocalStorage } from "./modulos/local-storage.js";
 //         { url: 'assets/img/produto-8/img3.jpg', descricao: 'Modelo de Costas com Camisa, Manga Longa, Estampa Abstrata Marrom' }
 //     ],
 // }];
+
 // pushLocalStorage("itens",produto);
-let itensLocal = [];
+
+let itensLocal: Produto[] = [];
 if (pullLocalStorage("itensSacola") !== null) {
     itensLocal = pullLocalStorage("itensSacola");
-}
-else {
+} else {
     itensLocal = [];
 }
-const botoesSacola = document.querySelectorAll("#produtos-dinamicos");
+
+const botoesSacola: NodeListOf<HTMLElement> = document.querySelectorAll("#produtos-dinamicos");
 const itens = pullLocalStorage("itens");
-const verificaProdutoSacola = (produto, nome) => produto.some((produto) => produto.url === nome);
+
+const verificaProdutoSacola = (produto: Produto[], nome: string) => produto.some((produto: Produto) => produto.url === nome);
+
 botoesSacola.forEach((botao, index) => {
     botao.addEventListener('click', () => {
-        const produtos = itens[index];
+        const produtos: Produto = itens[index];
         const local = pullLocalStorage("itens");
+
         if (!verificaProdutoSacola(itensLocal, produtos.url)) {
             produtos.quantidade_carrinho = 1;
             itensLocal.push(produtos);
-        }
-        else {
+        } else {
             itensLocal.find((value) => value.url === produtos.url);
             produtos.quantidade_carrinho ? produtos.quantidade_carrinho++ : produtos;
         }
+
         const indiceProdutoItensLocal = pegarIndiceObj(itensLocal, produtos.url);
-        itensLocal[indiceProdutoItensLocal].quantidade_carrinho;
-        if (itensLocal[indiceProdutoItensLocal].quantidade_carrinho > local[indiceProdutoItensLocal].quantidade_disponivel) {
+
+        <number>itensLocal[indiceProdutoItensLocal].quantidade_carrinho;
+        if (<number>itensLocal[indiceProdutoItensLocal].quantidade_carrinho > <number>local[indiceProdutoItensLocal].quantidade_disponivel) {
             adicionaClasse(index, ".conteudo_costas-botao", "costas-botao_indisponivel");
             return;
         }
         local[indiceProdutoItensLocal].quantidade_carrinho = produtos.quantidade_carrinho;
         pushLocalStorage("itens", local);
         pushLocalStorage("itensSacola", itensLocal);
+
     });
 });
-function chamaElement(Element) {
+
+function chamaElement(Element: string): NodeListOf<HTMLElement> {
     return document.querySelectorAll(Element);
 }
-function adicionaClasse(indice, Element, classe) {
+
+function adicionaClasse(indice: number, Element: string, classe: string) {
     return chamaElement(Element)[indice].classList.add(classe);
 }
-export function pegarIndiceObj(estoque, nomeProduto) {
-    return estoque.findIndex((itemEstoque) => itemEstoque.url == nomeProduto);
+
+export function pegarIndiceObj(estoque: Produto[], nomeProduto: string): number {
+    return estoque.findIndex((itemEstoque: Produto) => itemEstoque.url == nomeProduto);
 }

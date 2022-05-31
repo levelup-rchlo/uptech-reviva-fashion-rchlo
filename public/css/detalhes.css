@@ -45,7 +45,7 @@ body {
 }
 
 .cabecalho_carrinho {
-  background: center no-repeat url(../../assets/svg/logo-carrinho-compras.svg);
+  background: center no-repeat url(../assets/svg/logo-carrinho-compras.svg);
   transition: 0.4s all;
   height: 5em;
   width: 5em;
@@ -692,7 +692,7 @@ body {
 }
 .produto_botao-sacola:hover .botao-sacola_conteudo, .produto_botao-sacola-detalhes:hover .botao-sacola_conteudo {
   transform: rotateY(180deg);
-  transition: transform 0.5s;
+  transition: transform 0.2s;
 }
 .produto_botao-sacola:active, .produto_botao-sacola-detalhes:active {
   transform: scale(1.05);
@@ -701,7 +701,7 @@ body {
 .botao-sacola_conteudo {
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.5s 1s;
+  transition: transform 0.2s;
 }
 
 .conteudo_frente-botao, .conteudo_costas-botao {
@@ -722,12 +722,12 @@ body {
 }
 
 .conteudo_costas-botao {
-  background: no-repeat center #c4c4c4 url(../../assets/svg/check-solid.svg);
+  background: no-repeat center #c4c4c4 url(../assets/svg/check-solid.svg);
   color: #ffffff;
   transform: rotateY(180deg);
 }
 .conteudo_costas-botao:focus {
-  background: no-repeat center #008844 url(../../assets/svg/check-solid-branco.svg);
+  background: no-repeat center #008844 url(../assets/svg/check-solid-branco.svg);
 }
 
 .botao-sacola, .botao-sacola-detalhes {
