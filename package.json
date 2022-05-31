@@ -1,31 +1,31 @@
 {
-  "name": "uptech-reviva-fashion-rchlo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "compile-sass": "sass public/sass:public/css",
-    "compile-typescript": "tsc",
-    "dev-server": "live-server --no-browser --port=3000 public",
-    "run-all": "concurrently 'npm run compile-sass' 'npm run dev-server' 'npm run compile-typescript'",
-    "start": "nodemon -e sass,ts --exec 'npm run run-all'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo/issues"
-  },
-  "homepage": "https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo#readme",
-  "devDependencies": {
-    "concurrently": "^7.1.0",
-    "live-server": "^1.2.1",
-    "nodemon": "^2.0.15",
-    "sass": "^1.49.9",
-    "typescript": "^4.6.3"
-  }
+    "name": "uptech-reviva-fashion-rchlo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile-sass": "sass public/sass:public/css",
+        "compile-typescript": "tsc",
+        "dev-server": "live-server --no-browser --port=3000 public",
+        "run-all": "concurrently \"npm run compile-sass\" \"npm run dev-server\" \"npm run compile-typescript\"",
+        "start": "nodemon -e sass,ts --exec \"npm run run-all\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo/issues"
+    },
+    "homepage": "https://github.com/levelup-rchlo/uptech-reviva-fashion-rchlo#readme",
+    "devDependencies": {
+        "concurrently": "^7.1.0",
+        "live-server": "^1.2.1",
+        "nodemon": "^2.0.15",
+        "sass": "^1.49.9",
+        "typescript": "^4.6.3"
+    }
 }

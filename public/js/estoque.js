@@ -7,7 +7,7 @@ let estoque = [{
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 3,
         imagens: [
-            { url: 'link para imagem', descricao: 'crooped preto' }
+            { url: '../src/cropped.png', descricao: 'crooped preto' }
         ],
     },
 
@@ -20,7 +20,7 @@ let estoque = [{
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 3,
         imagens: [
-            { url: 'link para imagem', descricao: 'Regata listrada preta e cinza' }
+            { url: '../src/listrada.png', descricao: 'Regata listrada preta e cinza' }
         ],
     },
 
@@ -31,9 +31,9 @@ let estoque = [{
         preco: 99.90,
         descricao: 'A Calça larga preto AK by Riachuelo é a escolha certa para criar looks com muito estilo! Confeccionada em sarja, a calça apresenta modelagem paper bag, a queridinha do momento! Perfeita para ocasiões especiais, encontros com os amigos e com o crush, aposte!',
         tamanhos_disponiveis: ['P', 'M', 'G'],
-        quantidade_disponivel: 4,
+        quantidade_disponivel: 3,
         imagens: [
-            { url: 'link para imagem', descricao: 'Calça larga preta' }
+            { url: '../src/calca.png', descricao: 'Calça larga preta' }
         ],
     },
 
@@ -44,9 +44,9 @@ let estoque = [{
         preco: 179.90,
         descricao: 'Blazer Cropped Feminino Manga Longa com Ombreira Linho Bege AK by Riachuelo confeccionado em tecido com linho, a peça conta com modelagem curta e gola tailleur com fechamento por botão. Queridinho do momento, o blazer pode ser usado em várias composições, como em peças com jeans destroyed e tênis casual ou com calça de alfaiataria e salto fino, formando um look super elegante. Inspire-se!',
         tamanhos_disponiveis: ['P', 'M', 'G'],
-        quantidade_disponivel: 4,
+        quantidade_disponivel: 3,
         imagens: [
-            { url: 'link para imagem', descricao: 'Vestido amarelo' }
+            { url: '../src/vestido.png', descricao: 'Vestido amarelo' }
         ],
     }
 ]
@@ -63,10 +63,24 @@ let novoObjeto = localStorage.getItem('estoque');
 novoObjeto = JSON.parse(novoObjeto);
 console.log(novoObjeto);
 
+const productNames = []
+
+novoObjeto.forEach(elemento => {
+    productNames.push(elemento.nome);
+});
+
+const imageButtons = document.querySelectorAll(".shopping-cart");
+
+for (let i = 0; i < imageButtons.length; i++) {
+    let name = (productNames[i]);
+    imageButtons[i].addEventListener("click", function(nomeProduto) { removeEstoque(name) });
+}
+
 function removeEstoque(nomeProduto) {
     novoObjeto.forEach(elemento => {
-        if (elemento.nome == nomeProduto) {
+        if (elemento.nome == nomeProduto && elemento.quantidade_disponivel > 0) {
             elemento.quantidade_disponivel--;
+            alert("Item adicionado");
         }
     });
     console.log(novoObjeto);
