@@ -1,26 +1,19 @@
-const carrinho = [39.90, 75.99, 24, 12, 109.99, 83.99]
-
-let total = 0
-
-
-for (let i = 0; i < carrinho.length; i++) {
-    if (carrinho[i] >= 70) {
-        carrinho[i] = carrinho[i] + (0.07 * carrinho[i])
+"use strict";
+const carrinhoTaxado = [39.90, 75.99, 24, 12, 109.99, 83.99];
+let totalTaxado = 0;
+for (let i = 0; i < carrinhoTaxado.length; i++) {
+    if (carrinhoTaxado[i] >= 70) {
+        carrinhoTaxado[i] = carrinhoTaxado[i] + (0.07 * carrinhoTaxado[i]);
     }
-    total = carrinho[i] + total
+    totalTaxado = carrinhoTaxado[i] + totalTaxado;
 }
-
-console.log(total)
-
-const carrinho2 = [39.90, 75.99, 24, 12, 109.99, 83.99]
-
-let x = 0
-
-carrinho2.forEach(value => {
+console.log(totalTaxado);
+const carrinhoTaxado2 = [39.90, 75.99, 24, 12, 109.99, 83.99];
+let xTaxado = 0;
+carrinhoTaxado2.forEach(value => {
     if (value >= 70) {
-        value += 0.07 * value
+        value += 0.07 * value;
     }
-    x += value
-})
-
-console.log(x)
+    xTaxado += value;
+});
+console.log(xTaxado);

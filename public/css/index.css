@@ -107,6 +107,10 @@
         justify-content: space-between;
     }
     
+    .links {
+        text-decoration: none;
+    }
+    
     .latest-releases h2 {
         margin: 1.5rem;
     }
