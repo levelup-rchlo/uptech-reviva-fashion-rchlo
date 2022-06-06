@@ -2,7 +2,7 @@
 const carrinhoTaxado = [39.90, 75.99, 24, 12, 109.99, 83.99];
 let totalTaxado = 0;
 for (let i = 0; i < carrinhoTaxado.length; i++) {
-    if (carrinhoTaxado[i] >= 70) {
+    if (carrinhoTaxado[i] >= 75) {
         carrinhoTaxado[i] = carrinhoTaxado[i] + (0.07 * carrinhoTaxado[i]);
     }
     totalTaxado = carrinhoTaxado[i] + totalTaxado;
