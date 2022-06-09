@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ ul,ol {
+	list-style: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+article, aside, details, 
+footer, header, nav, section {
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+
